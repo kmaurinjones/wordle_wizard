@@ -1,3 +1,4 @@
 *.gitignore*
 *pycache*
 */environment*
+*.DS_Store
