@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'audio'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('o', 4)]
+
+Letters to guess again:
+	['o']
+
+Letters to not guess again:
+	['a', 'd', 'i', 'u']
+
+At this point:
+	2027, 87.79% of total words have been eliminated, and
+	282, 12.21% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('store', 100.0), ('loser', 99.52), ('tenor', 96.66), ('snore', 94.56), ('stole', 93.68), ('score', 91.14), ('other', 90.17), ('trope', 89.41), ('onset', 88.68), ('stone', 88.68), ('shore', 88.04), ('horse', 88.04), ('crone', 87.8), ('poser', 87.27), ('prose', 87.27), ('spore', 87.27), ('close', 84.82), ('heron', 84.74), ('forte', 84.66), ('sober', 84.33), ('prone', 83.97), ('hotel', 83.85), ('wrote', 83.45), ('tower', 83.45), ('lower', 83.0), ('ethos', 82.2), ('those', 82.2), ('goner', 82.04), ('voter', 82.0), ('trove', 82.0), ('overt', 82.0), ('lover', 81.51), ('clone', 81.51), ('motel', 81.39), ('swore', 81.31), ('chore', 81.31), ('worse', 81.31), ('sower', 81.31), ('borne', 80.99), ('slope', 80.99)]
+
+Words guessed so far:
+	['audio'].
+
+Next guess:
+	'store'
+
+-----------------------------
+
+Guess 2: 'store'
+Letters in correct positions:
+	[('e', 4)]
+
+Letters in incorrect positions:
+	[('s', 0), ('o', 2), ('r', 3), ('o', 4)]
+
+Letters to guess again:
+	['e', 'o', 'r', 's']
+
+Letters to not guess again:
+	['a', 'd', 'i', 't', 'u']
+
+At this point:
+	2307, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('horse', 100.0), ('worse', 0.0)]
+
+Words guessed so far:
+	['audio', 'store'].
+
+Next guess:
+	'horse'
+
+-----------------------------
+
+Guess 3: 'horse'
+Letters in correct positions:
+	[('o', 1), ('r', 2), ('s', 3), ('e', 4)]
+
+Letters in incorrect positions:
+	[('s', 0), ('o', 2), ('r', 3), ('o', 4)]
+
+Letters to guess again:
+	['e', 'o', 'r', 's']
+
+Letters to not guess again:
+	['a', 'd', 'h', 'i', 't', 'u']
+
+At this point:
+	2308, 99.96% of total words have been eliminated, and
+	1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+	'worse'
+
+Next guess:
+	'worse'
+
+-----------------------------
+
+Guess 4: 'worse'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'worse'.
+
+-----------------------------
