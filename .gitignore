@@ -1,3 +1,3 @@
-*.gitignore
-*.pycache
-/environment
+*.gitignore*
+*pycache*
+*/environment*
