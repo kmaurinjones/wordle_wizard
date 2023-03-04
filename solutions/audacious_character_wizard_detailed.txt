@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'audacious'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 3), ('c', 4)]
+
+Letters to guess again:
+	['a', 'c']
+
+Letters to not guess again:
+	['d', 'i', 'o', 's', 'u']
+
+At this point:
+	9629, 99.1% of total words have been eliminated, and
+	87, 0.9% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('parchment', 100.0), ('rectangle', 99.73), ('centrally', 94.96), ('clergyman', 92.02), ('carpentry', 87.13), ('placement', 84.93), ('verplanck', 84.82), ('enchanter', 84.28), ('charlayne', 83.87), ('carpenter', 83.13), ('caprenter', 83.13), ('benchmark', 81.08), ('centenary', 79.54), ('vtterance', 78.77), ('relevancy', 78.35), ('cattlemen', 77.34), ('lactantem', 77.34), ('pregnancy', 76.07), ('freelance', 75.18), ('relevance', 74.38), ('traceable', 74.17), ('celebrate', 74.17), ('lawerence', 73.96), ('wehrmacht', 72.81), ('perchance', 72.06), ('hatchment', 70.64), ('halfpence', 69.75), ('membrance', 69.48), ('thackeray', 68.71), ('fragrance', 68.53), ('mercenary', 67.85), ('champagne', 67.2), ('camembert', 66.9), ('challenge', 66.87), ('eckermann', 66.73), ('mccracken', 66.73), ('cranberry', 65.33), ('mcelvaney', 64.71), ('backwater', 64.38), ('canebrake', 64.21)]
+
+Words guessed so far:
+	['audacious'].
+
+Next guess:
+	'parchment'
+
+-----------------------------
+
+Guess 2: 'parchment'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('r', 2), ('a', 3), ('c', 3), ('c', 4), ('h', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+	9712, 99.96% of total words have been eliminated, and
+	4, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('chatterer', 0.0), ('heartache', 0.0), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['audacious', 'parchment'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 3: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('r', 2), ('a', 3), ('c', 3), ('c', 4), ('h', 4), ('e', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

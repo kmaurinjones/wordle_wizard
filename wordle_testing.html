@@ -1,0 +1,3927 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.168">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>wordle_testing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="wordle_testing_files/libs/clipboard/clipboard.min.js"></script>
+<script src="wordle_testing_files/libs/quarto-html/quarto.js"></script>
+<script src="wordle_testing_files/libs/quarto-html/popper.min.js"></script>
+<script src="wordle_testing_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="wordle_testing_files/libs/quarto-html/anchor.min.js"></script>
+<link href="wordle_testing_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="wordle_testing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="wordle_testing_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="wordle_testing_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="wordle_testing_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="imports" class="level2">
+<h2 class="anchored" data-anchor-id="imports">Imports</h2>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> operator</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> wordle_functions <span class="im">import</span> <span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="importing-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="importing-datasets">Importing datasets</h2>
+<section id="official-words" class="level3">
+<h3 class="anchored" data-anchor-id="official-words">official words</h3>
+<ul>
+<li>official wordle word list</li>
+</ul>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Official list</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>official_words <span class="op">=</span> []</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/official_words_processed.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        official_words.append(word)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(official_words))</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>official_words[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2310</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>['wince', 'thyme', 'mower', 'horde', 'heard']</code></pre>
+</div>
+</div>
+</section>
+<section id="alternative-list-1" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-list-1">alternative list 1</h3>
+<ul>
+<li>an alternate list of 5-letter words found on the web</li>
+</ul>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Official list</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>alt_words_1 <span class="op">=</span> []</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/alt_words_1.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        alt_words_1.append(word)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(alt_words_1))</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>alt_words_1[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>14856</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>['rossa', 'jetty', 'wizzo', 'cuppa', 'cohoe']</code></pre>
+</div>
+</div>
+</section>
+<section id="nltk-grand-corpus" class="level3">
+<h3 class="anchored" data-anchor-id="nltk-grand-corpus">nltk grand corpus</h3>
+<ul>
+<li>Amalgamation of all words in various NLTK corpora to have as big a dataset as possible</li>
+<li>Developed manually</li>
+</ul>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">### grand corpus tokens</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>nltk_tokens <span class="op">=</span> []</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_tokens_5.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        nltk_tokens.append(word)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(nltk_tokens))</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>nltk_tokens[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>535189</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="36">
+<pre><code>['years', 'board', 'dutch', 'group', 'agnew']</code></pre>
+</div>
+</div>
+</section>
+<section id="nltk-grand-corpus-types-and-counts" class="level3">
+<h3 class="anchored" data-anchor-id="nltk-grand-corpus-types-and-counts">nltk grand corpus types and counts</h3>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">### grand corpus types and counts</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>nltk_counts <span class="op">=</span> {}</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_5.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)) <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)[<span class="dv">0</span>]</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>            count <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)[<span class="dv">1</span>]</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>            nltk_counts[word] <span class="op">=</span> count</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(nltk_counts))</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>nltk_counts[<span class="st">'which'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8043</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>'15760'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Official list</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>official_words <span class="op">=</span> []</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/official_words_processed.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word) <span class="op">&gt;</span> <span class="dv">0</span>: <span class="co"># there's one blank entry at the start</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>            official_words.append(word)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(official_words))</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>official_words[:<span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2309</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>['wince',
+ 'thyme',
+ 'mower',
+ 'horde',
+ 'heard',
+ 'tenor',
+ 'zonal',
+ 'parry',
+ 'shied',
+ 'fizzy']</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="wordle-functions-testing" class="level2">
+<h2 class="anchored" data-anchor-id="wordle-functions-testing">Wordle functions + Testing</h2>
+<section id="testing-wordle_wizard" class="level3">
+<h3 class="anchored" data-anchor-id="testing-wordle_wizard">Testing <code>wordle_wizard()</code></h3>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> official_words, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"arose"</span>, target <span class="op">=</span> <span class="st">"syrup"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">False</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'arose'
+Guess 2: 'shirt'
+Guess 3: 'surly'
+Guess 4: 'syrup'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'syrup'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'arose'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('r', 1), ('s', 3)]
+
+Letters to guess again:
+    ['r', 's']
+
+Letters to not guess again:
+    ['a', 'e', 'o']
+
+At this point:
+    2288, 99.09% of total words have been eliminated, and
+    21, 0.91% of total words remain possible.
+
+All potential next guesses:
+    [('shirt', 100.0), ('strip', 97.58), ('rusty', 82.49), ('skirt', 81.4), ('surly', 81.16), ('swirl', 78.38), ('spurt', 76.33), ('slurp', 75.0), ('spurn', 60.02), ('sprig', 53.86), ('risky', 49.52), ('virus', 47.83), ('shirk', 45.65), ('scrum', 44.57), ('syrup', 44.44), ('scrub', 40.82), ('smirk', 38.29), ('strut', 38.16), ('shrug', 34.78), ('shrub', 31.64), ('usurp', 0.0)]
+
+Words guessed so far:
+    ['arose'].
+
+Next guess:
+    'shirt'
+
+-----------------------------
+
+Guess 2: 'shirt'
+Letters in correct positions:
+    [('s', 0)]
+
+Letters in incorrect positions:
+    [('r', 1), ('s', 3), ('r', 3)]
+
+Letters to guess again:
+    ['r', 's']
+
+Letters to not guess again:
+    ['a', 'e', 'h', 'i', 'o', 't']
+
+At this point:
+    2305, 99.83% of total words have been eliminated, and
+    4, 0.17% of total words remain possible.
+
+All potential next guesses:
+    [('surly', 100.0), ('scrum', 9.28), ('syrup', 8.98), ('scrub', 0.0)]
+
+Words guessed so far:
+    ['arose', 'shirt'].
+
+Next guess:
+    'surly'
+
+-----------------------------
+
+Guess 3: 'surly'
+Letters in correct positions:
+    [('s', 0), ('r', 2)]
+
+Letters in incorrect positions:
+    [('r', 1), ('u', 1), ('s', 3), ('r', 3), ('y', 4)]
+
+Letters to guess again:
+    ['r', 's', 'u', 'y']
+
+Letters to not guess again:
+    ['a', 'e', 'h', 'i', 'l', 'o', 't']
+
+At this point:
+    2308, 99.96% of total words have been eliminated, and
+    1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+    'syrup'
+
+Next guess:
+    'syrup'
+
+-----------------------------
+
+Guess 4: 'syrup'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'syrup'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-3-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-3-letter-words">Testing on 3-letter words</h3>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 3 letters</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>words_3_letters <span class="op">=</span> []</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>words_3_types_counts <span class="op">=</span> {}</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_3.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>                words_3_letters.append(word)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>                words_3_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_3_letters))</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_3_letters[:<span class="dv">5</span>])</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>words_3_types_counts[<span class="st">'the'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1531
+['the', 'and', 'for', 'his', 'was']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>'286732'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_3_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"the"</span>, target <span class="op">=</span> <span class="st">"his"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">False</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'the'
+Guess 2: 'hoa'
+Guess 3: 'his'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'his'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'the'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('h', 1)]
+
+Letters to guess again:
+    ['h']
+
+Letters to not guess again:
+    ['e', 't']
+
+At this point:
+    1447, 94.51% of total words have been eliminated, and
+    84, 5.49% of total words remain possible.
+
+The top 40 potential next guesses are:
+    [('hoa', 100.0), ('hai', 93.36), ('ash', 80.38), ('has', 80.38), ('hua', 77.56), ('anh', 77.56), ('han', 77.56), ('nah', 77.56), ('har', 76.41), ('ham', 73.89), ('mah', 73.89), ('hal', 72.06), ('hap', 71.6), ('pah', 71.6), ('dah', 70.92), ('had', 70.92), ('hab', 68.24), ('bah', 68.24), ('agh', 64.66), ('hag', 64.66), ('hos', 64.43), ('haw', 63.13), ('wah', 63.13), ('hay', 62.98), ('hon', 61.6), ('hou', 61.6), ('hor', 60.46), ('sih', 57.79), ('ish', 57.79), ('his', 57.79), ('vah', 55.8), ('hav', 55.8), ('hop', 55.65), ('nih', 54.96), ('hin', 54.96), ('hui', 54.96), ('hod', 54.96), ('och', 54.5), ('hoc', 54.5), ('hir', 53.82)]
+
+Words guessed so far:
+    ['the'].
+
+Next guess:
+    'hoa'
+
+-----------------------------
+
+Guess 2: 'hoa'
+Letters in correct positions:
+    [('h', 0)]
+
+Letters in incorrect positions:
+    [('h', 1)]
+
+Letters to guess again:
+    ['h']
+
+Letters to not guess again:
+    ['a', 'e', 'o', 't']
+
+At this point:
+    1505, 98.3% of total words have been eliminated, and
+    26, 1.7% of total words remain possible.
+
+All potential next guesses:
+    [('his', 100.0), ('hin', 95.11), ('hui', 95.11), ('hir', 93.13), ('him', 88.77), ('hil', 85.6), ('hip', 84.81), ('hid', 83.62), ('hic', 82.83), ('hsu', 72.66), ('hrs', 70.67), ('hun', 67.77), ('hur', 65.79), ('hum', 61.43), ('hul', 58.39), ('hiv', 57.46), ('hud', 56.27), ('hub', 51.65), ('hys', 47.42), ('hug', 45.44), ('huy', 42.54), ('hyr', 40.55), ('hym', 36.2), ('huz', 20.08), ('huh', 6.21), ('hmm', 0.0)]
+
+Words guessed so far:
+    ['the', 'hoa'].
+
+Next guess:
+    'his'
+
+-----------------------------
+
+Guess 3: 'his'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'his'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-4-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-4-letter-words">Testing on 4-letter words</h3>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 3 letters</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>words_4_letters <span class="op">=</span> []</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>words_4_types_counts <span class="op">=</span> {}</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_4.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>                words_4_letters.append(word)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>                words_4_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_4_letters))</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_4_letters[:<span class="dv">5</span>])</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>words_4_types_counts[<span class="st">'that'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4266
+['that', 'with', 'this', 'they', 'have']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>'57994'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_4_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"have"</span>, target <span class="op">=</span> <span class="st">"this"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">False</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'have'
+Guess 2: 'shor'
+Guess 3: 'this'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'this'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'have'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('h', 0)]
+
+Letters to guess again:
+    ['h']
+
+Letters to not guess again:
+    ['a', 'e', 'v']
+
+At this point:
+    4101, 96.13% of total words have been eliminated, and
+    165, 3.87% of total words remain possible.
+
+The top 40 potential next guesses are:
+    [('rosh', 100.0), ('shor', 100.0), ('shon', 97.4), ('sohn', 97.4), ('soth', 95.92), ('shot', 95.92), ('iohn', 93.08), ('itoh', 91.54), ('shin', 88.41), ('shou', 88.29), ('thor', 88.11), ('thro', 88.11), ('roth', 88.11), ('orth', 88.11), ('shod', 87.94), ('sith', 86.87), ('tish', 86.87), ('this', 86.87), ('shit', 86.87), ('loth', 86.58), ('mosh', 86.34), ('thon', 85.51), ('shop', 83.38), ('posh', 83.38), ('bosh', 83.03), ('imho', 82.02), ('gosh', 81.37), ('rhod', 80.19), ('shui', 79.24), ('dish', 78.95), ('mohr', 78.53), ('show', 77.53), ('whos', 77.53), ('mish', 77.29), ('shim', 77.29), ('thin', 76.46), ('tohu', 76.4), ('thou', 76.4), ('doth', 76.05), ('rush', 75.75)]
+
+Words guessed so far:
+    ['have'].
+
+Next guess:
+    'shor'
+
+-----------------------------
+
+Guess 2: 'shor'
+Letters in correct positions:
+    [('h', 1)]
+
+Letters in incorrect positions:
+    [('h', 0), ('s', 0)]
+
+Letters to guess again:
+    ['h', 's']
+
+Letters to not guess again:
+    ['a', 'e', 'o', 'r', 'v']
+
+At this point:
+    4263, 99.93% of total words have been eliminated, and
+    3, 0.07% of total words remain possible.
+
+All potential next guesses:
+    [('this', 100.0), ('phis', 17.51), ('thus', 0.0)]
+
+Words guessed so far:
+    ['have', 'shor'].
+
+Next guess:
+    'this'
+
+-----------------------------
+
+Guess 3: 'this'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'this'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-6-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-6-letter-words">Testing on 6-letter words</h3>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 6 letters</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>words_6_letters <span class="op">=</span> []</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>words_6_types_counts <span class="op">=</span> {}</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_6.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>                words_6_letters.append(word)</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>                words_6_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_6_letters))</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_6_letters[:<span class="dv">5</span>])</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>words_6_types_counts[words_6_letters[<span class="dv">0</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>11290
+['little', 'before', 'people', 'should', 'things']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>'5543'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_6_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"little"</span>, target <span class="op">=</span> <span class="st">"before"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">False</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'little'
+Guess 2: 'sarone'
+Guess 3: 'upmore'
+Guess 4: 'decore'
+Guess 5: 'before'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'before'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'little'
+Letters in correct positions:
+    [('e', 5)]
+
+Letters in incorrect positions:
+    []
+
+Letters to guess again:
+    ['e']
+
+Letters to not guess again:
+    ['i', 'l', 't']
+
+At this point:
+    10880, 96.37% of total words have been eliminated, and
+    410, 3.63% of total words remain possible.
+
+The top 40 potential next guesses are:
+    [('sarone', 100.0), ('arouse', 92.3), ('hoarse', 91.81), ('ashore', 91.81), ('coarse', 91.12), ('romane', 86.05), ('orange', 84.29), ('groane', 84.29), ('organe', 84.29), ('scorne', 82.78), ('sundae', 82.69), ('phrase', 81.14), ('sharpe', 81.14), ('scrape', 80.44), ('dosage', 79.56), ('grande', 79.02), ('coahse', 78.65), ('graspe', 78.56), ('drouse', 78.56), ('manure', 78.44), ('sharke', 78.41), ('roache', 78.02), ('horace', 78.02), ('roxane', 77.44), ('sworne', 77.14), ('swarme', 76.59), ('damone', 76.38), ('unbare', 76.23), ('urbane', 76.23), ('sparke', 75.83), ('shayne', 75.53), ('prance', 75.5), ('romage', 75.32), ('drawne', 75.26), ('source', 75.05), ('crusoe', 75.05), ('course', 75.05), ('crouse', 75.05), ('square', 74.47), ('assure', 73.95)]
+
+Words guessed so far:
+    ['little'].
+
+Next guess:
+    'sarone'
+
+-----------------------------
+
+Guess 2: 'sarone'
+Letters in correct positions:
+    [('o', 3), ('e', 5)]
+
+Letters in incorrect positions:
+    [('r', 2)]
+
+Letters to guess again:
+    ['e', 'o', 'r']
+
+Letters to not guess again:
+    ['a', 'i', 'l', 'n', 's', 't']
+
+At this point:
+    11277, 99.88% of total words have been eliminated, and
+    13, 0.12% of total words remain possible.
+
+All potential next guesses:
+    [('upmore', 100.0), ('upbore', 88.8), ('decore', 73.56), ('droope', 63.76), ('remoue', 60.96), ('broome', 42.92), ('crooke', 31.88), ('remove', 23.02), ('brooke', 19.91), ('proofe', 18.66), ('before', 16.33), ('groove', 14.0), ('revoke', 0.0)]
+
+Words guessed so far:
+    ['little', 'sarone'].
+
+Next guess:
+    'upmore'
+
+-----------------------------
+
+Guess 3: 'upmore'
+Letters in correct positions:
+    [('o', 3), ('r', 4), ('e', 5)]
+
+Letters in incorrect positions:
+    [('r', 2)]
+
+Letters to guess again:
+    ['e', 'o', 'r']
+
+Letters to not guess again:
+    ['a', 'i', 'l', 'm', 'n', 'p', 's', 't', 'u']
+
+At this point:
+    11288, 99.98% of total words have been eliminated, and
+    2, 0.02% of total words remain possible.
+
+All potential next guesses:
+    [('decore', 100.0), ('before', 0.0)]
+
+Words guessed so far:
+    ['little', 'sarone', 'upmore'].
+
+Next guess:
+    'decore'
+
+-----------------------------
+
+Guess 4: 'decore'
+Letters in correct positions:
+    [('e', 1), ('o', 3), ('r', 4), ('e', 5)]
+
+Letters in incorrect positions:
+    [('r', 2)]
+
+Letters to guess again:
+    ['e', 'o', 'r']
+
+Letters to not guess again:
+    ['a', 'c', 'd', 'i', 'l', 'm', 'n', 'p', 's', 't', 'u']
+
+At this point:
+    11289, 99.99% of total words have been eliminated, and
+    1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+    'before'
+
+Next guess:
+    'before'
+
+-----------------------------
+
+Guess 5: 'before'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'before'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-7-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-7-letter-words">Testing on 7-letter words</h3>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 7 letters</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>words_7_letters <span class="op">=</span> []</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>words_7_types_counts <span class="op">=</span> {}</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_7.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>                words_7_letters.append(word)</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>                words_7_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_7_letters))</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_7_letters[:<span class="dv">5</span>])</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>words_7_types_counts[words_7_letters[<span class="dv">0</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>12566
+['because', 'through', 'against', 'another', 'himself']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>'4809'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_7_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"because"</span>, target <span class="op">=</span> <span class="st">"through"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">True</span>, random_target <span class="op">=</span> <span class="va">True</span>, </span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'cutteth'
+Guess 2: 'citroen'
+Guess 3: 'catered'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'catered'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'mallice'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('i', 4), ('e', 6)]
+
+Letters to guess again:
+    ['e', 'i']
+
+Letters to not guess again:
+    ['a', 'c', 'l', 'm']
+
+At this point:
+    12024, 95.69% of total words have been eliminated, and
+    542, 4.31% of total words remain possible.
+
+The top 40 potential next guesses are:
+    [('editors', 100.0), ('steroid', 100.0), ('ignores', 98.26), ('regions', 98.26), ('edtions', 97.18), ('pierson', 96.48), ('horites', 96.25), ('goriest', 95.52), ('insured', 94.43), ('hinders', 93.7), ('shrined', 93.7), ('kristen', 93.08), ('stinker', 93.08), ('kirsten', 93.08), ('tinkers', 93.08), ('winters', 92.27), ('erikson', 91.81), ('striven', 91.38), ('girdest', 90.22), ('stidger', 90.22), ('binders', 89.8), ('protein', 88.64), ('pointer', 88.64), ('striped', 88.48), ('uprisen', 88.17), ('interns', 87.67), ('inserts', 87.67), ('tristen', 87.67), ('tinners', 87.67), ('steiner', 87.67), ('joiners', 87.55), ('periods', 87.21), ('hedison', 86.86), ('untired', 86.55), ('friends', 86.55), ('finders', 86.55), ('drinkes', 86.51), ('dirksen', 86.51), ('seniors', 86.39), ('winders', 85.74)]
+
+Words guessed so far:
+    ['mallice'].
+
+Next guess:
+    'steroid'
+
+-----------------------------
+
+Guess 2: 'steroid'
+Letters in correct positions:
+    [('s', 0)]
+
+Letters in incorrect positions:
+    [('t', 1), ('e', 2), ('r', 3), ('i', 4), ('i', 5), ('e', 6)]
+
+Letters to guess again:
+    ['e', 'i', 'r', 's', 't']
+
+Letters to not guess again:
+    ['a', 'c', 'd', 'l', 'm', 'o']
+
+At this point:
+    12560, 99.95% of total words have been eliminated, and
+    6, 0.05% of total words remain possible.
+
+All potential next guesses:
+    [('swigert', 100.0), ('sprites', 61.27), ('swifter', 61.03), ('switzer', 38.73), ('sisters', 0.0), ('sitters', 0.0)]
+
+Words guessed so far:
+    ['mallice', 'steroid'].
+
+Next guess:
+    'swigert'
+
+-----------------------------
+
+Guess 3: 'swigert'
+Letters in correct positions:
+    [('s', 0), ('e', 4), ('r', 5)]
+
+Letters in incorrect positions:
+    [('t', 1), ('e', 2), ('i', 2), ('r', 3), ('i', 4), ('i', 5), ('e', 6), ('t', 6)]
+
+Letters to guess again:
+    ['e', 'i', 'r', 's', 't']
+
+Letters to not guess again:
+    ['a', 'c', 'd', 'g', 'l', 'm', 'o', 'w']
+
+At this point:
+    12564, 99.98% of total words have been eliminated, and
+    2, 0.02% of total words remain possible.
+
+All potential next guesses:
+    [('sisters', 0.0), ('sitters', 0.0)]
+
+Words guessed so far:
+    ['mallice', 'steroid', 'swigert'].
+
+Next guess:
+    'sitters'
+
+-----------------------------
+
+Guess 4: 'sitters'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'sitters'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-8-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-8-letter-words">Testing on 8-letter words</h3>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 8 letters</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>words_8_letters <span class="op">=</span> []</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>words_8_types_counts <span class="op">=</span> {}</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_8.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>                words_8_letters.append(word)</span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a>                words_8_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_8_letters))</span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_8_letters[:<span class="dv">5</span>])</span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>words_8_types_counts[words_8_letters[<span class="dv">0</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>11650
+['children', 'together', 'director', 'anything', 'american']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>'3012'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_8_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"trinidad"</span>, target <span class="op">=</span> <span class="st">"together"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">False</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'trinidad'
+Guess 2: 'tumblers'
+Guess 3: 'together'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'together'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'trinidad'
+Letters in correct positions:
+    [('t', 0)]
+
+Letters in incorrect positions:
+    [('r', 1)]
+
+Letters to guess again:
+    ['r', 't']
+
+Letters to not guess again:
+    ['a', 'd', 'i', 'n']
+
+At this point:
+    11624, 99.78% of total words have been eliminated, and
+    26, 0.22% of total words remain possible.
+
+All potential next guesses:
+    [('tumbrels', 100.0), ('tumblers', 100.0), ('theorems', 91.84), ('throuble', 91.84), ('torquers', 82.1), ('terrours', 81.36), ('tortures', 81.36), ('throttle', 70.07), ('teleport', 67.5), ('threwest', 61.5), ('thereout', 61.5), ('together', 60.07), ('textures', 58.97), ('therfore', 53.47), ('therefor', 53.47), ('tweezers', 49.92), ('tourette', 48.69), ('torturer', 48.69), ('terrorem', 46.33), ('toujours', 33.65), ('temperer', 33.36), ('tortuous', 32.71), ('thorough', 25.24), ('tommorow', 2.04), ('tomorrow', 2.04), ('turturro', 0.0)]
+
+Words guessed so far:
+    ['trinidad'].
+
+Next guess:
+    'tumblers'
+
+-----------------------------
+
+Guess 2: 'tumblers'
+Letters in correct positions:
+    [('t', 0)]
+
+Letters in incorrect positions:
+    [('r', 1), ('e', 5), ('r', 6)]
+
+Letters to guess again:
+    ['e', 'r', 't']
+
+Letters to not guess again:
+    ['a', 'b', 'd', 'i', 'l', 'm', 'n', 's', 'u']
+
+At this point:
+    11648, 99.98% of total words have been eliminated, and
+    2, 0.02% of total words remain possible.
+
+All potential next guesses:
+    [('together', 100.0), ('therefor', 0.0)]
+
+Words guessed so far:
+    ['trinidad', 'tumblers'].
+
+Next guess:
+    'together'
+
+-----------------------------
+
+Guess 3: 'together'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'together'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-9-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-9-letter-words">Testing on 9-letter words</h3>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 9 letters</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>words_9_letters <span class="op">=</span> []</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>words_9_types_counts <span class="op">=</span> {}</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_9.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>                words_9_letters.append(word)</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>                words_9_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_9_letters))</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_9_letters[:<span class="dv">5</span>])</span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>words_9_types_counts[words_9_letters[<span class="dv">0</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>9716
+['something', 'character', 'therefore', 'according', 'different']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>'2621'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_9_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"something"</span>, target <span class="op">=</span> <span class="st">"character"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">True</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'laughless'
+Guess 2: 'anchorite'
+Guess 3: 'ermatched'
+Guess 4: 'charecter'
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'audacious'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('a', 0), ('a', 3), ('c', 4)]
+
+Letters to guess again:
+    ['a', 'c']
+
+Letters to not guess again:
+    ['d', 'i', 'o', 's', 'u']
+
+At this point:
+    9629, 99.1% of total words have been eliminated, and
+    87, 0.9% of total words remain possible.
+
+The top 40 potential next guesses are:
+    [('parchment', 100.0), ('rectangle', 99.73), ('centrally', 94.96), ('clergyman', 92.02), ('carpentry', 87.13), ('placement', 84.93), ('verplanck', 84.82), ('enchanter', 84.28), ('charlayne', 83.87), ('carpenter', 83.13), ('caprenter', 83.13), ('benchmark', 81.08), ('centenary', 79.54), ('vtterance', 78.77), ('relevancy', 78.35), ('cattlemen', 77.34), ('lactantem', 77.34), ('pregnancy', 76.07), ('freelance', 75.18), ('relevance', 74.38), ('traceable', 74.17), ('celebrate', 74.17), ('lawerence', 73.96), ('wehrmacht', 72.81), ('perchance', 72.06), ('hatchment', 70.64), ('halfpence', 69.75), ('membrance', 69.48), ('thackeray', 68.71), ('fragrance', 68.53), ('mercenary', 67.85), ('champagne', 67.2), ('camembert', 66.9), ('challenge', 66.87), ('eckermann', 66.73), ('mccracken', 66.73), ('cranberry', 65.33), ('mcelvaney', 64.71), ('backwater', 64.38), ('canebrake', 64.21)]
+
+Words guessed so far:
+    ['audacious'].
+
+Next guess:
+    'parchment'
+
+-----------------------------
+
+Guess 2: 'parchment'
+Letters in correct positions:
+    []
+
+Letters in incorrect positions:
+    [('a', 0), ('a', 1), ('r', 2), ('a', 3), ('c', 3), ('c', 4), ('h', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+    ['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+    ['d', 'i', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+    9712, 99.96% of total words have been eliminated, and
+    4, 0.04% of total words remain possible.
+
+All potential next guesses:
+    [('chatterer', 0.0), ('heartache', 0.0), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+    ['audacious', 'parchment'].
+
+Next guess:
+    'charecter'
+
+-----------------------------
+
+Guess 3: 'charecter'
+Letters in correct positions:
+    [('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+    [('a', 0), ('a', 1), ('r', 2), ('a', 3), ('c', 3), ('c', 4), ('h', 4), ('e', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+    ['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+    ['d', 'i', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+    9715, 99.99% of total words have been eliminated, and
+    1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+    'character'
+
+Next guess:
+    'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-on-10-letter-words" class="level3">
+<h3 class="anchored" data-anchor-id="testing-on-10-letter-words">Testing on 10-letter words</h3>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 10 letters</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>words_10_letters <span class="op">=</span> []</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>words_10_types_counts <span class="op">=</span> {}</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/nltk_grand_corpus_types_and_counts_10.txt"</span>, <span class="st">"r"</span>, encoding <span class="op">=</span> <span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> f.read().split(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>):</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> line.split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(word_freq) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># how many items are in each line, NOT the len of the word in the line</span></span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>            word <span class="op">=</span> word_freq[<span class="dv">0</span>]</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>            freq <span class="op">=</span> word_freq[<span class="dv">1</span>]</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word.isascii() <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>                words_10_letters.append(word)</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>                words_10_types_counts[word] <span class="op">=</span> freq</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>f.close() <span class="co"># closes connection to file</span></span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words_10_letters))</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words_10_letters[:<span class="dv">5</span>])</span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>words_10_types_counts[words_10_letters[<span class="dv">0</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7200
+['characters', 'themselves', 'everything', 'especially', 'understand']</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>'1929'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> val <span class="kw">in</span> [<span class="va">False</span>, <span class="va">True</span>]:</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>        wordle_wizard(word_list <span class="op">=</span> words_10_letters, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>                guess <span class="op">=</span> <span class="st">"characters"</span>, target <span class="op">=</span> <span class="st">"theologies"</span>, bias <span class="op">=</span> <span class="st">'entropy'</span>, </span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>                random_guess <span class="op">=</span> <span class="va">True</span>, random_target <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>                verbose <span class="op">=</span> val, drama <span class="op">=</span> <span class="dv">0</span>, return_stats <span class="op">=</span> <span class="va">False</span>, record <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------------------
+
+Guess 1: 'chronology'
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------
+-----------------------------
+
+Guess 1: 'seethingly'
+Letters in correct positions:
+    [('e', 2)]
+
+Letters in incorrect positions:
+    [('s', 0), ('e', 1), ('t', 3), ('h', 4), ('i', 5), ('g', 7), ('l', 8)]
+
+Letters to guess again:
+    ['e', 'g', 'h', 'i', 'l', 's', 't']
+
+Letters to not guess again:
+    ['n', 'y']
+
+At this point:
+    7199, 99.99% of total words have been eliminated, and
+    1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+    'theologies'
+
+Next guess:
+    'theologies'
+
+-----------------------------
+
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------</code></pre>
+</div>
+</div>
+</section>
+<section id="compare_wordle-testing" class="level3">
+<h3 class="anchored" data-anchor-id="compare_wordle-testing"><code>compare_wordle()</code> testing</h3>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"inputs/wordle_humans - Sheet1.csv"</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.shape)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(33, 8)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>second_guess</th>
+      <th>third_guess</th>
+      <th>fourth_guess</th>
+      <th>fifth_guess</th>
+      <th>sixth_guess</th>
+      <th>target</th>
+      <th>player</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>arose</td>
+      <td>plate</td>
+      <td>cache</td>
+      <td>mauve</td>
+      <td>vague</td>
+      <td>none</td>
+      <td>vague</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>slave</td>
+      <td>algae</td>
+      <td>apple</td>
+      <td>none</td>
+      <td>apple</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>gimps</td>
+      <td>ninth</td>
+      <td>none</td>
+      <td>none</td>
+      <td>ninth</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>snail</td>
+      <td>flail</td>
+      <td>none</td>
+      <td>none</td>
+      <td>flail</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>phase</td>
+      <td>stage</td>
+      <td>none</td>
+      <td>none</td>
+      <td>stage</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>ready</td>
+      <td>beady</td>
+      <td>heady</td>
+      <td>none</td>
+      <td>heady</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>douce</td>
+      <td>dairy</td>
+      <td>dunes</td>
+      <td>debug</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>aunts</td>
+      <td>swamp</td>
+      <td>usage</td>
+      <td>none</td>
+      <td>usage</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>douce</td>
+      <td>pound</td>
+      <td>found</td>
+      <td>bound</td>
+      <td>mound</td>
+      <td>sound</td>
+      <td>sound</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>palms</td>
+      <td>salts</td>
+      <td>ghost</td>
+      <td>salsa</td>
+      <td>salsa</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>cabin</td>
+      <td>manic</td>
+      <td>magic</td>
+      <td>none</td>
+      <td>magic</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>cache</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>snail</td>
+      <td>flail</td>
+      <td>avail</td>
+      <td>none</td>
+      <td>avail</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>lions</td>
+      <td>moist</td>
+      <td>frosh</td>
+      <td>kiosk</td>
+      <td>kiosk</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>wheat</td>
+      <td>sweat</td>
+      <td>none</td>
+      <td>none</td>
+      <td>sweat</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>ruddy</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>ruddy</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>tries</td>
+      <td>miner</td>
+      <td>viper</td>
+      <td>wiper</td>
+      <td>riper</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>douce</td>
+      <td>lairy</td>
+      <td>mauve</td>
+      <td>vague</td>
+      <td>none</td>
+      <td>none</td>
+      <td>vague</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>arose</td>
+      <td>unity</td>
+      <td>rubby</td>
+      <td>syrup</td>
+      <td>none</td>
+      <td>none</td>
+      <td>syrup</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>adore</td>
+      <td>above</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>above</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>arose</td>
+      <td>those</td>
+      <td>close</td>
+      <td>unity</td>
+      <td>moose</td>
+      <td>none</td>
+      <td>moose</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>arose</td>
+      <td>unity</td>
+      <td>polar</td>
+      <td>polka</td>
+      <td>none</td>
+      <td>none</td>
+      <td>polka</td>
+      <td>aidan</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>audio</td>
+      <td>plume</td>
+      <td>usurp</td>
+      <td>syrup</td>
+      <td>none</td>
+      <td>none</td>
+      <td>syrup</td>
+      <td>dad</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>audio</td>
+      <td>store</td>
+      <td>horse</td>
+      <td>worse</td>
+      <td>none</td>
+      <td>none</td>
+      <td>worse</td>
+      <td>dad</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>audio</td>
+      <td>stone</td>
+      <td>posse</td>
+      <td>worse</td>
+      <td>none</td>
+      <td>none</td>
+      <td>worse</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>audio</td>
+      <td>polar</td>
+      <td>polka</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>polka</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>audio</td>
+      <td>groan</td>
+      <td>poach</td>
+      <td>polka</td>
+      <td>none</td>
+      <td>none</td>
+      <td>polka</td>
+      <td>dad</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>audio</td>
+      <td>store</td>
+      <td>chose</td>
+      <td>loose</td>
+      <td>goose</td>
+      <td>moose</td>
+      <td>moose</td>
+      <td>dad</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>audio</td>
+      <td>store</td>
+      <td>close</td>
+      <td>moose</td>
+      <td>none</td>
+      <td>none</td>
+      <td>moose</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>homes</td>
+      <td>start</td>
+      <td>squat</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>squat</td>
+      <td>kai</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>audio</td>
+      <td>alone</td>
+      <td>above</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>above</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>audio</td>
+      <td>usual</td>
+      <td>squat</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>squat</td>
+      <td>diane</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>audio</td>
+      <td>taupe</td>
+      <td>squat</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>squat</td>
+      <td>dad</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co">### </span><span class="al">TESTING</span><span class="co"> DF INTERPRETATION</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"inputs/wordle_humans - Sheet1.csv"</span>)</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(convert_row(df, row))</span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>guess_list <span class="op">=</span> convert_row(df, row)[<span class="dv">0</span>]</span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>target_word <span class="op">=</span> convert_row(df, row)[<span class="dv">1</span>]</span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a>player <span class="op">=</span> convert_row(df, row)[<span class="dv">2</span>]</span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a>compare_wordle(word_list <span class="op">=</span> official_words, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a>                    guess_list <span class="op">=</span> guess_list, player <span class="op">=</span> player, target <span class="op">=</span> target_word,</span>
+<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a>                    verbose <span class="op">=</span> <span class="va">False</span>, return_stats <span class="op">=</span> <span class="va">True</span>, record <span class="op">=</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(['douce', 'lairy', 'ready', 'beady', 'heady'], 'heady', 'aidan')</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>{'first_guess': ['douce', 'douce'],
+ 'target_word': ['heady', 'heady'],
+ 'first_guess_vowels': [3.0, 3.0],
+ 'first_guess_consonants': [2.0, 2.0],
+ 'target_vowels': [3.0, 3.0],
+ 'target_consonants': [2.0, 2.0],
+ 'target_entropy': [66.43, 66.43],
+ 'first_guess_entropy': [63.74, 63.74],
+ 'target_guessed': [True, True],
+ 'mid_guesses_avg_vows': [3.0, 2.5],
+ 'mid_guesses_avg_cons': [2.0, 2.5],
+ 'avg_perf_letters': [9.0, 0.0],
+ 'avg_wrong_pos_letters': [11.0, 15.0],
+ 'avg_wrong_letters': [22.0, 15.0],
+ 'avg_remaining': [16.0, 21.67],
+ 'avg_intermediate_guess_entropy': [92.75, 90.94],
+ 'valid_success': [True, True],
+ 'player': ['aidan', 'wizard'],
+ 'num_guesses': [5.0, 4.0],
+ 'expected_guesses': [4.0, 4.0],
+ 'luck': [-0.16, 0]}</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="comparing-player-solutions-against-wizard-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-player-solutions-against-wizard-solutions">Comparing player solutions against wizard solutions</h2>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"compared_data/wordle_humans - Sheet1.csv"</span>)</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>stats_master <span class="op">=</span> {}</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>excepts <span class="op">=</span> []</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> df.index:</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>    guess_list <span class="op">=</span> convert_row(df, row)[<span class="dv">0</span>]</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>    target_word <span class="op">=</span> convert_row(df, row)[<span class="dv">1</span>]</span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>    player <span class="op">=</span> convert_row(df, row)[<span class="dv">2</span>]</span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb59-10"><a href="#cb59-10" aria-hidden="true" tabindex="-1"></a>        complete <span class="op">=</span> compare_wordle(word_list <span class="op">=</span> official_words, max_guesses <span class="op">=</span> <span class="dv">6</span>, </span>
+<span id="cb59-11"><a href="#cb59-11" aria-hidden="true" tabindex="-1"></a>                    guess_list <span class="op">=</span> guess_list, player <span class="op">=</span> player, target <span class="op">=</span> target_word,</span>
+<span id="cb59-12"><a href="#cb59-12" aria-hidden="true" tabindex="-1"></a>                    verbose <span class="op">=</span> <span class="va">True</span>, return_stats <span class="op">=</span> <span class="va">True</span>, record <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb59-13"><a href="#cb59-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> metric, results <span class="kw">in</span> complete.items():</span>
+<span id="cb59-14"><a href="#cb59-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> metric <span class="kw">in</span> stats_master:</span>
+<span id="cb59-15"><a href="#cb59-15" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> result <span class="kw">in</span> results:</span>
+<span id="cb59-16"><a href="#cb59-16" aria-hidden="true" tabindex="-1"></a>                    stats_master[metric].append(result)</span>
+<span id="cb59-17"><a href="#cb59-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb59-18"><a href="#cb59-18" aria-hidden="true" tabindex="-1"></a>                stats_master[metric] <span class="op">=</span> []</span>
+<span id="cb59-19"><a href="#cb59-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> result <span class="kw">in</span> results:</span>
+<span id="cb59-20"><a href="#cb59-20" aria-hidden="true" tabindex="-1"></a>                    stats_master[metric].append(result)</span>
+<span id="cb59-21"><a href="#cb59-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
+<span id="cb59-22"><a href="#cb59-22" aria-hidden="true" tabindex="-1"></a>        <span class="pp">AttributeError</span></span>
+<span id="cb59-23"><a href="#cb59-23" aria-hidden="true" tabindex="-1"></a>        excepts.append(guess_list)</span>
+<span id="cb59-24"><a href="#cb59-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-25"><a href="#cb59-25" aria-hidden="true" tabindex="-1"></a>df_master <span class="op">=</span> pd.DataFrame(stats_master)</span>
+<span id="cb59-26"><a href="#cb59-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.columns.tolist())</span>
+<span id="cb59-27"><a href="#cb59-27" aria-hidden="true" tabindex="-1"></a>df_master <span class="op">=</span> df_master[[<span class="st">'first_guess'</span>, <span class="st">'target_word'</span>, <span class="st">'player'</span>, <span class="st">'num_guesses'</span>, <span class="st">'expected_guesses'</span>, <span class="st">'luck'</span>, <span class="st">'first_guess_vowels'</span>, <span class="st">'first_guess_consonants'</span>,</span>
+<span id="cb59-28"><a href="#cb59-28" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'target_vowels'</span>, <span class="st">'target_consonants'</span>, <span class="st">'first_guess_entropy'</span>, <span class="st">'target_entropy'</span>,</span>
+<span id="cb59-29"><a href="#cb59-29" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'target_guessed'</span>, <span class="st">'mid_guesses_avg_vows'</span>, <span class="st">'mid_guesses_avg_cons'</span>, <span class="st">'avg_perf_letters'</span>,</span>
+<span id="cb59-30"><a href="#cb59-30" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'avg_wrong_pos_letters'</span>, <span class="st">'avg_wrong_letters'</span>, <span class="st">'avg_remaining'</span>, <span class="st">'avg_intermediate_guess_entropy'</span>,</span>
+<span id="cb59-31"><a href="#cb59-31" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'valid_success'</span>]]</span>
+<span id="cb59-32"><a href="#cb59-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-33"><a href="#cb59-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(excepts)</span>
+<span id="cb59-34"><a href="#cb59-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.shape) <span class="co"># check shape before deleting dups</span></span>
+<span id="cb59-35"><a href="#cb59-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-36"><a href="#cb59-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Delete duplicate rows (some created by process)</span></span>
+<span id="cb59-37"><a href="#cb59-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, row <span class="kw">in</span> <span class="bu">enumerate</span>(df_master.duplicated()):</span>
+<span id="cb59-38"><a href="#cb59-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row <span class="op">==</span> <span class="va">True</span>:</span>
+<span id="cb59-39"><a href="#cb59-39" aria-hidden="true" tabindex="-1"></a>        df_master.drop(i, axis <span class="op">=</span> <span class="dv">0</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb59-40"><a href="#cb59-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-41"><a href="#cb59-41" aria-hidden="true" tabindex="-1"></a>df_master.to_csv(<span class="st">'data/players_compared.csv'</span>) <span class="co"># write new data to csv</span></span>
+<span id="cb59-42"><a href="#cb59-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-43"><a href="#cb59-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.shape) <span class="co"># check shape after deleting dups</span></span>
+<span id="cb59-44"><a href="#cb59-44" aria-hidden="true" tabindex="-1"></a>df_master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['first_guess', 'target_word', 'first_guess_vowels', 'first_guess_consonants', 'target_vowels', 'target_consonants', 'first_guess_entropy', 'target_entropy', 'target_guessed', 'mid_guesses_avg_vows', 'mid_guesses_avg_cons', 'avg_perf_letters', 'avg_wrong_pos_letters', 'avg_wrong_letters', 'avg_remaining', 'avg_intermediate_guess_entropy', 'valid_success', 'player', 'num_guesses', 'expected_guesses', 'luck']
+[['douce', 'dairy', 'dunes', 'debug'], ['douce', 'lairy', 'cache'], []]
+(60, 21)
+(56, 21)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>target_word</th>
+      <th>player</th>
+      <th>num_guesses</th>
+      <th>expected_guesses</th>
+      <th>luck</th>
+      <th>first_guess_vowels</th>
+      <th>first_guess_consonants</th>
+      <th>target_vowels</th>
+      <th>target_consonants</th>
+      <th>...</th>
+      <th>target_entropy</th>
+      <th>target_guessed</th>
+      <th>mid_guesses_avg_vows</th>
+      <th>mid_guesses_avg_cons</th>
+      <th>avg_perf_letters</th>
+      <th>avg_wrong_pos_letters</th>
+      <th>avg_wrong_letters</th>
+      <th>avg_remaining</th>
+      <th>avg_intermediate_guess_entropy</th>
+      <th>valid_success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>arose</td>
+      <td>vague</td>
+      <td>diane</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.31</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>26.0</td>
+      <td>19.00</td>
+      <td>99.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>arose</td>
+      <td>vague</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.31</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>7.0</td>
+      <td>4.0</td>
+      <td>30.0</td>
+      <td>19.25</td>
+      <td>99.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>douce</td>
+      <td>apple</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>0.23</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>62.88</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>5.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>49.50</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>douce</td>
+      <td>apple</td>
+      <td>wizard</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>62.88</td>
+      <td>True</td>
+      <td>2.33</td>
+      <td>2.67</td>
+      <td>12.0</td>
+      <td>4.0</td>
+      <td>43.0</td>
+      <td>40.00</td>
+      <td>93.95</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>douce</td>
+      <td>ninth</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>0.27</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>35.41</td>
+      <td>True</td>
+      <td>2.00</td>
+      <td>3.00</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>27.0</td>
+      <td>123.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>douce</td>
+      <td>ninth</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>35.41</td>
+      <td>True</td>
+      <td>1.80</td>
+      <td>3.20</td>
+      <td>3.0</td>
+      <td>12.0</td>
+      <td>35.0</td>
+      <td>95.50</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>douce</td>
+      <td>flail</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>42.27</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>21.0</td>
+      <td>123.00</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>douce</td>
+      <td>flail</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>42.27</td>
+      <td>True</td>
+      <td>2.25</td>
+      <td>2.75</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>21.0</td>
+      <td>120.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>douce</td>
+      <td>stage</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>81.44</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>22.0</td>
+      <td>65.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>douce</td>
+      <td>stage</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>81.44</td>
+      <td>True</td>
+      <td>2.25</td>
+      <td>2.75</td>
+      <td>9.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>59.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>douce</td>
+      <td>heady</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>-0.16</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>66.43</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>9.0</td>
+      <td>11.0</td>
+      <td>22.0</td>
+      <td>16.00</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>douce</td>
+      <td>heady</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>66.43</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>21.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>douce</td>
+      <td>usage</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>3.0</td>
+      <td>-0.55</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>73.76</td>
+      <td>True</td>
+      <td>2.40</td>
+      <td>2.60</td>
+      <td>5.0</td>
+      <td>14.0</td>
+      <td>31.0</td>
+      <td>10.00</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>douce</td>
+      <td>usage</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>73.76</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>18.00</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>douce</td>
+      <td>sound</td>
+      <td>aidan</td>
+      <td>6.0</td>
+      <td>3.0</td>
+      <td>-0.88</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.26</td>
+      <td>True</td>
+      <td>2.17</td>
+      <td>2.83</td>
+      <td>18.0</td>
+      <td>5.0</td>
+      <td>20.0</td>
+      <td>6.40</td>
+      <td>93.95</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>douce</td>
+      <td>sound</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.26</td>
+      <td>True</td>
+      <td>2.33</td>
+      <td>2.67</td>
+      <td>6.0</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>8.50</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>douce</td>
+      <td>salsa</td>
+      <td>aidan</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>-0.41</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>35.65</td>
+      <td>True</td>
+      <td>1.83</td>
+      <td>3.17</td>
+      <td>10.0</td>
+      <td>7.0</td>
+      <td>47.0</td>
+      <td>74.20</td>
+      <td>93.95</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>douce</td>
+      <td>salsa</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>35.65</td>
+      <td>True</td>
+      <td>2.25</td>
+      <td>2.75</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>23.0</td>
+      <td>123.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>douce</td>
+      <td>magic</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>-0.16</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>46.88</td>
+      <td>True</td>
+      <td>2.40</td>
+      <td>2.60</td>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>29.0</td>
+      <td>21.75</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>douce</td>
+      <td>magic</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>46.88</td>
+      <td>True</td>
+      <td>2.25</td>
+      <td>2.75</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>18.0</td>
+      <td>27.00</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>douce</td>
+      <td>avail</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.07</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>40.02</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>6.0</td>
+      <td>10.0</td>
+      <td>31.0</td>
+      <td>92.50</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>douce</td>
+      <td>avail</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>40.02</td>
+      <td>True</td>
+      <td>2.40</td>
+      <td>2.60</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>31.0</td>
+      <td>90.75</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>douce</td>
+      <td>kiosk</td>
+      <td>aidan</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>-0.41</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>33.88</td>
+      <td>True</td>
+      <td>2.17</td>
+      <td>2.83</td>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>45.0</td>
+      <td>34.20</td>
+      <td>93.95</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>douce</td>
+      <td>kiosk</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>33.88</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>20.0</td>
+      <td>55.33</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>douce</td>
+      <td>sweat</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>78.03</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>21.0</td>
+      <td>114.00</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>douce</td>
+      <td>sweat</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>78.03</td>
+      <td>True</td>
+      <td>2.33</td>
+      <td>2.67</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>10.0</td>
+      <td>160.00</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>douce</td>
+      <td>ruddy</td>
+      <td>aidan</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.12</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>30.13</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>6.50</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>douce</td>
+      <td>ruddy</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>30.13</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>9.0</td>
+      <td>8.00</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>douce</td>
+      <td>vague</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.31</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>18.0</td>
+      <td>12.33</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>douce</td>
+      <td>vague</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.31</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>18.00</td>
+      <td>87.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>arose</td>
+      <td>syrup</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>49.33</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>12.0</td>
+      <td>16.0</td>
+      <td>7.67</td>
+      <td>99.88</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>arose</td>
+      <td>syrup</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>49.33</td>
+      <td>True</td>
+      <td>2.00</td>
+      <td>3.00</td>
+      <td>3.0</td>
+      <td>10.0</td>
+      <td>16.0</td>
+      <td>8.67</td>
+      <td>99.88</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>adore</td>
+      <td>above</td>
+      <td>aidan</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>0.36</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>65.88</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>4.00</td>
+      <td>95.60</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>adore</td>
+      <td>above</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>65.88</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>3.00</td>
+      <td>97.07</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>arose</td>
+      <td>moose</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.60</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>22.0</td>
+      <td>4.50</td>
+      <td>99.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>arose</td>
+      <td>moose</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.60</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>19.0</td>
+      <td>4.50</td>
+      <td>99.90</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>arose</td>
+      <td>polka</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>19.0</td>
+      <td>21.33</td>
+      <td>99.88</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>arose</td>
+      <td>polka</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>3.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>16.67</td>
+      <td>99.88</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>audio</td>
+      <td>syrup</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>49.33</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>18.0</td>
+      <td>37.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>audio</td>
+      <td>syrup</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>49.33</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>11.0</td>
+      <td>56.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>audio</td>
+      <td>worse</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>76.42</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>95.67</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>audio</td>
+      <td>worse</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>76.42</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>95.67</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>audio</td>
+      <td>worse</td>
+      <td>diane</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>76.42</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>4.0</td>
+      <td>8.0</td>
+      <td>17.0</td>
+      <td>97.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>audio</td>
+      <td>polka</td>
+      <td>diane</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.13</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>39.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>audio</td>
+      <td>polka</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>39.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>audio</td>
+      <td>polka</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>17.0</td>
+      <td>32.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>audio</td>
+      <td>moose</td>
+      <td>dad</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>0.06</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.60</td>
+      <td>True</td>
+      <td>2.83</td>
+      <td>2.17</td>
+      <td>13.0</td>
+      <td>9.0</td>
+      <td>37.0</td>
+      <td>60.00</td>
+      <td>93.67</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>audio</td>
+      <td>moose</td>
+      <td>wizard</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.60</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>12.0</td>
+      <td>9.0</td>
+      <td>39.0</td>
+      <td>60.00</td>
+      <td>93.67</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>audio</td>
+      <td>moose</td>
+      <td>diane</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>0.40</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.60</td>
+      <td>True</td>
+      <td>2.75</td>
+      <td>2.25</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>18.0</td>
+      <td>98.33</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>homes</td>
+      <td>squat</td>
+      <td>kai</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>0.34</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>1.67</td>
+      <td>3.33</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>9.0</td>
+      <td>81.50</td>
+      <td>88.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>homes</td>
+      <td>squat</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>2.00</td>
+      <td>3.00</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>18.0</td>
+      <td>54.67</td>
+      <td>91.26</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>audio</td>
+      <td>above</td>
+      <td>diane</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>0.34</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>65.88</td>
+      <td>True</td>
+      <td>3.33</td>
+      <td>1.67</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>16.50</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>audio</td>
+      <td>above</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>65.88</td>
+      <td>True</td>
+      <td>3.25</td>
+      <td>1.75</td>
+      <td>7.0</td>
+      <td>3.0</td>
+      <td>15.0</td>
+      <td>12.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>audio</td>
+      <td>squat</td>
+      <td>diane</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.13</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>17.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>audio</td>
+      <td>squat</td>
+      <td>wizard</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>17.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>audio</td>
+      <td>squat</td>
+      <td>dad</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.13</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>17.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>56 rows × 21 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'aidan'"</span>)[<span class="st">'num_guesses'</span>].mean())</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'aidan'"</span>).shape)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>df_master.query(<span class="st">"player == 'aidan'"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4.5
+(18, 21)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>target_word</th>
+      <th>player</th>
+      <th>num_guesses</th>
+      <th>expected_guesses</th>
+      <th>luck</th>
+      <th>first_guess_vowels</th>
+      <th>first_guess_consonants</th>
+      <th>target_vowels</th>
+      <th>target_consonants</th>
+      <th>...</th>
+      <th>target_entropy</th>
+      <th>target_guessed</th>
+      <th>mid_guesses_avg_vows</th>
+      <th>mid_guesses_avg_cons</th>
+      <th>avg_perf_letters</th>
+      <th>avg_wrong_pos_letters</th>
+      <th>avg_wrong_letters</th>
+      <th>avg_remaining</th>
+      <th>avg_intermediate_guess_entropy</th>
+      <th>valid_success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>douce</td>
+      <td>apple</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.07</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>62.83</td>
+      <td>True</td>
+      <td>2.6</td>
+      <td>2.4</td>
+      <td>5.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>49.50</td>
+      <td>92.75</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>douce</td>
+      <td>ninth</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>0.27</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>35.38</td>
+      <td>True</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>27.0</td>
+      <td>123.00</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>douce</td>
+      <td>flail</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>42.30</td>
+      <td>True</td>
+      <td>2.5</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>21.0</td>
+      <td>122.33</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>douce</td>
+      <td>stage</td>
+      <td>aidan</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>81.29</td>
+      <td>True</td>
+      <td>2.5</td>
+      <td>2.5</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>22.0</td>
+      <td>65.67</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>douce</td>
+      <td>heady</td>
+      <td>aidan</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>-0.16</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>66.43</td>
+      <td>True</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>11.0</td>
+      <td>22.0</td>
+      <td>16.00</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'dad'"</span>)[<span class="st">'num_guesses'</span>].mean())</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'dad'"</span>).shape)</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>df_master.query(<span class="st">"player == 'dad'"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4.2
+(5, 21)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>target_word</th>
+      <th>player</th>
+      <th>num_guesses</th>
+      <th>expected_guesses</th>
+      <th>luck</th>
+      <th>first_guess_vowels</th>
+      <th>first_guess_consonants</th>
+      <th>target_vowels</th>
+      <th>target_consonants</th>
+      <th>...</th>
+      <th>target_entropy</th>
+      <th>target_guessed</th>
+      <th>mid_guesses_avg_vows</th>
+      <th>mid_guesses_avg_cons</th>
+      <th>avg_perf_letters</th>
+      <th>avg_wrong_pos_letters</th>
+      <th>avg_wrong_letters</th>
+      <th>avg_remaining</th>
+      <th>avg_intermediate_guess_entropy</th>
+      <th>valid_success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>38</th>
+      <td>audio</td>
+      <td>syrup</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>49.32</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>18.0</td>
+      <td>37.00</td>
+      <td>90.50</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>audio</td>
+      <td>worse</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>76.40</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>95.33</td>
+      <td>90.50</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>audio</td>
+      <td>polka</td>
+      <td>dad</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>-0.21</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>55.00</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>17.0</td>
+      <td>32.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>audio</td>
+      <td>moose</td>
+      <td>dad</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>0.06</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.53</td>
+      <td>True</td>
+      <td>2.83</td>
+      <td>2.17</td>
+      <td>13.0</td>
+      <td>9.0</td>
+      <td>37.0</td>
+      <td>59.80</td>
+      <td>93.67</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>audio</td>
+      <td>squat</td>
+      <td>dad</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.13</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>50.67</td>
+      <td>True</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>17.00</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'diane'"</span>)[<span class="st">'num_guesses'</span>].mean())</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'diane'"</span>).shape)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>df_master.query(<span class="st">"player == 'diane'"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3.6666666666666665
+(6, 21)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>target_word</th>
+      <th>player</th>
+      <th>num_guesses</th>
+      <th>expected_guesses</th>
+      <th>luck</th>
+      <th>first_guess_vowels</th>
+      <th>first_guess_consonants</th>
+      <th>target_vowels</th>
+      <th>target_consonants</th>
+      <th>...</th>
+      <th>target_entropy</th>
+      <th>target_guessed</th>
+      <th>mid_guesses_avg_vows</th>
+      <th>mid_guesses_avg_cons</th>
+      <th>avg_perf_letters</th>
+      <th>avg_wrong_pos_letters</th>
+      <th>avg_wrong_letters</th>
+      <th>avg_remaining</th>
+      <th>avg_intermediate_guess_entropy</th>
+      <th>valid_success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>arose</td>
+      <td>vague</td>
+      <td>diane</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.25</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>26.0</td>
+      <td>18.75</td>
+      <td>99.86</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>audio</td>
+      <td>worse</td>
+      <td>diane</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.09</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>76.40</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>4.0</td>
+      <td>8.0</td>
+      <td>17.0</td>
+      <td>96.67</td>
+      <td>90.50</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>audio</td>
+      <td>polka</td>
+      <td>diane</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>0.13</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>54.91</td>
+      <td>True</td>
+      <td>2.67</td>
+      <td>2.33</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>38.50</td>
+      <td>87.34</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>audio</td>
+      <td>moose</td>
+      <td>diane</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>0.40</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>53.53</td>
+      <td>True</td>
+      <td>2.75</td>
+      <td>2.25</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>18.0</td>
+      <td>98.00</td>
+      <td>90.51</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>audio</td>
+      <td>above</td>
+      <td>diane</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>0.34</td>
+      <td>4.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>65.89</td>
+      <td>True</td>
+      <td>3.33</td>
+      <td>1.67</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>16.50</td>
+      <td>87.35</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'wizard'"</span>)[<span class="st">'num_guesses'</span>].mean())</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_master.query(<span class="st">"player == 'wizard'"</span>).shape)</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>df_master.query(<span class="st">"player == 'wizard'"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3.857142857142857
+(28, 21)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="35">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>first_guess</th>
+      <th>target_word</th>
+      <th>player</th>
+      <th>num_guesses</th>
+      <th>expected_guesses</th>
+      <th>luck</th>
+      <th>first_guess_vowels</th>
+      <th>first_guess_consonants</th>
+      <th>target_vowels</th>
+      <th>target_consonants</th>
+      <th>...</th>
+      <th>target_entropy</th>
+      <th>target_guessed</th>
+      <th>mid_guesses_avg_vows</th>
+      <th>mid_guesses_avg_cons</th>
+      <th>avg_perf_letters</th>
+      <th>avg_wrong_pos_letters</th>
+      <th>avg_wrong_letters</th>
+      <th>avg_remaining</th>
+      <th>avg_intermediate_guess_entropy</th>
+      <th>valid_success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>arose</td>
+      <td>vague</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>58.25</td>
+      <td>True</td>
+      <td>2.60</td>
+      <td>2.40</td>
+      <td>7.0</td>
+      <td>4.0</td>
+      <td>30.0</td>
+      <td>19.00</td>
+      <td>99.86</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>douce</td>
+      <td>apple</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>62.83</td>
+      <td>True</td>
+      <td>2.40</td>
+      <td>2.60</td>
+      <td>8.0</td>
+      <td>7.0</td>
+      <td>28.0</td>
+      <td>48.00</td>
+      <td>92.75</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>douce</td>
+      <td>ninth</td>
+      <td>wizard</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>35.38</td>
+      <td>True</td>
+      <td>1.80</td>
+      <td>3.20</td>
+      <td>3.0</td>
+      <td>12.0</td>
+      <td>35.0</td>
+      <td>95.00</td>
+      <td>92.74</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>douce</td>
+      <td>flail</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>42.30</td>
+      <td>True</td>
+      <td>2.25</td>
+      <td>2.75</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>21.0</td>
+      <td>120.00</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>douce</td>
+      <td>stage</td>
+      <td>wizard</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>81.29</td>
+      <td>True</td>
+      <td>2.50</td>
+      <td>2.50</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>17.0</td>
+      <td>59.33</td>
+      <td>90.92</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

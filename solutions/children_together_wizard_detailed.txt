@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'children'
+Letters in correct positions:
+	[('e', 6)]
+
+Letters in incorrect positions:
+	[('h', 1), ('r', 5)]
+
+Letters to guess again:
+	['e', 'h', 'r']
+
+Letters to not guess again:
+	['c', 'd', 'i', 'l', 'n']
+
+At this point:
+	11633, 99.85% of total words have been eliminated, and
+	17, 0.15% of total words remain possible.
+
+Potential next guesses:
+	[('stargher', 100.0), ('breathes', 89.55), ('harrowes', 76.65), ('smoother', 75.24), ('strophes', 72.32), ('trophees', 72.32), ('hovarter', 59.42), ('strother', 48.68), ('reshapes', 36.44), ('pyorrhea', 28.06), ('braugher', 16.2), ('breather', 14.03), ('harasses', 12.71), ('rehashes', 12.71), ('howsever', 10.17), ('together', 1.88), ('voorhees', 0.0)]
+
+Words guessed so far:
+	['children'].
+
+Next guess:
+	'stargher'
+
+-----------------------------
+
+Guess 2: 'stargher'
+Letters in correct positions:
+	[('h', 5), ('e', 6), ('r', 7)]
+
+Letters in incorrect positions:
+	[('h', 1), ('t', 1), ('r', 3), ('g', 4), ('r', 5)]
+
+Letters to guess again:
+	['e', 'g', 'h', 'r', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'i', 'l', 'n', 's']
+
+At this point:
+	11649, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'together'
+
+Next guess:
+	'together'
+
+-----------------------------
+
+Guess 3: 'together'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'together'.
+
+-----------------------------

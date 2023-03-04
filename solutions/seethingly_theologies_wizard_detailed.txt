@@ -1,0 +1,35 @@
+-----------------------------
+
+Guess 1: 'seethingly'
+Letters in correct positions:
+	[('e', 2)]
+
+Letters in incorrect positions:
+	[('s', 0), ('e', 1), ('t', 3), ('h', 4), ('i', 5), ('g', 7), ('l', 8)]
+
+Letters to guess again:
+	['e', 'g', 'h', 'i', 'l', 's', 't']
+
+Letters to not guess again:
+	['n', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

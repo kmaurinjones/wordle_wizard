@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'vuhranduh'
+Letters in correct positions:
+	[('r', 3), ('a', 4)]
+
+Letters in incorrect positions:
+	[('h', 2), ('h', 8)]
+
+Letters to guess again:
+	['a', 'h', 'r']
+
+Letters to not guess again:
+	['d', 'n', 'u', 'v']
+
+At this point:
+	9708, 99.92% of total words have been eliminated, and
+	8, 0.08% of total words remain possible.
+
+Potential next guesses:
+	[('therapies', 100.0), ('therapist', 100.0), ('patrasche', 69.83), ('hierarchs', 64.89), ('hierarchy', 20.75), ('characers', 8.96), ('charashim', 3.03), ('character', 0.0)]
+
+Words guessed so far:
+	['vuhranduh'].
+
+Next guess:
+	'therapist'
+
+-----------------------------
+
+Guess 2: 'therapist'
+Letters in correct positions:
+	[('h', 1), ('r', 3), ('a', 4)]
+
+Letters in incorrect positions:
+	[('t', 0), ('h', 2), ('e', 2), ('h', 8), ('t', 8)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'n', 'p', 's', 'u', 'v']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

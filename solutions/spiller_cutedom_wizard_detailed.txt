@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'spiller'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 5)]
+
+Letters to guess again:
+	['e']
+
+Letters to not guess again:
+	['i', 'l', 'p', 'r', 's']
+
+At this point:
+	12318, 98.03% of total words have been eliminated, and
+	248, 1.97% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('cognate', 100.0), ('montage', 97.29), ('megaton', 97.29), ('donahue', 93.29), ('macedon', 92.25), ('unteach', 91.87), ('wheaton', 90.96), ('cathode', 90.79), ('augment', 88.33), ('bondage', 87.5), ('acetone', 87.25), ('tonneau', 86.75), ('bentham', 84.12), ('fadeout', 82.62), ('coynage', 81.88), ('combate', 81.04), ('outface', 79.83), ('mendoza', 79.33), ('mekonah', 79.21), ('mandate', 78.79), ('bethany', 78.58), ('ontkean', 78.25), ('enchant', 77.5), ('concaue', 76.92), ('foameth', 76.29), ('hangeth', 75.46), ('hexagon', 74.96), ('meaneth', 74.75), ('magnate', 73.96), ('magenta', 73.96), ('cocteau', 73.96), ('unbegot', 73.75), ('jeannot', 73.67), ('ecbatan', 73.29), ('cottage', 72.37), ('beneath', 72.04), ('macbeth', 71.29), ('aduance', 71.21), ('duncane', 71.21), ('heckman', 70.75)]
+
+Words guessed so far:
+	['spiller'].
+
+Next guess:
+	'cognate'
+
+-----------------------------
+
+Guess 2: 'cognate'
+Letters in correct positions:
+	[('c', 0)]
+
+Letters in incorrect positions:
+	[('o', 1), ('e', 5), ('t', 5), ('e', 6)]
+
+Letters to guess again:
+	['c', 'e', 'o', 't']
+
+Letters to not guess again:
+	['a', 'g', 'i', 'l', 'n', 'p', 'r', 's']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'cutedom'
+
+Next guess:
+	'cutedom'
+
+-----------------------------
+
+Guess 3: 'cutedom'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'cutedom'.
+
+-----------------------------

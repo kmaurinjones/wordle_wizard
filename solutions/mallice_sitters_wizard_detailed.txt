@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'mallice'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('i', 4), ('e', 6)]
+
+Letters to guess again:
+	['e', 'i']
+
+Letters to not guess again:
+	['a', 'c', 'l', 'm']
+
+At this point:
+	12024, 95.69% of total words have been eliminated, and
+	542, 4.31% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('editors', 100.0), ('steroid', 100.0), ('ignores', 98.26), ('regions', 98.26), ('edtions', 97.18), ('pierson', 96.48), ('horites', 96.25), ('goriest', 95.52), ('insured', 94.43), ('hinders', 93.7), ('shrined', 93.7), ('kristen', 93.08), ('stinker', 93.08), ('kirsten', 93.08), ('tinkers', 93.08), ('winters', 92.27), ('erikson', 91.81), ('striven', 91.38), ('girdest', 90.22), ('stidger', 90.22), ('binders', 89.8), ('protein', 88.64), ('pointer', 88.64), ('striped', 88.48), ('uprisen', 88.17), ('interns', 87.67), ('inserts', 87.67), ('tristen', 87.67), ('tinners', 87.67), ('steiner', 87.67), ('joiners', 87.55), ('periods', 87.21), ('hedison', 86.86), ('untired', 86.55), ('friends', 86.55), ('finders', 86.55), ('drinkes', 86.51), ('dirksen', 86.51), ('seniors', 86.39), ('winders', 85.74)]
+
+Words guessed so far:
+	['mallice'].
+
+Next guess:
+	'steroid'
+
+-----------------------------
+
+Guess 2: 'steroid'
+Letters in correct positions:
+	[('s', 0)]
+
+Letters in incorrect positions:
+	[('t', 1), ('e', 2), ('r', 3), ('i', 4), ('i', 5), ('e', 6)]
+
+Letters to guess again:
+	['e', 'i', 'r', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'l', 'm', 'o']
+
+At this point:
+	12560, 99.95% of total words have been eliminated, and
+	6, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('swigert', 100.0), ('sprites', 61.27), ('swifter', 61.03), ('switzer', 38.73), ('sisters', 0.0), ('sitters', 0.0)]
+
+Words guessed so far:
+	['mallice', 'steroid'].
+
+Next guess:
+	'swigert'
+
+-----------------------------
+
+Guess 3: 'swigert'
+Letters in correct positions:
+	[('s', 0), ('e', 4), ('r', 5)]
+
+Letters in incorrect positions:
+	[('t', 1), ('e', 2), ('i', 2), ('r', 3), ('i', 4), ('i', 5), ('e', 6), ('t', 6)]
+
+Letters to guess again:
+	['e', 'i', 'r', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'g', 'l', 'm', 'o', 'w']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('sisters', 0.0), ('sitters', 0.0)]
+
+Words guessed so far:
+	['mallice', 'steroid', 'swigert'].
+
+Next guess:
+	'sitters'
+
+-----------------------------
+
+Guess 4: 'sitters'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'sitters'.
+
+-----------------------------

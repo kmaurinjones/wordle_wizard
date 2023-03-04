@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'kreskin'
+Letters in correct positions:
+	[('k', 0)]
+
+Letters in incorrect positions:
+	[('e', 2), ('k', 4), ('i', 5)]
+
+Letters to guess again:
+	['e', 'i', 'k']
+
+Letters to not guess again:
+	['n', 'r', 's']
+
+At this point:
+	12558, 99.94% of total words have been eliminated, and
+	8, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('kadmiel', 100.0), ('kalecki', 71.8), ('kelaiah', 69.51), ('kimboed', 50.24), ('killeth', 49.61), ('kawecki', 36.26), ('kezziah', 28.04), ('kimmell', 0.0)]
+
+Words guessed so far:
+	['kreskin'].
+
+Next guess:
+	'kadmiel'
+
+-----------------------------
+
+Guess 2: 'kadmiel'
+Letters in correct positions:
+	[('k', 0), ('a', 1)]
+
+Letters in incorrect positions:
+	[('e', 2), ('k', 4), ('i', 4), ('i', 5), ('e', 5)]
+
+Letters to guess again:
+	['a', 'e', 'i', 'k']
+
+Letters to not guess again:
+	['d', 'l', 'm', 'n', 'r', 's']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'kawecki'
+
+Next guess:
+	'kawecki'
+
+-----------------------------
+
+Guess 3: 'kawecki'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'kawecki'.
+
+-----------------------------

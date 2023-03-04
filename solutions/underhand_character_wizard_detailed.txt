@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'underhand'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 3), ('r', 4), ('h', 5), ('a', 6)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r']
+
+Letters to not guess again:
+	['d', 'n', 'u']
+
+At this point:
+	9609, 98.9% of total words have been eliminated, and
+	107, 1.1% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('aerosmith', 100.0), ('reichstag', 93.19), ('korahites', 92.91), ('hairstyle', 91.96), ('chapiters', 91.64), ('tsarevich', 85.75), ('lethargic', 81.89), ('stomacher', 81.77), ('theatrics', 81.45), ('charities', 81.45), ('heritages', 77.67), ('pharzites', 77.59), ('therapies', 76.07), ('therapist', 76.07), ('behaviors', 74.32), ('whitakers', 73.49), ('bachelors', 72.45), ('thalbergs', 72.09), ('lightyear', 71.7), ('orchestra', 70.82), ('shortages', 67.04), ('trashiest', 65.88), ('heartiest', 65.88), ('chemarims', 65.76), ('sarsechim', 65.76), ('horseplay', 64.93), ('forsaketh', 64.53), ('harvilles', 64.33), ('charlotte', 59.51), ('hijackers', 59.39), ('heartwoes', 59.04), ('patrasche', 57.84), ('ashtoreth', 55.29), ('ashteroth', 55.29), ('hierarchs', 54.86), ('tarheelia', 54.62), ('approches', 54.42), ('sharecrop', 54.42), ('shallower', 53.14), ('latherers', 52.83)]
+
+Words guessed so far:
+	['underhand'].
+
+Next guess:
+	'aerosmith'
+
+-----------------------------
+
+Guess 2: 'aerosmith'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 0), ('e', 1), ('r', 2), ('e', 3), ('r', 4), ('h', 5), ('a', 6), ('t', 7), ('h', 8)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'm', 'n', 'o', 's', 'u']
+
+At this point:
+	9712, 99.96% of total words have been eliminated, and
+	4, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('thackeray', 100.0), ('chatterer', 0.0), ('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['underhand', 'aerosmith'].
+
+Next guess:
+	'thackeray'
+
+-----------------------------
+
+Guess 3: 'thackeray'
+Letters in correct positions:
+	[('h', 1), ('a', 2)]
+
+Letters in incorrect positions:
+	[('a', 0), ('t', 0), ('e', 1), ('r', 2), ('e', 3), ('c', 3), ('r', 4), ('h', 5), ('e', 5), ('a', 6), ('r', 6), ('t', 7), ('a', 7), ('h', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'k', 'm', 'n', 'o', 's', 'u', 'y']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['underhand', 'aerosmith', 'thackeray'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

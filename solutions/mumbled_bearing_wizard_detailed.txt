@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'mumbled'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('b', 3), ('e', 5)]
+
+Letters to guess again:
+	['b', 'e']
+
+Letters to not guess again:
+	['d', 'l', 'm', 'u']
+
+At this point:
+	12368, 98.42% of total words have been eliminated, and
+	198, 1.58% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('biserta', 100.0), ('bietnar', 95.61), ('boaters', 93.81), ('bertoia', 92.15), ('ascribe', 92.15), ('bearish', 91.15), ('obtaine', 89.72), ('bangers', 87.75), ('bearing', 86.09), ('bathers', 86.06), ('breaths', 86.06), ('escobar', 85.96), ('arecibo', 84.26), ('aerobic', 84.26), ('briscoe', 82.66), ('bankers', 82.23), ('nosebag', 81.86), ('beating', 81.3), ('breakin', 80.53), ('ebronah', 80.53), ('betrays', 80.43), ('siberia', 80.3), ('ebonics', 80.23), ('brakest', 79.87), ('bravest', 78.4), ('bergson', 78.3), ('obiects', 77.87), ('barrens', 77.57), ('banners', 77.57), ('vibrate', 76.74), ('bothers', 76.57), ('hebraic', 76.51), ('birnane', 75.87), ('ribcage', 75.87), ('beatnik', 75.74), ('beastie', 75.51), ('breasts', 75.21), ('beaters', 75.21), ('abreast', 75.21), ('batters', 75.21)]
+
+Words guessed so far:
+	['mumbled'].
+
+Next guess:
+	'biserta'
+
+-----------------------------
+
+Guess 2: 'biserta'
+Letters in correct positions:
+	[('b', 0)]
+
+Letters in incorrect positions:
+	[('i', 1), ('b', 3), ('e', 3), ('r', 4), ('e', 5), ('a', 6)]
+
+Letters to guess again:
+	['a', 'b', 'e', 'i', 'r']
+
+Letters to not guess again:
+	['d', 'l', 'm', 's', 't', 'u']
+
+At this point:
+	12563, 99.98% of total words have been eliminated, and
+	3, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('bearing', 100.0), ('breakin', 74.07), ('beraiah', 0.0)]
+
+Words guessed so far:
+	['mumbled', 'biserta'].
+
+Next guess:
+	'bearing'
+
+-----------------------------
+
+Guess 3: 'bearing'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'bearing'.
+
+-----------------------------

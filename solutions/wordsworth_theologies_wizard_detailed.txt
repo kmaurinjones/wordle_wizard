@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'wordsworth'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('o', 1), ('s', 4), ('o', 6), ('t', 8), ('h', 9)]
+
+Letters to guess again:
+	['h', 'o', 's', 't']
+
+Letters to not guess again:
+	['d', 'r', 'w']
+
+At this point:
+	7166, 99.53% of total words have been eliminated, and
+	34, 0.47% of total words remain possible.
+
+Potential next guesses:
+	[('hanochites', 100.0), ('exhaustion', 98.16), ('ethiopians', 94.49), ('shackleton', 87.17), ('hesitation', 83.25), ('shilonites', 73.9), ('hypnotises', 69.4), ('theophilus', 66.71), ('zephonites', 65.24), ('phagocytes', 58.99), ('manhattoes', 57.52), ('thamnophis', 57.43), ('outmatches', 55.84), ('biochemist', 55.56), ('theologies', 52.98), ('chocolates', 51.96), ('fathomless', 51.47), ('hellespont', 48.2), ('escutcheon', 46.36), ('scholastic', 40.69), ('hypothesis', 36.93), ('phillotson', 36.89), ('hutchinson', 35.09), ('pistachios', 30.56), ('outshining', 29.86), ('stonehenge', 27.12), ('stephenson', 26.84), ('smoothness', 26.8), ('phosphates', 25.08), ('stochastic', 19.32), ('sketchbook', 10.13), ('thoughtest', 8.7), ('psychotics', 5.47), ('hypotheses', 0.0)]
+
+Words guessed so far:
+	['wordsworth'].
+
+Next guess:
+	'hanochites'
+
+-----------------------------
+
+Guess 2: 'hanochites'
+Letters in correct positions:
+	[('o', 3), ('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('h', 0), ('o', 1), ('s', 4), ('h', 5), ('o', 6), ('i', 6), ('t', 7), ('t', 8), ('h', 9)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'n', 'r', 'w']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

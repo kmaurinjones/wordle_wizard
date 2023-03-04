@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'arose'
+Guess 2: 'shirt'
+Guess 3: 'surly'
+Guess 4: 'syrup'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'syrup'.
+
+-----------------------------

@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'trinidad'
+Guess 2: 'tumblers'
+Guess 3: 'together'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'together'.
+
+-----------------------------

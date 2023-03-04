@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'tudeski'
+Guess 2: 'central'
+Guess 3: 'protege'
+Guess 4: 'whether'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'whether'.
+
+-----------------------------

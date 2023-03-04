@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'homages'
+Guess 2: 'entrail'
+Guess 3: 'purepac'
+Guess 4: 'rebecca'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'rebecca'.
+
+-----------------------------

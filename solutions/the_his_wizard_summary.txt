@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'the'
+Guess 2: 'hoa'
+Guess 3: 'his'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'his'.
+
+-----------------------------

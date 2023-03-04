@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'little'
+Letters in correct positions:
+	[('e', 5)]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	['e']
+
+Letters to not guess again:
+	['i', 'l', 't']
+
+At this point:
+	10880, 96.37% of total words have been eliminated, and
+	410, 3.63% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('sarone', 100.0), ('arouse', 92.3), ('hoarse', 91.81), ('ashore', 91.81), ('coarse', 91.12), ('romane', 86.05), ('orange', 84.29), ('groane', 84.29), ('organe', 84.29), ('scorne', 82.78), ('sundae', 82.69), ('phrase', 81.14), ('sharpe', 81.14), ('scrape', 80.44), ('dosage', 79.56), ('grande', 79.02), ('coahse', 78.65), ('graspe', 78.56), ('drouse', 78.56), ('manure', 78.44), ('sharke', 78.41), ('roache', 78.02), ('horace', 78.02), ('roxane', 77.44), ('sworne', 77.14), ('swarme', 76.59), ('damone', 76.38), ('unbare', 76.23), ('urbane', 76.23), ('sparke', 75.83), ('shayne', 75.53), ('prance', 75.5), ('romage', 75.32), ('drawne', 75.26), ('source', 75.05), ('crusoe', 75.05), ('course', 75.05), ('crouse', 75.05), ('square', 74.47), ('assure', 73.95)]
+
+Words guessed so far:
+	['little'].
+
+Next guess:
+	'sarone'
+
+-----------------------------
+
+Guess 2: 'sarone'
+Letters in correct positions:
+	[('o', 3), ('e', 5)]
+
+Letters in incorrect positions:
+	[('r', 2)]
+
+Letters to guess again:
+	['e', 'o', 'r']
+
+Letters to not guess again:
+	['a', 'i', 'l', 'n', 's', 't']
+
+At this point:
+	11277, 99.88% of total words have been eliminated, and
+	13, 0.12% of total words remain possible.
+
+Potential next guesses:
+	[('upmore', 100.0), ('upbore', 88.8), ('decore', 73.56), ('droope', 63.76), ('remoue', 60.96), ('broome', 42.92), ('crooke', 31.88), ('remove', 23.02), ('brooke', 19.91), ('proofe', 18.66), ('before', 16.33), ('groove', 14.0), ('revoke', 0.0)]
+
+Words guessed so far:
+	['little', 'sarone'].
+
+Next guess:
+	'upmore'
+
+-----------------------------
+
+Guess 3: 'upmore'
+Letters in correct positions:
+	[('o', 3), ('r', 4), ('e', 5)]
+
+Letters in incorrect positions:
+	[('r', 2)]
+
+Letters to guess again:
+	['e', 'o', 'r']
+
+Letters to not guess again:
+	['a', 'i', 'l', 'm', 'n', 'p', 's', 't', 'u']
+
+At this point:
+	11288, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('decore', 100.0), ('before', 0.0)]
+
+Words guessed so far:
+	['little', 'sarone', 'upmore'].
+
+Next guess:
+	'decore'
+
+-----------------------------
+
+Guess 4: 'decore'
+Letters in correct positions:
+	[('e', 1), ('o', 3), ('r', 4), ('e', 5)]
+
+Letters in incorrect positions:
+	[('r', 2)]
+
+Letters to guess again:
+	['e', 'o', 'r']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'i', 'l', 'm', 'n', 'p', 's', 't', 'u']
+
+At this point:
+	11289, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'before'
+
+Next guess:
+	'before'
+
+-----------------------------
+
+Guess 5: 'before'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'before'.
+
+-----------------------------

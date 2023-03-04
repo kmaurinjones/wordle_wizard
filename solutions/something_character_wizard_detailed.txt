@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'something'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 3), ('t', 4), ('h', 5)]
+
+Letters to guess again:
+	['e', 'h', 't']
+
+Letters to not guess again:
+	['g', 'i', 'm', 'n', 'o', 's']
+
+At this point:
+	9680, 99.63% of total words have been eliminated, and
+	36, 0.37% of total words remain possible.
+
+Potential next guesses:
+	[('cathedral', 100.0), ('declareth', 100.0), ('archuleta', 97.01), ('petruchka', 88.89), ('leathered', 81.17), ('characted', 74.89), ('ratcheted', 74.89), ('archetype', 74.6), ('weatherly', 73.01), ('betharbel', 71.13), ('departeth', 68.42), ('thackeray', 66.88), ('feathered', 62.63), ('butchered', 62.58), ('earthward', 60.6), ('weathered', 60.6), ('rewardeth', 60.6), ('deathward', 60.6), ('watchable', 59.1), ('bethrapha', 58.38), ('bewrayeth', 57.07), ('charecter', 55.72), ('character', 55.72), ('teachable', 54.56), ('betrayeth', 52.54), ('prepareth', 49.25), ('bethpalet', 48.04), ('bethabara', 46.02), ('bethbarah', 46.02), ('befalleth', 42.25), ('furthered', 41.14), ('phthalate', 38.92), ('hatchette', 20.33), ('zephathah', 15.6), ('ephphatha', 13.81), ('executeth', 0.0)]
+
+Words guessed so far:
+	['something'].
+
+Next guess:
+	'declareth'
+
+-----------------------------
+
+Guess 2: 'declareth'
+Letters in correct positions:
+	[('a', 4)]
+
+Letters in incorrect positions:
+	[('e', 1), ('c', 2), ('e', 3), ('t', 4), ('h', 5), ('r', 5), ('e', 6), ('t', 7), ('h', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'l', 'm', 'n', 'o', 's']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'behauiours'
+Letters in correct positions:
+	[('s', 9)]
+
+Letters in incorrect positions:
+	[('e', 1), ('h', 2), ('i', 5), ('o', 6)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'o', 's']
+
+Letters to not guess again:
+	['a', 'b', 'r', 'u']
+
+At this point:
+	7193, 99.9% of total words have been eliminated, and
+	7, 0.1% of total words remain possible.
+
+Potential next guesses:
+	[('somethings', 100.0), ('shilonites', 96.64), ('hypnotises', 85.76), ('theologies', 45.99), ('symphonies', 40.75), ('hypothesis', 7.12), ('phosphines', 0.0)]
+
+Words guessed so far:
+	['behauiours'].
+
+Next guess:
+	'somethings'
+
+-----------------------------
+
+Guess 2: 'somethings'
+Letters in correct positions:
+	[('s', 9)]
+
+Letters in incorrect positions:
+	[('s', 0), ('e', 1), ('o', 1), ('h', 2), ('e', 3), ('t', 4), ('i', 5), ('h', 5), ('o', 6), ('i', 6), ('g', 8)]
+
+Letters to guess again:
+	['e', 'g', 'h', 'i', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'm', 'n', 'r', 'u']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

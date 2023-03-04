@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'sermons'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('n', 5)]
+
+Letters to guess again:
+	['n']
+
+Letters to not guess again:
+	['e', 'm', 'o', 'r', 's']
+
+At this point:
+	12419, 98.83% of total words have been eliminated, and
+	147, 1.17% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('lunatic', 100.0), ('nuptial', 95.88), ('lucinda', 92.55), ('caitlyn', 91.8), ('languid', 90.44), ('invault', 88.65), ('chaplin', 84.66), ('handily', 83.03), ('faintly', 82.38), ('bigthan', 81.89), ('cynthia', 81.06), ('lukanic', 80.18), ('watchin', 79.44), ('gainful', 78.08), ('dauphin', 77.73), ('calinda', 77.47), ('baldwin', 76.94), ('pythian', 76.94), ('painful', 76.06), ('jacinth', 75.54), ('unclipt', 74.44), ('ithacan', 74.18), ('paladin', 73.35), ('chilian', 73.21), ('captain', 71.37), ('wacklin', 70.32), ('initial', 69.31), ('italian', 69.31), ('dandily', 68.79), ('habitan', 68.43), ('inhabit', 68.43), ('dunciad', 67.6), ('nightly', 66.94), ('danchin', 66.77), ('annuity', 66.33), ('invalid', 66.11), ('fanatic', 66.07), ('cynical', 65.8), ('cyncial', 65.8), ('anythin', 65.5)]
+
+Words guessed so far:
+	['sermons'].
+
+Next guess:
+	'lunatic'
+
+-----------------------------
+
+Guess 2: 'lunatic'
+Letters in correct positions:
+	[('i', 5)]
+
+Letters in incorrect positions:
+	[('n', 2), ('a', 3), ('n', 5), ('c', 6)]
+
+Letters to guess again:
+	['a', 'c', 'i', 'n']
+
+Letters to not guess again:
+	['e', 'l', 'm', 'o', 'r', 's', 't', 'u']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('changin', 100.0), ('chaykin', 0.0)]
+
+Words guessed so far:
+	['sermons', 'lunatic'].
+
+Next guess:
+	'changin'
+
+-----------------------------
+
+Guess 3: 'changin'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('i', 5), ('n', 6)]
+
+Letters in incorrect positions:
+	[('n', 2), ('a', 3), ('n', 3), ('n', 5), ('c', 6)]
+
+Letters to guess again:
+	['a', 'c', 'h', 'i', 'n']
+
+Letters to not guess again:
+	['e', 'g', 'l', 'm', 'o', 'r', 's', 't', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'chaykin'
+
+Next guess:
+	'chaykin'
+
+-----------------------------
+
+Guess 4: 'chaykin'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'chaykin'.
+
+-----------------------------

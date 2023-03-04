@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'cutteth'
+Guess 2: 'citroen'
+Guess 3: 'catered'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'catered'.
+
+-----------------------------

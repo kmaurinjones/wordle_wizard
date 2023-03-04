@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'plainfield'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('l', 1), ('i', 3), ('i', 6), ('e', 7), ('l', 8)]
+
+Letters to guess again:
+	['e', 'i', 'l']
+
+Letters to not guess again:
+	['a', 'd', 'f', 'n', 'p']
+
+At this point:
+	7160, 99.44% of total words have been eliminated, and
+	40, 0.56% of total words remain possible.
+
+Potential next guesses:
+	[('chrysolite', 100.0), ('lobsterish', 83.48), ('irresolute', 78.45), ('kilometres', 78.36), ('volumetric', 77.81), ('hostelries', 75.14), ('lighthouse', 71.64), ('vultureism', 68.65), ('silhouette', 58.8), ('theologies', 56.03), ('velocities', 54.63), ('volksgeist', 51.86), ('lobotomies', 51.72), ('lobotomise', 51.72), ('telemovies', 48.46), ('mulberries', 38.88), ('bolshevism', 35.98), ('weismuller', 33.62), ('mercilesse', 33.58), ('guiltlesse', 32.08), ('shellulite', 31.53), ('locomotive', 30.31), ('emshwiller', 30.31), ('sightlesse', 28.77), ('ishmeelite', 28.4), ('subtleties', 27.59), ('limburgher', 27.22), ('bolsheviks', 26.54), ('berthelier', 19.51), ('immobilise', 18.65), ('collective', 17.88), ('timekiller', 14.34), ('wheelerite', 14.25), ('imbecility', 12.57), ('grillework', 12.02), ('millimeter', 11.3), ('rollergirl', 5.9), ('kieslowski', 3.99), ('jezreelite', 1.23), ('multilevel', 0.0)]
+
+Words guessed so far:
+	['plainfield'].
+
+Next guess:
+	'chrysolite'
+
+-----------------------------
+
+Guess 2: 'chrysolite'
+Letters in correct positions:
+	[('h', 1), ('o', 5), ('i', 7)]
+
+Letters in incorrect positions:
+	[('l', 1), ('i', 3), ('s', 4), ('i', 6), ('l', 6), ('e', 7), ('l', 8), ('t', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'f', 'n', 'p', 'r', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

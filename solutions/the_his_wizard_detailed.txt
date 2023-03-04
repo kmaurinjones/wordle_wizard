@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'the'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('h', 1)]
+
+Letters to guess again:
+	['h']
+
+Letters to not guess again:
+	['e', 't']
+
+At this point:
+	1447, 94.51% of total words have been eliminated, and
+	84, 5.49% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('hoa', 100.0), ('hai', 93.36), ('ash', 80.38), ('has', 80.38), ('hua', 77.56), ('anh', 77.56), ('han', 77.56), ('nah', 77.56), ('har', 76.41), ('ham', 73.89), ('mah', 73.89), ('hal', 72.06), ('hap', 71.6), ('pah', 71.6), ('dah', 70.92), ('had', 70.92), ('hab', 68.24), ('bah', 68.24), ('agh', 64.66), ('hag', 64.66), ('hos', 64.43), ('haw', 63.13), ('wah', 63.13), ('hay', 62.98), ('hon', 61.6), ('hou', 61.6), ('hor', 60.46), ('sih', 57.79), ('ish', 57.79), ('his', 57.79), ('vah', 55.8), ('hav', 55.8), ('hop', 55.65), ('nih', 54.96), ('hin', 54.96), ('hui', 54.96), ('hod', 54.96), ('och', 54.5), ('hoc', 54.5), ('hir', 53.82)]
+
+Words guessed so far:
+	['the'].
+
+Next guess:
+	'hoa'
+
+-----------------------------
+
+Guess 2: 'hoa'
+Letters in correct positions:
+	[('h', 0)]
+
+Letters in incorrect positions:
+	[('h', 1)]
+
+Letters to guess again:
+	['h']
+
+Letters to not guess again:
+	['a', 'e', 'o', 't']
+
+At this point:
+	1505, 98.3% of total words have been eliminated, and
+	26, 1.7% of total words remain possible.
+
+Potential next guesses:
+	[('his', 100.0), ('hin', 95.11), ('hui', 95.11), ('hir', 93.13), ('him', 88.77), ('hil', 85.6), ('hip', 84.81), ('hid', 83.62), ('hic', 82.83), ('hsu', 72.66), ('hrs', 70.67), ('hun', 67.77), ('hur', 65.79), ('hum', 61.43), ('hul', 58.39), ('hiv', 57.46), ('hud', 56.27), ('hub', 51.65), ('hys', 47.42), ('hug', 45.44), ('huy', 42.54), ('hyr', 40.55), ('hym', 36.2), ('huz', 20.08), ('huh', 6.21), ('hmm', 0.0)]
+
+Words guessed so far:
+	['the', 'hoa'].
+
+Next guess:
+	'his'
+
+-----------------------------
+
+Guess 3: 'his'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'his'.
+
+-----------------------------

@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'because'
+Letters in correct positions:
+	[('u', 4)]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	['u']
+
+Letters to not guess again:
+	['a', 'b', 'c', 'e', 's']
+
+At this point:
+	12550, 99.87% of total words have been eliminated, and
+	16, 0.13% of total words remain possible.
+
+Potential next guesses:
+	[('orotund', 100.0), ('poliuto', 83.65), ('honourd', 82.26), ('rizzuto', 80.4), ('thorugh', 69.9), ('through', 69.9), ('morquio', 58.41), ('untruth', 56.35), ('mityukh', 51.89), ('luthuli', 50.76), ('ioyfull', 46.71), ('fitfull', 38.47), ('unfound', 21.06), ('koizumi', 20.66), ('unwound', 19.67), ('putzulu', 0.0)]
+
+Words guessed so far:
+	['because'].
+
+Next guess:
+	'orotund'
+
+-----------------------------
+
+Guess 2: 'orotund'
+Letters in correct positions:
+	[('u', 4)]
+
+Letters in incorrect positions:
+	[('o', 0), ('r', 1), ('o', 2), ('t', 3)]
+
+Letters to guess again:
+	['o', 'r', 't', 'u']
+
+Letters to not guess again:
+	['a', 'b', 'c', 'd', 'e', 'n', 's']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('rizzuto', 100.0), ('through', 0.0)]
+
+Words guessed so far:
+	['because', 'orotund'].
+
+Next guess:
+	'rizzuto'
+
+-----------------------------
+
+Guess 3: 'rizzuto'
+Letters in correct positions:
+	[('u', 4)]
+
+Letters in incorrect positions:
+	[('o', 0), ('r', 0), ('r', 1), ('o', 2), ('t', 3), ('t', 5), ('o', 6)]
+
+Letters to guess again:
+	['o', 'r', 't', 'u']
+
+Letters to not guess again:
+	['a', 'b', 'c', 'd', 'e', 'i', 'n', 's', 'z']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'through'
+
+Next guess:
+	'through'
+
+-----------------------------
+
+Guess 4: 'through'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'through'.
+
+-----------------------------

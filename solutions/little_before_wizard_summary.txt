@@ -1,0 +1,14 @@
+-----------------------------
+
+Guess 1: 'little'
+Guess 2: 'sarone'
+Guess 3: 'upmore'
+Guess 4: 'decore'
+Guess 5: 'before'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'before'.
+
+-----------------------------

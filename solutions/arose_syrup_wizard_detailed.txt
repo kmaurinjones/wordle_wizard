@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'arose'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('r', 1), ('s', 3)]
+
+Letters to guess again:
+	['r', 's']
+
+Letters to not guess again:
+	['a', 'e', 'o']
+
+At this point:
+	2288, 99.09% of total words have been eliminated, and
+	21, 0.91% of total words remain possible.
+
+Potential next guesses:
+	[('shirt', 100.0), ('strip', 97.58), ('rusty', 82.49), ('skirt', 81.4), ('surly', 81.16), ('swirl', 78.38), ('spurt', 76.33), ('slurp', 75.0), ('spurn', 60.02), ('sprig', 53.86), ('risky', 49.52), ('virus', 47.83), ('shirk', 45.65), ('scrum', 44.57), ('syrup', 44.44), ('scrub', 40.82), ('smirk', 38.29), ('strut', 38.16), ('shrug', 34.78), ('shrub', 31.64), ('usurp', 0.0)]
+
+Words guessed so far:
+	['arose'].
+
+Next guess:
+	'shirt'
+
+-----------------------------
+
+Guess 2: 'shirt'
+Letters in correct positions:
+	[('s', 0)]
+
+Letters in incorrect positions:
+	[('r', 1), ('s', 3), ('r', 3)]
+
+Letters to guess again:
+	['r', 's']
+
+Letters to not guess again:
+	['a', 'e', 'h', 'i', 'o', 't']
+
+At this point:
+	2305, 99.83% of total words have been eliminated, and
+	4, 0.17% of total words remain possible.
+
+Potential next guesses:
+	[('surly', 100.0), ('scrum', 9.28), ('syrup', 8.98), ('scrub', 0.0)]
+
+Words guessed so far:
+	['arose', 'shirt'].
+
+Next guess:
+	'surly'
+
+-----------------------------
+
+Guess 3: 'surly'
+Letters in correct positions:
+	[('s', 0), ('r', 2)]
+
+Letters in incorrect positions:
+	[('r', 1), ('u', 1), ('s', 3), ('r', 3), ('y', 4)]
+
+Letters to guess again:
+	['r', 's', 'u', 'y']
+
+Letters to not guess again:
+	['a', 'e', 'h', 'i', 'l', 'o', 't']
+
+At this point:
+	2308, 99.96% of total words have been eliminated, and
+	1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+	'syrup'
+
+Next guess:
+	'syrup'
+
+-----------------------------
+
+Guess 4: 'syrup'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'syrup'.
+
+-----------------------------

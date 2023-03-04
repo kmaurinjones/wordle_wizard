@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'trinidad'
+Letters in correct positions:
+	[('t', 0)]
+
+Letters in incorrect positions:
+	[('r', 1)]
+
+Letters to guess again:
+	['r', 't']
+
+Letters to not guess again:
+	['a', 'd', 'i', 'n']
+
+At this point:
+	11624, 99.78% of total words have been eliminated, and
+	26, 0.22% of total words remain possible.
+
+Potential next guesses:
+	[('tumbrels', 100.0), ('tumblers', 100.0), ('theorems', 91.84), ('throuble', 91.84), ('torquers', 82.1), ('terrours', 81.36), ('tortures', 81.36), ('throttle', 70.07), ('teleport', 67.5), ('threwest', 61.5), ('thereout', 61.5), ('together', 60.07), ('textures', 58.97), ('therfore', 53.47), ('therefor', 53.47), ('tweezers', 49.92), ('tourette', 48.69), ('torturer', 48.69), ('terrorem', 46.33), ('toujours', 33.65), ('temperer', 33.36), ('tortuous', 32.71), ('thorough', 25.24), ('tommorow', 2.04), ('tomorrow', 2.04), ('turturro', 0.0)]
+
+Words guessed so far:
+	['trinidad'].
+
+Next guess:
+	'tumblers'
+
+-----------------------------
+
+Guess 2: 'tumblers'
+Letters in correct positions:
+	[('t', 0)]
+
+Letters in incorrect positions:
+	[('r', 1), ('e', 5), ('r', 6)]
+
+Letters to guess again:
+	['e', 'r', 't']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'i', 'l', 'm', 'n', 's', 'u']
+
+At this point:
+	11648, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('together', 100.0), ('therefor', 0.0)]
+
+Words guessed so far:
+	['trinidad', 'tumblers'].
+
+Next guess:
+	'together'
+
+-----------------------------
+
+Guess 3: 'together'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'together'.
+
+-----------------------------
