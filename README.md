@@ -3,7 +3,7 @@
 Like many others, as soon as the popular web game "Wordle" went viral in 2021/2022, I, like many others, became obsessed with it. When I began the Master of Data Sciences - Computational Linguistics at UBC, one of the first potential applications I thought of with the skills I would be learning was an algorithm to be able to automatically solve the game's puzzles. Fast forward to now, I'm a few months from finishing the program and I've began developing this repo in order to tackle this question. Ironically, at this point I hadn't played the game in months and I was not aware there had since been developed the "Wordle Bot", that does exactly what I had set out to create, so this whole project was made completely independent of Wordle Bot, with no knowledge or intentional borrowings from it.
 
 ## Interactive Web App/Project Demo
-If you would like to see this backend in action, I've developed a frontend using huggingface.com. Check it out here: https://huggingface.co/spaces/kmaurinjones/wordle_wizard
+If you would like to see this backend in action, I've developed a frontend using https://huggingface.co/. Check it out here: https://huggingface.co/spaces/kmaurinjones/wordle_wizard
 
 ## Table of Contents
 ### `/data`
