@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'reaffirmed'
+Letters in correct positions:
+	[('e', 8)]
+
+Letters in incorrect positions:
+	[('e', 1), ('i', 5)]
+
+Letters to guess again:
+	['e', 'i']
+
+Letters to not guess again:
+	['a', 'd', 'f', 'm', 'r']
+
+At this point:
+	7166, 99.53% of total words have been eliminated, and
+	34, 0.47% of total words remain possible.
+
+Potential next guesses:
+	[('shilonites', 100.0), ('hypnotises', 94.81), ('punchlines', 85.75), ('stockpiles', 85.24), ('gibeonites', 84.58), ('theologies', 75.85), ('concubines', 72.41), ('injustices', 70.52), ('cinephiles', 69.58), ('objectives', 59.15), ('incentives', 58.82), ('cineplexes', 57.83), ('existences', 54.62), ('stickytoes', 54.1), ('phosphines', 53.92), ('institutes', 50.42), ('spielvogel', 46.93), ('subtleties', 46.27), ('explitives', 40.66), ('uzzielites', 39.29), ('executives', 38.58), ('explosives', 34.62), ('intestines', 34.25), ('exigencies', 33.54), ('hitchhikes', 32.03), ('housewives', 28.11), ('likenesses', 27.64), ('highnesses', 25.94), ('businesses', 24.72), ('nibelungen', 24.48), ('pickpocket', 22.41), ('sicknesses', 22.36), ('subspecies', 19.53), ('epilepsies', 0.0)]
+
+Words guessed so far:
+	['reaffirmed'].
+
+Next guess:
+	'shilonites'
+
+-----------------------------
+
+Guess 2: 'shilonites'
+Letters in correct positions:
+	[('h', 1), ('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('s', 0), ('e', 1), ('i', 2), ('l', 3), ('o', 4), ('i', 5), ('i', 6), ('t', 7)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'd', 'f', 'm', 'n', 'r']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'anchorite'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 0), ('c', 2), ('h', 3), ('r', 5), ('t', 7), ('e', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['i', 'n', 'o']
+
+At this point:
+	9694, 99.77% of total words have been eliminated, and
+	22, 0.23% of total words remain possible.
+
+Potential next guesses:
+	[('chargedst', 100.0), ('marchedst', 98.66), ('scratched', 80.28), ('preachest', 70.86), ('scratcher', 53.74), ('chracters', 53.74), ('scratches', 53.74), ('searchest', 53.74), ('petruchka', 45.92), ('ermatched', 44.92), ('rewatched', 32.82), ('erwatched', 32.82), ('characted', 26.54), ('ratcheted', 26.54), ('chartered', 26.54), ('chattered', 26.54), ('wehrmacht', 24.67), ('thackeray', 15.44), ('treachery', 9.02), ('chatterer', 0.0), ('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['anchorite'].
+
+Next guess:
+	'chargedst'
+
+-----------------------------
+
+Guess 2: 'chargedst'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3)]
+
+Letters in incorrect positions:
+	[('a', 0), ('c', 2), ('h', 3), ('r', 5), ('e', 5), ('t', 7), ('e', 8), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'n', 'o', 's']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['anchorite', 'chargedst'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 3: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 0), ('c', 2), ('h', 3), ('e', 4), ('r', 5), ('e', 5), ('t', 7), ('e', 8), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'n', 'o', 's']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

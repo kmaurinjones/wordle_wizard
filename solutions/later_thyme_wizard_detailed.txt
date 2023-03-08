@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'later'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 2), ('e', 3)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['a', 'l', 'r']
+
+At this point:
+	2272, 97.64% of total words have been eliminated, and
+	55, 2.36% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('stone', 100.0), ('stein', 94.85), ('those', 88.48), ('ethos', 88.48), ('suite', 88.34), ('pesto', 87.27), ('smote', 84.12), ('heist', 83.4), ('scent', 82.76), ('spite', 82.12), ('unite', 82.05), ('smite', 79.04), ('stoke', 77.4), ('spent', 76.04), ('inept', 75.82), ('stove', 73.89), ('edict', 71.32), ('chest', 71.24), ('ethic', 71.03), ('depot', 69.74), ('deity', 68.1), ('piety', 66.52), ('guest', 65.88), ('tempo', 65.02), ('twine', 65.02), ('tepid', 64.59), ('exist', 61.66), ('eight', 60.66), ('debit', 59.23), ('twice', 59.01), ('chute', 58.44), ('evict', 56.44), ('white', 53.58), ('quote', 53.43), ('tense', 53.29), ('swept', 52.58), ('befit', 49.07), ('quest', 48.57), ('quite', 48.35), ('depth', 47.07)]
+
+Words guessed so far:
+	['later'].
+
+Next guess:
+	'stone'
+
+-----------------------------
+
+Guess 2: 'stone'
+Letters in correct positions:
+	[('e', 4)]
+
+Letters in incorrect positions:
+	[('t', 1), ('t', 2), ('e', 3)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['a', 'l', 'n', 'o', 'r', 's']
+
+At this point:
+	2321, 99.74% of total words have been eliminated, and
+	6, 0.26% of total words remain possible.
+
+Potential next guesses:
+	[('twice', 100.0), ('chute', 98.55), ('white', 86.21), ('quite', 72.96), ('thyme', 66.42), ('theme', 0.0)]
+
+Words guessed so far:
+	['later', 'stone'].
+
+Next guess:
+	'twice'
+
+-----------------------------
+
+Guess 3: 'twice'
+Letters in correct positions:
+	[('t', 0), ('e', 4)]
+
+Letters in incorrect positions:
+	[('t', 1), ('t', 2), ('e', 3)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['a', 'c', 'i', 'l', 'n', 'o', 'r', 's', 'w']
+
+At this point:
+	2325, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('thyme', 100.0), ('theme', 0.0)]
+
+Words guessed so far:
+	['later', 'stone', 'twice'].
+
+Next guess:
+	'thyme'
+
+-----------------------------
+
+Guess 4: 'thyme'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'thyme'.
+
+-----------------------------

@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'countering'
+Letters in correct positions:
+	[('i', 7)]
+
+Letters in incorrect positions:
+	[('o', 1), ('t', 4), ('e', 5), ('g', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'o', 't']
+
+Letters to not guess again:
+	['c', 'n', 'r', 'u']
+
+At this point:
+	7198, 99.97% of total words have been eliminated, and
+	2, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('ideologist', 100.0), ('theologies', 0.0)]
+
+Words guessed so far:
+	['countering'].
+
+Next guess:
+	'ideologist'
+
+-----------------------------
+
+Guess 2: 'ideologist'
+Letters in correct positions:
+	[('e', 2), ('o', 3), ('l', 4), ('o', 5), ('g', 6), ('i', 7)]
+
+Letters in incorrect positions:
+	[('i', 0), ('o', 1), ('t', 4), ('e', 5), ('s', 8), ('g', 9), ('t', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['c', 'd', 'n', 'r', 'u']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

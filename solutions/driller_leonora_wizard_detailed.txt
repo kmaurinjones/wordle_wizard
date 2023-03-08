@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'driller'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('r', 1), ('l', 3), ('l', 4), ('e', 5), ('r', 6)]
+
+Letters to guess again:
+	['e', 'l', 'r']
+
+Letters to not guess again:
+	['d', 'i']
+
+At this point:
+	12368, 98.42% of total words have been eliminated, and
+	198, 1.58% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('sternal', 100.0), ('rentals', 100.0), ('salerno', 98.8), ('lancers', 91.39), ('clarets', 88.82), ('cartels', 88.82), ('halters', 87.73), ('largest', 87.04), ('alperts', 85.4), ('salmore', 85.22), ('central', 83.99), ('neutral', 83.59), ('renault', 83.59), ('talkers', 81.01), ('falters', 81.01), ('walters', 80.25), ('maruels', 77.45), ('parcels', 76.8), ('perusal', 76.4), ('startle', 75.93), ('alberto', 75.49), ('latrobe', 75.49), ('sternly', 75.05), ('aerosol', 74.73), ('palmers', 74.44), ('snorkle', 73.24), ('numeral', 72.62), ('calkers', 72.4), ('refusal', 72.0), ('lantern', 71.1), ('eternal', 71.1), ('lateran', 71.1), ('eteranl', 71.1), ('chorale', 70.55), ('leonora', 69.9), ('players', 69.61), ('sparely', 69.61), ('closure', 69.5), ('thermal', 69.39), ('relents', 69.35)]
+
+Words guessed so far:
+	['driller'].
+
+Next guess:
+	'rentals'
+
+-----------------------------
+
+Guess 2: 'rentals'
+Letters in correct positions:
+	[('e', 1)]
+
+Letters in incorrect positions:
+	[('r', 0), ('r', 1), ('n', 2), ('l', 3), ('l', 4), ('a', 4), ('e', 5), ('l', 5), ('r', 6)]
+
+Letters to guess again:
+	['a', 'e', 'l', 'n', 'r']
+
+Letters to not guess again:
+	['d', 'i', 's', 't']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'leonora'
+
+Next guess:
+	'leonora'
+
+-----------------------------
+
+Guess 3: 'leonora'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'leonora'.
+
+-----------------------------

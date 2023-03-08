@@ -1,0 +1,168 @@
+-----------------------------
+
+Guess 1: 'later'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('l', 0)]
+
+Letters to guess again:
+	['l']
+
+Letters to not guess again:
+	['a', 'e', 'r', 't']
+
+At this point:
+	2209, 94.93% of total words have been eliminated, and
+	118, 5.07% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('solid', 100.0), ('spoil', 98.59), ('scold', 89.13), ('sling', 85.27), ('slink', 79.68), ('scowl', 78.07), ('cloud', 77.56), ('could', 77.56), ('slimy', 77.36), ('slick', 74.28), ('nobly', 74.21), ('cling', 74.15), ('slung', 73.95), ('blond', 72.54), ('clown', 72.35), ('silky', 71.38), ('clink', 68.62), ('child', 68.49), ('slunk', 68.36), ('ghoul', 67.97), ('blind', 67.91), ('colic', 67.07), ('plush', 66.88), ('moldy', 66.24), ('godly', 65.79), ('mogul', 64.05), ('guild', 63.67), ('slump', 62.96), ('clung', 62.83), ('vinyl', 62.51), ('slosh', 62.38), ('build', 62.06), ('blush', 61.99), ('would', 61.86), ('dimly', 61.61), ('colon', 61.54), ('blown', 61.48), ('sloop', 61.22), ('spool', 61.22), ('fling', 60.39)]
+
+Words guessed so far:
+	['later'].
+
+Next guess:
+	'solid'
+
+-----------------------------
+
+Guess 2: 'solid'
+Letters in correct positions:
+	[('o', 1), ('l', 2)]
+
+Letters in incorrect positions:
+	[('l', 0)]
+
+Letters to guess again:
+	['l', 'o']
+
+Letters to not guess again:
+	['a', 'd', 'e', 'i', 'r', 's', 't']
+
+At this point:
+	2321, 99.74% of total words have been eliminated, and
+	6, 0.26% of total words remain possible.
+
+Potential next guesses:
+	[('colon', 100.0), ('holly', 60.23), ('polyp', 56.95), ('golly', 47.1), ('folly', 33.78), ('jolly', 0.0)]
+
+Words guessed so far:
+	['later', 'solid'].
+
+Next guess:
+	'colon'
+
+-----------------------------
+
+Guess 3: 'colon'
+Letters in correct positions:
+	[('o', 1), ('l', 2)]
+
+Letters in incorrect positions:
+	[('l', 0), ('o', 3)]
+
+Letters to guess again:
+	['l', 'o']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'e', 'i', 'n', 'r', 's', 't']
+
+At this point:
+	2322, 99.79% of total words have been eliminated, and
+	5, 0.21% of total words remain possible.
+
+Potential next guesses:
+	[('holly', 100.0), ('polyp', 94.55), ('golly', 78.21), ('folly', 56.09), ('jolly', 0.0)]
+
+Words guessed so far:
+	['later', 'solid', 'colon'].
+
+Next guess:
+	'holly'
+
+-----------------------------
+
+Guess 4: 'holly'
+Letters in correct positions:
+	[('o', 1), ('l', 2), ('l', 3), ('y', 4)]
+
+Letters in incorrect positions:
+	[('l', 0), ('o', 3)]
+
+Letters to guess again:
+	['l', 'o', 'y']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'e', 'h', 'i', 'n', 'r', 's', 't']
+
+At this point:
+	2324, 99.87% of total words have been eliminated, and
+	3, 0.13% of total words remain possible.
+
+Potential next guesses:
+	[('golly', 100.0), ('folly', 71.72), ('jolly', 0.0)]
+
+Words guessed so far:
+	['later', 'solid', 'colon', 'holly'].
+
+Next guess:
+	'golly'
+
+-----------------------------
+
+Guess 5: 'golly'
+Letters in correct positions:
+	[('o', 1), ('l', 2), ('l', 3), ('y', 4)]
+
+Letters in incorrect positions:
+	[('l', 0), ('o', 3)]
+
+Letters to guess again:
+	['l', 'o', 'y']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'e', 'g', 'h', 'i', 'n', 'r', 's', 't']
+
+At this point:
+	2325, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('folly', 100.0), ('jolly', 0.0)]
+
+Words guessed so far:
+	['later', 'solid', 'colon', 'holly', 'golly'].
+
+Next guess:
+	'folly'
+
+-----------------------------
+
+Guess 6: 'folly'
+Letters in correct positions:
+	[('o', 1), ('l', 2), ('l', 3), ('y', 4)]
+
+Letters in incorrect positions:
+	[('l', 0), ('o', 3)]
+
+Letters to guess again:
+	['l', 'o', 'y']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'n', 'r', 's', 't']
+
+At this point:
+	2326, 99.96% of total words have been eliminated, and
+	1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+	'jolly'
+
+Unfortunately, the Wordle could not be solved in 6 guesses.
+
+The target word was 'jolly'. Better luck next time!
+
+-----------------------------
+

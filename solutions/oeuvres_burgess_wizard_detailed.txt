@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'oeuvres'
+Letters in correct positions:
+	[('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 1), ('u', 2), ('r', 4), ('e', 5)]
+
+Letters to guess again:
+	['e', 'r', 's', 'u']
+
+Letters to not guess again:
+	['o', 'v']
+
+At this point:
+	12511, 99.56% of total words have been eliminated, and
+	55, 0.44% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('piraeus', 100.0), ('artemus', 92.74), ('maruels', 91.46), ('hunters', 84.26), ('bunters', 78.29), ('erastus', 75.78), ('auteurs', 75.78), ('butlers', 72.85), ('burdens', 68.4), ('numbers', 60.62), ('tuckers', 55.41), ('undress', 55.3), ('lumbers', 55.18), ('bureaus', 54.24), ('curlews', 52.9), ('dusters', 51.14), ('quakers', 50.32), ('buriers', 48.51), ('gunners', 48.51), ('cutters', 47.22), ('thereus', 45.47), ('cherubs', 44.76), ('gutters', 44.35), ('hurlers', 44.18), ('turkeys', 43.77), ('burners', 43.65), ('musters', 43.36), ('mutters', 43.36), ('luggers', 43.07), ('errupts', 41.66), ('junkers', 40.49), ('busters', 39.56), ('bumpers', 37.1), ('hudreds', 35.58), ('issuers', 35.34), ('dreyfus', 33.88), ('murders', 33.41), ('fullers', 33.35), ('runners', 30.54), ('huggers', 28.79)]
+
+Words guessed so far:
+	['oeuvres'].
+
+Next guess:
+	'piraeus'
+
+-----------------------------
+
+Guess 2: 'piraeus'
+Letters in correct positions:
+	[('r', 2), ('e', 4), ('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 1), ('u', 2), ('r', 4), ('e', 5), ('u', 5)]
+
+Letters to guess again:
+	['e', 'r', 's', 'u']
+
+Letters to not guess again:
+	['a', 'i', 'o', 'p', 'v']
+
+At this point:
+	12558, 99.94% of total words have been eliminated, and
+	8, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('burdens', 100.0), ('curlews', 65.98), ('hurlers', 46.85), ('turkeys', 45.96), ('burners', 45.7), ('murders', 23.23), ('turrets', 7.83), ('burgess', 0.0)]
+
+Words guessed so far:
+	['oeuvres', 'piraeus'].
+
+Next guess:
+	'burdens'
+
+-----------------------------
+
+Guess 3: 'burdens'
+Letters in correct positions:
+	[('b', 0), ('u', 1), ('r', 2), ('e', 4), ('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 1), ('u', 2), ('r', 4), ('e', 5), ('u', 5)]
+
+Letters to guess again:
+	['b', 'e', 'r', 's', 'u']
+
+Letters to not guess again:
+	['a', 'd', 'i', 'n', 'o', 'p', 'v']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'burgess'
+
+Next guess:
+	'burgess'
+
+-----------------------------
+
+Guess 4: 'burgess'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'burgess'.
+
+-----------------------------

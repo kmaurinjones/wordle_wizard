@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'axially'
+Guess 2: 'holster'
+Guess 3: 'plunder'
+Guess 4: 'plumber'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'plumber'.
+
+-----------------------------

@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'packets'
+Guess 2: 'discern'
+Guess 3: 'schmeer'
+Guess 4: 'screech'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'screech'.
+
+-----------------------------

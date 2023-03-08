@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'zelllweger'
+Letters in correct positions:
+	[('l', 4), ('e', 8)]
+
+Letters in incorrect positions:
+	[('e', 1), ('l', 2), ('l', 3), ('e', 6), ('g', 7)]
+
+Letters to guess again:
+	['e', 'g', 'l']
+
+Letters to not guess again:
+	['r', 'w', 'z']
+
+At this point:
+	7192, 99.89% of total words have been eliminated, and
+	8, 0.11% of total words remain possible.
+
+Potential next guesses:
+	[('vigilantes', 100.0), ('catalogues', 80.98), ('theologies', 67.25), ('catalogued', 62.42), ('monologues', 46.77), ('sunglasses', 41.66), ('ideologies', 40.74), ('eyeglasses', 0.0)]
+
+Words guessed so far:
+	['zelllweger'].
+
+Next guess:
+	'vigilantes'
+
+-----------------------------
+
+Guess 2: 'vigilantes'
+Letters in correct positions:
+	[('l', 4), ('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('e', 1), ('i', 1), ('l', 2), ('g', 2), ('l', 3), ('i', 3), ('e', 6), ('g', 7), ('t', 7)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 's', 't']
+
+Letters to not guess again:
+	['a', 'n', 'r', 'v', 'w', 'z']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

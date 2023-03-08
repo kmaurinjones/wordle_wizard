@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'varlaam'
+Guess 2: 'stirlen'
+Guess 3: 'toddler'
+Guess 4: 'kettler'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'kettler'.
+
+-----------------------------

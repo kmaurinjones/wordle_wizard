@@ -1,0 +1,15 @@
+-----------------------------
+
+Guess 1: 'bizance'
+Guess 2: 'stardel'
+Guess 3: 'earshot'
+Guess 4: 'mastery'
+Guess 5: 'rafters'
+Guess 6: 'tatters'
+
+Congratulations! The Wordle has been solved in 6 guesses!
+Lucky! It was the last guess.
+
+The target word was 'tatters'.
+
+-----------------------------

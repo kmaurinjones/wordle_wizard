@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'talitha'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 0), ('t', 4), ('h', 5)]
+
+Letters to guess again:
+	['h', 't']
+
+Letters to not guess again:
+	['a', 'i', 'l']
+
+At this point:
+	12424, 98.87% of total words have been eliminated, and
+	142, 1.13% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('hornets', 100.0), ('hunters', 92.86), ('mothers', 87.61), ('smother', 87.61), ('notches', 87.34), ('bothers', 85.42), ('monthes', 85.15), ('curseth', 82.66), ('honesty', 80.76), ('chesnut', 80.2), ('reshoot', 77.97), ('hooters', 77.97), ('methods', 77.18), ('gunther', 76.61), ('notched', 74.95), ('mouthes', 74.58), ('burthen', 73.89), ('burneth', 73.89), ('horrent', 73.55), ('northen', 73.55), ('botches', 72.76), ('deutsch', 72.23), ('poureth', 71.66), ('sendeth', 71.0), ('rusheth', 70.83), ('doherty', 70.8), ('gropeth', 70.4), ('frothed', 70.27), ('southey', 70.17), ('huntest', 68.41), ('soothed', 67.54), ('sherbet', 66.84), ('runneth', 66.41), ('sotheby', 66.18), ('motherf', 65.85), ('formeth', 65.85), ('groweth', 65.71), ('stephen', 65.65), ('freshet', 64.05), ('butcher', 63.65)]
+
+Words guessed so far:
+	['talitha'].
+
+Next guess:
+	'hornets'
+
+-----------------------------
+
+Guess 2: 'hornets'
+Letters in correct positions:
+	[('e', 4)]
+
+Letters in incorrect positions:
+	[('t', 0), ('h', 0), ('t', 4), ('h', 5), ('t', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'h', 's', 't']
+
+Letters to not guess again:
+	['a', 'i', 'l', 'n', 'o', 'r']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'shewest'
+
+Next guess:
+	'shewest'
+
+-----------------------------
+
+Guess 3: 'shewest'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'shewest'.
+
+-----------------------------

@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'severed'
+Guess 2: 'ulation'
+Guess 3: 'cynical'
+Guess 4: 'manilla'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'manilla'.
+
+-----------------------------

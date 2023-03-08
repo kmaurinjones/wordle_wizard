@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'extending'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 2), ('e', 3)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'n', 'x']
+
+At this point:
+	9357, 96.31% of total words have been eliminated, and
+	359, 3.69% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('pectorals', 100.0), ('stomacher', 92.45), ('relocates', 90.66), ('mousetrap', 88.98), ('maelstrom', 86.43), ('orchestra', 82.42), ('masterful', 82.34), ('spectator', 81.03), ('spaceport', 81.03), ('salvatore', 80.37), ('bucharest', 80.3), ('mcalester', 79.42), ('favourest', 78.55), ('moustache', 77.85), ('laboureth', 76.94), ('forsaketh', 76.65), ('bracelets', 76.32), ('cautelous', 76.07), ('southerly', 75.81), ('overcoats', 75.63), ('overcasts', 75.63), ('abhorrest', 75.08), ('computers', 74.79), ('workmates', 74.39), ('formulate', 74.24), ('savourest', 73.59), ('stylemark', 73.59), ('trackless', 72.93), ('austerely', 72.27), ('charlotte', 72.05), ('heartwoes', 71.62), ('platforme', 71.4), ('postulate', 71.18), ('obstacles', 70.78), ('approvest', 70.7), ('cleopatra', 70.67), ('preachest', 70.52), ('loathsome', 70.38), ('tremulous', 70.19), ('starpower', 70.19)]
+
+Words guessed so far:
+	['extending'].
+
+Next guess:
+	'pectorals'
+
+-----------------------------
+
+Guess 2: 'pectorals'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 1), ('t', 2), ('c', 2), ('e', 3), ('t', 3), ('r', 5), ('a', 6)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'l', 'n', 'o', 'p', 's', 'x']
+
+At this point:
+	9711, 99.95% of total words have been eliminated, and
+	5, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('thackeray', 100.0), ('curvature', 64.5), ('treachery', 58.44), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['extending', 'pectorals'].
+
+Next guess:
+	'thackeray'
+
+-----------------------------
+
+Guess 3: 'thackeray'
+Letters in correct positions:
+	[('h', 1), ('a', 2)]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 0), ('e', 1), ('t', 2), ('c', 2), ('e', 3), ('t', 3), ('c', 3), ('r', 5), ('e', 5), ('a', 6), ('r', 6), ('a', 7)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'k', 'l', 'n', 'o', 'p', 's', 'x', 'y']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['extending', 'pectorals', 'thackeray'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 4: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 0), ('e', 1), ('t', 2), ('c', 2), ('e', 3), ('t', 3), ('c', 3), ('e', 4), ('r', 5), ('e', 5), ('a', 6), ('r', 6), ('a', 7)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'k', 'l', 'n', 'o', 'p', 's', 'x', 'y']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -18,22 +18,22 @@ At this point:
 	165, 3.87% of total words remain possible.
 
 The top 40 potential next guesses are::
-	[('rosh', 100.0), ('shor', 100.0), ('shon', 97.4), ('sohn', 97.4), ('soth', 95.92), ('shot', 95.92), ('iohn', 93.08), ('itoh', 91.54), ('shin', 88.41), ('shou', 88.29), ('thor', 88.11), ('thro', 88.11), ('roth', 88.11), ('orth', 88.11), ('shod', 87.94), ('sith', 86.87), ('tish', 86.87), ('this', 86.87), ('shit', 86.87), ('loth', 86.58), ('mosh', 86.34), ('thon', 85.51), ('shop', 83.38), ('posh', 83.38), ('bosh', 83.03), ('imho', 82.02), ('gosh', 81.37), ('rhod', 80.19), ('shui', 79.24), ('dish', 78.95), ('mohr', 78.53), ('show', 77.53), ('whos', 77.53), ('mish', 77.29), ('shim', 77.29), ('thin', 76.46), ('tohu', 76.4), ('thou', 76.4), ('doth', 76.05), ('rush', 75.75)]
+	[('shor', 100.0), ('rosh', 100.0), ('shon', 97.4), ('sohn', 97.4), ('soth', 95.92), ('shot', 95.92), ('iohn', 93.08), ('itoh', 91.54), ('shin', 88.41), ('shou', 88.29), ('orth', 88.11), ('thor', 88.11), ('roth', 88.11), ('thro', 88.11), ('shod', 87.94), ('sith', 86.87), ('this', 86.87), ('shit', 86.87), ('tish', 86.87), ('loth', 86.58), ('mosh', 86.34), ('thon', 85.51), ('posh', 83.38), ('shop', 83.38), ('bosh', 83.03), ('imho', 82.02), ('gosh', 81.37), ('rhod', 80.19), ('shui', 79.24), ('dish', 78.95), ('mohr', 78.53), ('whos', 77.53), ('show', 77.53), ('mish', 77.29), ('shim', 77.29), ('thin', 76.46), ('tohu', 76.4), ('thou', 76.4), ('doth', 76.05), ('shur', 75.75)]
 
 Words guessed so far:
 	['have'].
 
 Next guess:
-	'shor'
+	'rosh'
 
 -----------------------------
 
-Guess 2: 'shor'
+Guess 2: 'rosh'
 Letters in correct positions:
-	[('h', 1)]
+	[]
 
 Letters in incorrect positions:
-	[('h', 0), ('s', 0)]
+	[('h', 0), ('s', 2), ('h', 3)]
 
 Letters to guess again:
 	['h', 's']
@@ -42,24 +42,52 @@ Letters to not guess again:
 	['a', 'e', 'o', 'r', 'v']
 
 At this point:
-	4263, 99.93% of total words have been eliminated, and
-	3, 0.07% of total words remain possible.
+	4252, 99.67% of total words have been eliminated, and
+	14, 0.33% of total words remain possible.
 
 Potential next guesses:
-	[('this', 100.0), ('phis', 17.51), ('thus', 0.0)]
+	[('shin', 100.0), ('shit', 96.22), ('this', 96.22), ('shui', 77.44), ('shim', 72.63), ('ship', 65.36), ('phis', 65.36), ('shun', 62.59), ('thus', 58.81), ('shut', 58.81), ('schl', 50.22), ('shly', 42.5), ('ishi', 22.56), ('shuz', 0.0)]
 
 Words guessed so far:
-	['have', 'shor'].
+	['have', 'rosh'].
+
+Next guess:
+	'shin'
+
+-----------------------------
+
+Guess 3: 'shin'
+Letters in correct positions:
+	[('h', 1), ('i', 2)]
+
+Letters in incorrect positions:
+	[('h', 0), ('s', 0), ('s', 2), ('h', 3)]
+
+Letters to guess again:
+	['h', 'i', 's']
+
+Letters to not guess again:
+	['a', 'e', 'n', 'o', 'r', 'v']
+
+At this point:
+	4264, 99.95% of total words have been eliminated, and
+	2, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('this', 100.0), ('phis', 0.0)]
+
+Words guessed so far:
+	['have', 'rosh', 'shin'].
 
 Next guess:
 	'this'
 
 -----------------------------
 
-Guess 3: 'this'
+Guess 4: 'this'
 
-Congratulations! The Wordle has been solved in 3 guesses!
-There were still 3 guesses remaining.
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
 
 The target word was 'this'.
 

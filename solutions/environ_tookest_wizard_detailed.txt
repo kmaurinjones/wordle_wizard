@@ -1,0 +1,147 @@
+-----------------------------
+
+Guess 1: 'environ'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('o', 5)]
+
+Letters to guess again:
+	['e', 'o']
+
+Letters to not guess again:
+	['i', 'n', 'r', 'v']
+
+At this point:
+	12163, 96.79% of total words have been eliminated, and
+	403, 3.21% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('locates', 100.0), ('loathes', 98.78), ('apostle', 96.16), ('boatels', 94.65), ('coasted', 94.0), ('solaced', 93.1), ('outages', 88.82), ('boasted', 88.65), ('abodest', 88.65), ('hostage', 88.04), ('zealots', 87.35), ('cleopas', 86.49), ('postage', 85.43), ('gestapo', 85.43), ('belasco', 84.98), ('located', 84.78), ('loathed', 83.59), ('loadeth', 83.59), ('coldest', 82.82), ('gloated', 82.78), ('loudest', 82.37), ('tousled', 82.37), ('holdest', 81.59), ('cloakes', 81.55), ('lodgest', 80.82), ('stowage', 79.63), ('toasted', 79.47), ('bloated', 79.43), ('clothes', 78.86), ('polecat', 78.2), ('boldest', 77.47), ('zealous', 77.22), ('jealous', 76.61), ('poaches', 76.53), ('floated', 76.0), ('locales', 75.84), ('osceola', 75.84), ('solaces', 75.84), ('homages', 75.71), ('bealoth', 75.47)]
+
+Words guessed so far:
+	['environ'].
+
+Next guess:
+	'locates'
+
+-----------------------------
+
+Guess 2: 'locates'
+Letters in correct positions:
+	[('o', 1)]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 4), ('o', 5), ('e', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'i', 'l', 'n', 'r', 'v']
+
+At this point:
+	12558, 99.94% of total words have been eliminated, and
+	8, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('modesty', 100.0), ('sotheby', 77.78), ('poshest', 61.32), ('sowedst', 55.14), ('hottest', 25.51), ('possest', 16.6), ('softest', 0.0), ('tookest', 0.0)]
+
+Words guessed so far:
+	['environ', 'locates'].
+
+Next guess:
+	'modesty'
+
+-----------------------------
+
+Guess 3: 'modesty'
+Letters in correct positions:
+	[('o', 1)]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 3), ('t', 4), ('s', 4), ('o', 5), ('e', 5), ('t', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'i', 'l', 'm', 'n', 'r', 'v', 'y']
+
+At this point:
+	12561, 99.96% of total words have been eliminated, and
+	5, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('poshest', 100.0), ('hottest', 41.61), ('possest', 27.07), ('softest', 0.0), ('tookest', 0.0)]
+
+Words guessed so far:
+	['environ', 'locates', 'modesty'].
+
+Next guess:
+	'poshest'
+
+-----------------------------
+
+Guess 4: 'poshest'
+Letters in correct positions:
+	[('o', 1), ('e', 4), ('s', 5), ('t', 6)]
+
+Letters in incorrect positions:
+	[('e', 0), ('s', 2), ('e', 3), ('t', 4), ('s', 4), ('o', 5), ('e', 5), ('t', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'h', 'i', 'l', 'm', 'n', 'p', 'r', 'v', 'y']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('tookest', 0.0), ('softest', 0.0)]
+
+Words guessed so far:
+	['environ', 'locates', 'modesty', 'poshest'].
+
+Next guess:
+	'softest'
+
+-----------------------------
+
+Guess 5: 'softest'
+Letters in correct positions:
+	[('o', 1), ('e', 4), ('s', 5), ('t', 6)]
+
+Letters in incorrect positions:
+	[('e', 0), ('s', 0), ('s', 2), ('e', 3), ('t', 3), ('t', 4), ('s', 4), ('o', 5), ('e', 5), ('t', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'f', 'h', 'i', 'l', 'm', 'n', 'p', 'r', 'v', 'y']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'tookest'
+
+Next guess:
+	'tookest'
+
+-----------------------------
+
+Guess 6: 'tookest'
+
+Congratulations! The Wordle has been solved in 6 guesses!
+Lucky! It was the last guess.
+
+The target word was 'tookest'.
+
+-----------------------------

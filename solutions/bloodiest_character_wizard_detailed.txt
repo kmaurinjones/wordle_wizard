@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'bloodiest'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['b', 'd', 'i', 'l', 'o', 's']
+
+At this point:
+	9654, 99.36% of total words have been eliminated, and
+	62, 0.64% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('manhunter', 100.0), ('mccartney', 94.62), ('carpentry', 93.69), ('utterance', 90.8), ('pageantry', 88.78), ('enchanter', 88.73), ('prettyman', 87.69), ('carpenter', 86.71), ('caprenter', 86.71), ('guarantee', 85.88), ('petruchka', 85.16), ('enumerate', 84.8), ('parentage', 81.8), ('petermann', 80.71), ('centenary', 80.46), ('parachute', 80.2), ('vtterance', 79.11), ('archetype', 69.86), ('curettage', 67.01), ('penetrate', 66.55), ('punctuate', 66.08), ('recapture', 64.94), ('hearthrug', 62.05), ('thackeray', 61.58), ('entappuah', 61.12), ('premature', 58.95), ('warrantee', 58.17), ('curvature', 57.34), ('aftermath', 50.67), ('truepenny', 50.47), ('charecter', 49.64), ('heartache', 49.64), ('chatterer', 49.64), ('character', 49.64), ('hartweger', 49.59), ('appetence', 48.81), ('marquette', 46.54), ('hexameter', 44.88), ('manhatten', 44.78), ('zarephath', 44.62)]
+
+Words guessed so far:
+	['bloodiest'].
+
+Next guess:
+	'manhunter'
+
+-----------------------------
+
+Guess 2: 'manhunter'
+Letters in correct positions:
+	[('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 1), ('h', 3), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'i', 'l', 'm', 'n', 'o', 's', 'u']
+
+At this point:
+	9713, 99.97% of total words have been eliminated, and
+	3, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 100.0), ('character', 100.0), ('hereafter', 0.0)]
+
+Words guessed so far:
+	['bloodiest', 'manhunter'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

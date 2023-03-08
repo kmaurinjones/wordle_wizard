@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'lawyers'
+Letters in correct positions:
+	[('a', 1)]
+
+Letters in incorrect positions:
+	[('l', 0), ('w', 2), ('e', 4), ('r', 5)]
+
+Letters to guess again:
+	['a', 'e', 'l', 'r', 'w']
+
+Letters to not guess again:
+	['s', 'y']
+
+At this point:
+	12562, 99.97% of total words have been eliminated, and
+	4, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('walther', 100.0), ('warlike', 88.19), ('marlowe', 74.54), ('warbled', 0.0)]
+
+Words guessed so far:
+	['lawyers'].
+
+Next guess:
+	'walther'
+
+-----------------------------
+
+Guess 2: 'walther'
+Letters in correct positions:
+	[('a', 1)]
+
+Letters in incorrect positions:
+	[('l', 0), ('w', 0), ('w', 2), ('l', 2), ('e', 4), ('r', 5), ('e', 5), ('r', 6)]
+
+Letters to guess again:
+	['a', 'e', 'l', 'r', 'w']
+
+Letters to not guess again:
+	['h', 's', 't', 'y']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'marlowe'
+
+Next guess:
+	'marlowe'
+
+-----------------------------
+
+Guess 3: 'marlowe'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'marlowe'.
+
+-----------------------------

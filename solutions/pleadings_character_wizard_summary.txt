@@ -1,0 +1,14 @@
+-----------------------------
+
+Guess 1: 'pleadings'
+Guess 2: 'bechorath'
+Guess 3: 'thackeray'
+Guess 4: 'charecter'
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'summits'
+Guess 2: 'salient'
+Guess 3: 'sinatra'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'sinatra'.
+
+-----------------------------

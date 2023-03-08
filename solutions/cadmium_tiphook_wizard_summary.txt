@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'cadmium'
+Guess 2: 'stirlen'
+Guess 3: 'tiphook'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'tiphook'.
+
+-----------------------------

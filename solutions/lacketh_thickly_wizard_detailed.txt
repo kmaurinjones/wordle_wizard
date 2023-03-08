@@ -1,0 +1,35 @@
+-----------------------------
+
+Guess 1: 'lacketh'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('l', 0), ('c', 2), ('k', 3), ('t', 5), ('h', 6)]
+
+Letters to guess again:
+	['c', 'h', 'k', 'l', 't']
+
+Letters to not guess again:
+	['a', 'e']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'thickly'
+
+Next guess:
+	'thickly'
+
+-----------------------------
+
+Guess 2: 'thickly'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'thickly'.
+
+-----------------------------

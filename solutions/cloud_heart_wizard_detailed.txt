@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'cloud'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	[]
+
+Letters to not guess again:
+	['c', 'd', 'l', 'o', 'u']
+
+At this point:
+	1767, 75.93% of total words have been eliminated, and
+	560, 24.07% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('stare', 100.0), ('irate', 99.89), ('raise', 98.24), ('arise', 98.24), ('saner', 95.18), ('snare', 95.18), ('teary', 92.16), ('heart', 91.05), ('hater', 91.05), ('earth', 91.05), ('tries', 90.54), ('taper', 90.44), ('share', 89.39), ('shear', 89.39), ('tamer', 88.85), ('spear', 88.78), ('spare', 88.78), ('parse', 88.78), ('grate', 88.6), ('great', 88.6), ('rents', 87.49), ('stern', 87.49), ('inter', 87.38), ('inert', 87.38), ('yearn', 87.31), ('smear', 87.2), ('after', 86.12), ('rinse', 85.72), ('risen', 85.72), ('siren', 85.72), ('resin', 85.72), ('taker', 85.47), ('yeast', 85.26), ('water', 85.04), ('safer', 84.43), ('afire', 84.32), ('haste', 84.18), ('ramen', 84.0), ('anger', 83.75), ('range', 83.75)]
+
+Words guessed so far:
+	['cloud'].
+
+Next guess:
+	'stare'
+
+-----------------------------
+
+Guess 2: 'stare'
+Letters in correct positions:
+	[('a', 2), ('r', 3)]
+
+Letters in incorrect positions:
+	[('t', 1), ('e', 4)]
+
+Letters to guess again:
+	['a', 'e', 'r', 't']
+
+Letters to not guess again:
+	['c', 'd', 'l', 'o', 's', 'u']
+
+At this point:
+	2325, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('teary', 100.0), ('heart', 0.0)]
+
+Words guessed so far:
+	['cloud', 'stare'].
+
+Next guess:
+	'teary'
+
+-----------------------------
+
+Guess 3: 'teary'
+Letters in correct positions:
+	[('e', 1), ('a', 2), ('r', 3)]
+
+Letters in incorrect positions:
+	[('t', 0), ('t', 1), ('e', 4)]
+
+Letters to guess again:
+	['a', 'e', 'r', 't']
+
+Letters to not guess again:
+	['c', 'd', 'l', 'o', 's', 'u', 'y']
+
+At this point:
+	2326, 99.96% of total words have been eliminated, and
+	1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+	'heart'
+
+Next guess:
+	'heart'
+
+-----------------------------
+
+Guess 4: 'heart'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'heart'.
+
+-----------------------------

@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'deliuer'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('i', 3), ('e', 5)]
+
+Letters to guess again:
+	['e', 'i']
+
+Letters to not guess again:
+	['d', 'l', 'r', 'u']
+
+At this point:
+	12293, 97.83% of total words have been eliminated, and
+	273, 2.17% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('mainest', 100.0), ('maeotis', 95.64), ('evasion', 90.44), ('cinemas', 90.01), ('enigmas', 87.94), ('spahnie', 87.56), ('obtaine', 87.26), ('pistone', 86.75), ('shigeta', 86.46), ('aseptic', 85.78), ('atheism', 85.74), ('pastime', 83.03), ('cheatin', 82.9), ('coinage', 80.7), ('ethanim', 80.15), ('takeshi', 79.43), ('singeth', 78.8), ('nighest', 78.8), ('maiesty', 78.63), ('inspect', 78.12), ('mistake', 77.87), ('antoine', 77.74), ('shimeon', 76.68), ('jasmine', 76.26), ('ebonics', 75.2), ('amnesia', 74.95), ('cassite', 74.74), ('ascetic', 74.74), ('pigeons', 74.69), ('poetics', 73.76), ('atheist', 73.51), ('infects', 73.04), ('takeing', 73.0), ('anytime', 73.0), ('egotism', 72.92), ('obiects', 72.2), ('moabite', 71.43), ('vintage', 71.14), ('whitens', 70.88), ('vietnam', 70.42)]
+
+Words guessed so far:
+	['deliuer'].
+
+Next guess:
+	'mainest'
+
+-----------------------------
+
+Guess 2: 'mainest'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('m', 0), ('e', 1), ('a', 1), ('i', 2), ('i', 3), ('e', 4), ('e', 5), ('s', 5)]
+
+Letters to guess again:
+	['a', 'e', 'i', 'm', 's']
+
+Letters to not guess again:
+	['d', 'l', 'n', 'r', 't', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'piepsam'
+
+Next guess:
+	'piepsam'
+
+-----------------------------
+
+Guess 3: 'piepsam'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'piepsam'.
+
+-----------------------------

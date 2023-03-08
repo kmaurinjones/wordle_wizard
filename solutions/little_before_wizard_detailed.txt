@@ -18,7 +18,7 @@ At this point:
 	410, 3.63% of total words remain possible.
 
 The top 40 potential next guesses are::
-	[('sarone', 100.0), ('arouse', 92.3), ('hoarse', 91.81), ('ashore', 91.81), ('coarse', 91.12), ('romane', 86.05), ('orange', 84.29), ('groane', 84.29), ('organe', 84.29), ('scorne', 82.78), ('sundae', 82.69), ('phrase', 81.14), ('sharpe', 81.14), ('scrape', 80.44), ('dosage', 79.56), ('grande', 79.02), ('coahse', 78.65), ('graspe', 78.56), ('drouse', 78.56), ('manure', 78.44), ('sharke', 78.41), ('roache', 78.02), ('horace', 78.02), ('roxane', 77.44), ('sworne', 77.14), ('swarme', 76.59), ('damone', 76.38), ('unbare', 76.23), ('urbane', 76.23), ('sparke', 75.83), ('shayne', 75.53), ('prance', 75.5), ('romage', 75.32), ('drawne', 75.26), ('source', 75.05), ('crusoe', 75.05), ('course', 75.05), ('crouse', 75.05), ('square', 74.47), ('assure', 73.95)]
+	[('sarone', 100.0), ('arouse', 92.3), ('hoarse', 91.81), ('ashore', 91.81), ('coarse', 91.12), ('romane', 86.05), ('orange', 84.29), ('groane', 84.29), ('organe', 84.29), ('scorne', 82.78), ('sundae', 82.69), ('sharpe', 81.14), ('phrase', 81.14), ('scrape', 80.44), ('dosage', 79.56), ('grande', 79.02), ('coahse', 78.65), ('drouse', 78.56), ('graspe', 78.56), ('manure', 78.44), ('sharke', 78.41), ('roache', 78.02), ('horace', 78.02), ('roxane', 77.44), ('sworne', 77.14), ('swarme', 76.59), ('damone', 76.38), ('unbare', 76.23), ('urbane', 76.23), ('sparke', 75.83), ('shayne', 75.53), ('prance', 75.5), ('romage', 75.32), ('drawne', 75.26), ('source', 75.05), ('crusoe', 75.05), ('course', 75.05), ('crouse', 75.05), ('square', 74.47), ('assure', 73.95)]
 
 Words guessed so far:
 	['little'].

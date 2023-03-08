@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'later'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 4)]
+
+Letters to guess again:
+	['a', 'r']
+
+Letters to not guess again:
+	['e', 'l', 't']
+
+At this point:
+	2257, 96.99% of total words have been eliminated, and
+	70, 3.01% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('arson', 100.0), ('acorn', 87.34), ('adorn', 82.08), ('apron', 80.47), ('drain', 76.88), ('groan', 76.81), ('organ', 76.81), ('roach', 75.57), ('scary', 72.86), ('grain', 71.54), ('acrid', 70.67), ('crash', 70.59), ('hoard', 70.3), ('brain', 69.71), ('scrap', 69.35), ('cobra', 68.84), ('diary', 67.37), ('scram', 66.13), ('spray', 66.06), ('shard', 65.33), ('croak', 64.3), ('sharp', 63.79), ('broad', 63.5), ('board', 63.5), ('foray', 62.18), ('scarf', 60.57), ('grasp', 58.81), ('braid', 58.3), ('brash', 58.23), ('ovary', 57.35), ('urban', 56.84), ('angry', 55.82), ('grand', 53.91), ('shark', 53.69), ('crank', 52.82), ('chard', 52.67), ('spark', 52.45), ('brand', 52.08), ('bravo', 48.28), ('swarm', 48.28)]
+
+Words guessed so far:
+	['later'].
+
+Next guess:
+	'arson'
+
+-----------------------------
+
+Guess 2: 'arson'
+Letters in correct positions:
+	[('r', 1), ('n', 4)]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('r', 4)]
+
+Letters to guess again:
+	['a', 'n', 'r']
+
+Letters to not guess again:
+	['e', 'l', 'o', 's', 't']
+
+At this point:
+	2320, 99.7% of total words have been eliminated, and
+	7, 0.3% of total words remain possible.
+
+Potential next guesses:
+	[('drain', 100.0), ('grain', 85.71), ('brain', 80.82), ('urban', 46.38), ('drawn', 18.98), ('prawn', 14.87), ('brawn', 0.0)]
+
+Words guessed so far:
+	['later', 'arson'].
+
+Next guess:
+	'drain'
+
+-----------------------------
+
+Guess 3: 'drain'
+Letters in correct positions:
+	[('r', 1), ('a', 2), ('i', 3), ('n', 4)]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('r', 4)]
+
+Letters to guess again:
+	['a', 'i', 'n', 'r']
+
+Letters to not guess again:
+	['d', 'e', 'l', 'o', 's', 't']
+
+At this point:
+	2325, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('grain', 100.0), ('brain', 0.0)]
+
+Words guessed so far:
+	['later', 'arson', 'drain'].
+
+Next guess:
+	'grain'
+
+-----------------------------
+
+Guess 4: 'grain'
+Letters in correct positions:
+	[('r', 1), ('a', 2), ('i', 3), ('n', 4)]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('r', 4)]
+
+Letters to guess again:
+	['a', 'i', 'n', 'r']
+
+Letters to not guess again:
+	['d', 'e', 'g', 'l', 'o', 's', 't']
+
+At this point:
+	2326, 99.96% of total words have been eliminated, and
+	1, 0.04% of total words remain possible.
+
+The only remaining possible word is:
+	'brain'
+
+Next guess:
+	'brain'
+
+-----------------------------
+
+Guess 5: 'brain'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'brain'.
+
+-----------------------------

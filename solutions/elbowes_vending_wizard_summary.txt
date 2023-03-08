@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'elbowes'
+Guess 2: 'certain'
+Guess 3: 'feuding'
+Guess 4: 'heeding'
+Guess 5: 'mending'
+Guess 6: 'pending'
+
+Unfortunately, the Wordle could not be solved in 6 guesses.
+The target word was 'vending'. Better luck next time!
+

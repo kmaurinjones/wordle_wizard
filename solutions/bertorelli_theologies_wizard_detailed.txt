@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'bertorelli'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('t', 3), ('o', 4), ('e', 6), ('l', 7), ('l', 8), ('i', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o', 't']
+
+Letters to not guess again:
+	['b', 'r']
+
+At this point:
+	7131, 99.04% of total words have been eliminated, and
+	69, 0.96% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('planetoids', 100.0), ('emulations', 99.19), ('escalation', 90.82), ('estotiland', 88.88), ('hailstones', 85.15), ('longitudes', 83.78), ('unpoetical', 83.05), ('elevations', 78.72), ('licentious', 74.27), ('tonalities', 74.23), ('occidental', 72.73), ('middletons', 69.58), ('congenital', 69.5), ('capitoline', 69.17), ('pollinated', 67.27), ('simpletons', 66.02), ('novelistic', 64.89), ('oilheating', 63.83), ('theologian', 63.83), ('fieldstone', 63.47), ('evolutions', 62.18), ('completing', 61.29), ('evaluation', 59.83), ('oscillates', 58.66), ('socialites', 58.66), ('localities', 58.66), ('conciliate', 58.05), ('solicitude', 56.8), ('exultation', 56.23), ('nucleotide', 56.19), ('ideational', 56.15), ('politeness', 54.94), ('millstones', 54.89), ('milestones', 54.89), ('explantion', 53.48), ('exhalation', 53.28), ('elongation', 52.91), ('appelation', 52.59), ('collimated', 51.7), ('completist', 50.44)]
+
+Words guessed so far:
+	['bertorelli'].
+
+Next guess:
+	'planetoids'
+
+-----------------------------
+
+Guess 2: 'planetoids'
+Letters in correct positions:
+	[('i', 7), ('s', 9)]
+
+Letters in incorrect positions:
+	[('e', 1), ('l', 1), ('t', 3), ('o', 4), ('e', 4), ('t', 5), ('e', 6), ('o', 6), ('l', 7), ('l', 8), ('i', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'n', 'p', 'r']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

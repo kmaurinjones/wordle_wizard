@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'calgary'
+Letters in correct positions:
+	[('r', 5), ('y', 6)]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	['r', 'y']
+
+Letters to not guess again:
+	['a', 'c', 'g', 'l']
+
+At this point:
+	12529, 99.71% of total words have been eliminated, and
+	37, 0.29% of total words remain possible.
+
+Potential next guesses:
+	[('spidery', 100.0), ('wintery', 95.38), ('sensory', 90.89), ('fishery', 90.41), ('shivery', 88.47), ('history', 82.23), ('nursery', 81.43), ('showery', 81.3), ('enquiry', 79.98), ('mystery', 75.93), ('thierry', 75.27), ('turnery', 72.5), ('tisbury', 68.32), ('pottery', 64.28), ('jittery', 62.3), ('powdery', 62.08), ('newbury', 61.55), ('reentry', 57.33), ('buttery', 53.19), ('funnery', 52.62), ('pommery', 50.95), ('nunnery', 46.41), ('newbery', 46.41), ('bribery', 44.79), ('foppery', 44.39), ('foundry', 43.16), ('fernery', 37.48), ('robbery', 36.6), ('perjury', 30.09), ('mummery', 30.0), ('inquiry', 27.32), ('rubbery', 27.14), ('brewery', 17.25), ('peppery', 13.59), ('jeffery', 9.63), ('humphry', 3.17), ('roxbury', 0.0)]
+
+Words guessed so far:
+	['calgary'].
+
+Next guess:
+	'spidery'
+
+-----------------------------
+
+Guess 2: 'spidery'
+Letters in correct positions:
+	[('r', 5), ('y', 6)]
+
+Letters in incorrect positions:
+	[('d', 3)]
+
+Letters to guess again:
+	['d', 'r', 'y']
+
+Letters to not guess again:
+	['a', 'c', 'e', 'g', 'i', 'l', 'p', 's']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'foundry'
+
+Next guess:
+	'foundry'
+
+-----------------------------
+
+Guess 3: 'foundry'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'foundry'.
+
+-----------------------------

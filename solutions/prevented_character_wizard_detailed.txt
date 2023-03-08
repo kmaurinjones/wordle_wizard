@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'prevented'
+Letters in correct positions:
+	[('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('r', 1), ('e', 2), ('e', 4)]
+
+Letters to guess again:
+	['e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'n', 'p', 'v']
+
+At this point:
+	9684, 99.67% of total words have been eliminated, and
+	32, 0.33% of total words remain possible.
+
+Potential next guesses:
+	[('mcalister', 100.0), ('korahites', 91.19), ('bachrites', 87.08), ('liberates', 80.22), ('relocates', 77.52), ('ashurites', 76.9), ('slaughter', 75.53), ('hagarites', 75.28), ('izharites', 64.56), ('asherites', 62.98), ('merarites', 62.15), ('amramites', 62.15), ('tolerates', 61.28), ('slickster', 60.2), ('workmates', 58.99), ('barrister', 58.62), ('roommates', 51.1), ('kilometer', 46.2), ('alabaster', 44.99), ('resolutes', 42.83), ('zoroaster', 41.21), ('heberites', 38.47), ('chuckster', 29.5), ('barometer', 25.55), ('lullwater', 21.52), ('jezerites', 20.69), ('recruiter', 15.12), ('backwater', 14.08), ('character', 10.55), ('comforter', 7.19), ('hexameter', 6.73), ('hereafter', 0.0)]
+
+Words guessed so far:
+	['prevented'].
+
+Next guess:
+	'mcalister'
+
+-----------------------------
+
+Guess 2: 'mcalister'
+Letters in correct positions:
+	[('a', 2), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('r', 1), ('c', 1), ('e', 2), ('e', 4)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'm', 'n', 'p', 's', 'v']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'trimmings'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 0), ('r', 1)]
+
+Letters to guess again:
+	['r', 't']
+
+Letters to not guess again:
+	['g', 'i', 'm', 'n', 's']
+
+At this point:
+	9544, 98.23% of total words have been eliminated, and
+	172, 1.77% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('laboureth', 100.0), ('relocated', 98.74), ('charlotte', 94.55), ('patrolled', 93.25), ('cleopatra', 93.0), ('autocoder', 91.17), ('accoutred', 91.17), ('ulcerated', 88.65), ('cathedral', 87.02), ('declareth', 87.02), ('betrothal', 86.37), ('correlate', 82.59), ('electoral', 82.59), ('worktable', 82.14), ('overacted', 81.98), ('bechorath', 81.12), ('favoureth', 81.04), ('hereabout', 78.84), ('petruchka', 77.66), ('portrayed', 77.58), ('decorated', 77.58), ('detractor', 77.58), ('decorator', 77.58), ('doctorate', 77.58), ('heartedly', 76.61), ('clattered', 75.06), ('lacerated', 75.06), ('reputable', 74.74), ('elaborate', 74.41), ('parachute', 73.76), ('eachother', 73.39), ('adulterer', 72.78), ('approveth', 72.34), ('cooperate', 71.85), ('corporate', 71.85), ('leathered', 71.16), ('afterword', 71.03), ('corrupted', 69.89), ('rewatched', 69.69), ('akerfeldt', 68.63)]
+
+Words guessed so far:
+	['trimmings'].
+
+Next guess:
+	'laboureth'
+
+-----------------------------
+
+Guess 2: 'laboureth'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 0), ('r', 1), ('a', 1), ('r', 5), ('e', 6), ('t', 7), ('h', 8)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'g', 'i', 'l', 'm', 'n', 'o', 's', 'u']
+
+At this point:
+	9704, 99.88% of total words have been eliminated, and
+	12, 0.12% of total words remain possible.
+
+Potential next guesses:
+	[('rewatched', 100.0), ('chartered', 87.38), ('chattered', 87.38), ('characted', 87.38), ('feathered', 53.29), ('deathward', 47.65), ('weathered', 47.65), ('charecter', 34.09), ('heartache', 34.09), ('chatterer', 34.09), ('character', 34.09), ('hereafter', 0.0)]
+
+Words guessed so far:
+	['trimmings', 'laboureth'].
+
+Next guess:
+	'rewatched'
+
+-----------------------------
+
+Guess 3: 'rewatched'
+Letters in correct positions:
+	[('c', 5), ('e', 7)]
+
+Letters in incorrect positions:
+	[('t', 0), ('r', 0), ('r', 1), ('a', 1), ('e', 1), ('a', 3), ('t', 4), ('r', 5), ('e', 6), ('h', 6), ('t', 7), ('h', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'g', 'i', 'l', 'm', 'n', 'o', 's', 'u', 'w']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['trimmings', 'laboureth', 'rewatched'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

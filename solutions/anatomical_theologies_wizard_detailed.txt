@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'anatomical'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 3), ('o', 4), ('i', 6), ('l', 9)]
+
+Letters to guess again:
+	['i', 'l', 'o', 't']
+
+Letters to not guess again:
+	['a', 'c', 'm', 'n']
+
+At this point:
+	7184, 99.78% of total words have been eliminated, and
+	16, 0.22% of total words remain possible.
+
+Potential next guesses:
+	[('sportively', 100.0), ('lobsterish', 97.17), ('irresolute', 92.63), ('lighthouse', 86.49), ('outfielder', 79.4), ('ideologist', 76.21), ('theologies', 72.4), ('positively', 71.21), ('volksgeist', 68.63), ('shibboleth', 68.35), ('oppositely', 66.67), ('spoilsport', 41.48), ('studiously', 35.95), ('thirtyfold', 33.7), ('possiblity', 25.8), ('volubility', 0.0)]
+
+Words guessed so far:
+	['anatomical'].
+
+Next guess:
+	'sportively'
+
+-----------------------------
+
+Guess 2: 'sportively'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('s', 0), ('o', 2), ('t', 3), ('o', 4), ('t', 4), ('i', 5), ('i', 6), ('e', 7), ('l', 8), ('l', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'm', 'n', 'p', 'r', 'v', 'y']
+
+At this point:
+	7198, 99.97% of total words have been eliminated, and
+	2, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('ideologist', 100.0), ('theologies', 0.0)]
+
+Words guessed so far:
+	['anatomical', 'sportively'].
+
+Next guess:
+	'ideologist'
+
+-----------------------------
+
+Guess 3: 'ideologist'
+Letters in correct positions:
+	[('e', 2), ('o', 3), ('l', 4), ('o', 5), ('g', 6), ('i', 7)]
+
+Letters in incorrect positions:
+	[('s', 0), ('i', 0), ('o', 2), ('t', 3), ('o', 4), ('t', 4), ('i', 5), ('i', 6), ('e', 7), ('l', 8), ('s', 8), ('l', 9), ('t', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'm', 'n', 'p', 'r', 'v', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 4: 'theologies'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

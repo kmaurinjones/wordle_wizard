@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'camilla'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	[]
+
+Letters to not guess again:
+	['a', 'c', 'i', 'l', 'm']
+
+At this point:
+	11353, 90.35% of total words have been eliminated, and
+	1213, 9.65% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('rodents', 100.0), ('snorted', 100.0), ('thornes', 98.03), ('thrones', 98.03), ('hornets', 98.03), ('shorten', 98.03), ('preston', 96.71), ('resound', 94.96), ('sounder', 94.96), ('stroken', 94.25), ('towners', 93.82), ('norwest', 93.82), ('hunters', 93.66), ('detours', 93.52), ('respond', 93.27), ('ponders', 93.27), ('unhorse', 92.99), ('surgeon', 92.6), ('bordens', 92.52), ('punster', 92.34), ('gershon', 92.22), ('doesnut', 92.03), ('sported', 91.83), ('bunters', 91.59), ('stoners', 91.4), ('torsten', 91.4), ('orontes', 91.4), ('ephrons', 91.3), ('debtors', 91.08), ('sponger', 90.92), ('throned', 90.45), ('drownes', 90.39), ('wonders', 90.39), ('downers', 90.39), ('posture', 90.25), ('spouter', 90.25), ('proteus', 90.25), ('troupes', 90.25), ('bergson', 90.16), ('vendors', 89.92)]
+
+Words guessed so far:
+	['camilla'].
+
+Next guess:
+	'snorted'
+
+-----------------------------
+
+Guess 2: 'snorted'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('s', 0), ('n', 1), ('o', 2), ('e', 5), ('d', 6)]
+
+Letters to guess again:
+	['d', 'e', 'n', 'o', 's']
+
+Letters to not guess again:
+	['a', 'c', 'i', 'l', 'm', 'r', 't']
+
+At this point:
+	12562, 99.97% of total words have been eliminated, and
+	4, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('donkeys', 100.0), ('wendkos', 87.54), ('offends', 47.47), ('oddness', 0.0)]
+
+Words guessed so far:
+	['camilla', 'snorted'].
+
+Next guess:
+	'donkeys'
+
+-----------------------------
+
+Guess 3: 'donkeys'
+Letters in correct positions:
+	[('n', 2), ('s', 6)]
+
+Letters in incorrect positions:
+	[('s', 0), ('d', 0), ('n', 1), ('o', 1), ('o', 2), ('k', 3), ('e', 4), ('e', 5), ('d', 6)]
+
+Letters to guess again:
+	['d', 'e', 'k', 'n', 'o', 's']
+
+Letters to not guess again:
+	['a', 'c', 'i', 'l', 'm', 'r', 't', 'y']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'wendkos'
+
+Next guess:
+	'wendkos'
+
+-----------------------------
+
+Guess 4: 'wendkos'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'wendkos'.
+
+-----------------------------

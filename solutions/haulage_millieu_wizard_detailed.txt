@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'haulage'
+Letters in correct positions:
+	[('l', 3)]
+
+Letters in incorrect positions:
+	[('u', 2), ('e', 6)]
+
+Letters to guess again:
+	['e', 'l', 'u']
+
+Letters to not guess again:
+	['a', 'g', 'h']
+
+At this point:
+	12530, 99.71% of total words have been eliminated, and
+	36, 0.29% of total words remain possible.
+
+Potential next guesses:
+	[('butlers', 100.0), ('unblest', 96.21), ('builder', 88.62), ('curlews', 82.29), ('outlets', 79.17), ('sellout', 79.17), ('cutlery', 73.66), ('nucleus', 72.26), ('dullest', 72.1), ('perluss', 71.17), ('quilted', 70.39), ('bullies', 69.71), ('nucleic', 69.66), ('cullest', 68.57), ('cutlets', 68.57), ('purlieu', 68.57), ('burlier', 66.65), ('mullein', 66.23), ('fullers', 64.94), ('bullets', 61.77), ('quilles', 59.01), ('fullest', 57.45), ('sunless', 53.82), ('fueloil', 53.09), ('builded', 50.34), ('bullied', 50.34), ('pulleys', 41.09), ('sumless', 34.39), ('millieu', 31.79), ('mueller', 31.32), ('bueller', 27.95), ('fulller', 23.58), ('useless', 19.38), ('fuelled', 7.27), ('quelled', 0.88), ('duelled', 0.0)]
+
+Words guessed so far:
+	['haulage'].
+
+Next guess:
+	'butlers'
+
+-----------------------------
+
+Guess 2: 'butlers'
+Letters in correct positions:
+	[('l', 3)]
+
+Letters in incorrect positions:
+	[('u', 1), ('u', 2), ('e', 4), ('e', 6)]
+
+Letters to guess again:
+	['e', 'l', 'u']
+
+Letters to not guess again:
+	['a', 'b', 'g', 'h', 'r', 's', 't']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'millieu'
+
+Next guess:
+	'millieu'
+
+-----------------------------
+
+Guess 3: 'millieu'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'millieu'.
+
+-----------------------------

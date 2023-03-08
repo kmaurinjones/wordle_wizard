@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'unclasping'
+Letters in correct positions:
+	[('i', 7)]
+
+Letters in incorrect positions:
+	[('l', 3), ('s', 5), ('g', 9)]
+
+Letters to guess again:
+	['g', 'i', 'l', 's']
+
+Letters to not guess again:
+	['a', 'c', 'n', 'p', 'u']
+
+At this point:
+	7196, 99.94% of total words have been eliminated, and
+	4, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('ideologist', 100.0), ('theologies', 87.26), ('volksgeist', 74.66), ('ideologies', 0.0)]
+
+Words guessed so far:
+	['unclasping'].
+
+Next guess:
+	'ideologist'
+
+-----------------------------
+
+Guess 2: 'ideologist'
+Letters in correct positions:
+	[('e', 2), ('o', 3), ('l', 4), ('o', 5), ('g', 6), ('i', 7)]
+
+Letters in incorrect positions:
+	[('i', 0), ('l', 3), ('s', 5), ('s', 8), ('g', 9), ('t', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'n', 'p', 'u']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

@@ -1,0 +1,11 @@
+-----------------------------
+
+Guess 1: 'advantages'
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'tableau'
+Guess 2: 'cistern'
+Guess 3: 'fondest'
+Guess 4: 'densest'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'densest'.
+
+-----------------------------

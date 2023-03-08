@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'hoarded'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('r', 3), ('e', 5)]
+
+Letters to guess again:
+	['e', 'r']
+
+Letters to not guess again:
+	['a', 'd', 'h', 'o']
+
+At this point:
+	12109, 96.36% of total words have been eliminated, and
+	457, 3.64% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('cistern', 100.0), ('cretins', 100.0), ('resting', 98.3), ('serling', 97.48), ('lingers', 97.48), ('tinkers', 92.38), ('bristle', 92.07), ('winters', 91.64), ('nuseric', 91.25), ('reusing', 89.51), ('filters', 89.13), ('lifters', 89.13), ('pincers', 88.31), ('inserts', 87.42), ('interns', 87.42), ('tinners', 87.42), ('entirly', 84.98), ('trellis', 84.13), ('litters', 84.13), ('centuri', 84.02), ('permits', 83.46), ('syringe', 82.89), ('tilvern', 82.82), ('limpers', 82.68), ('eruting', 82.29), ('fingers', 82.29), ('timbers', 82.15), ('silberg', 81.97), ('runtime', 81.72), ('wingers', 81.54), ('relents', 81.23), ('bunters', 81.15), ('surfeit', 81.12), ('serving', 80.73), ('perkins', 80.66), ('terming', 80.38), ('turbine', 79.38), ('tribune', 79.38), ('firmest', 79.17), ('sincere', 79.03)]
+
+Words guessed so far:
+	['hoarded'].
+
+Next guess:
+	'cretins'
+
+-----------------------------
+
+Guess 2: 'cretins'
+Letters in correct positions:
+	[('t', 3)]
+
+Letters in incorrect positions:
+	[('r', 1), ('e', 2), ('r', 3), ('e', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'r', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'h', 'i', 'n', 'o']
+
+At this point:
+	12561, 99.96% of total words have been eliminated, and
+	5, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('restful', 100.0), ('gesture', 61.71), ('mystery', 42.37), ('vesture', 41.71), ('restest', 0.0)]
+
+Words guessed so far:
+	['hoarded', 'cretins'].
+
+Next guess:
+	'restful'
+
+-----------------------------
+
+Guess 3: 'restful'
+Letters in correct positions:
+	[('s', 2), ('t', 3)]
+
+Letters in incorrect positions:
+	[('r', 0), ('r', 1), ('e', 1), ('e', 2), ('r', 3), ('e', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'r', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'f', 'h', 'i', 'l', 'n', 'o', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'mystery'
+
+Next guess:
+	'mystery'
+
+-----------------------------
+
+Guess 4: 'mystery'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'mystery'.
+
+-----------------------------

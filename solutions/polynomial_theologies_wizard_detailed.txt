@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'polynomial'
+Letters in correct positions:
+	[('o', 5), ('i', 7)]
+
+Letters in incorrect positions:
+	[('o', 1), ('l', 2), ('l', 9)]
+
+Letters to guess again:
+	['i', 'l', 'o']
+
+Letters to not guess again:
+	['a', 'm', 'n', 'p', 'y']
+
+At this point:
+	7197, 99.96% of total words have been eliminated, and
+	3, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('ideologist', 100.0), ('theologies', 87.26), ('ideologies', 0.0)]
+
+Words guessed so far:
+	['polynomial'].
+
+Next guess:
+	'ideologist'
+
+-----------------------------
+
+Guess 2: 'ideologist'
+Letters in correct positions:
+	[('e', 2), ('o', 3), ('l', 4), ('o', 5), ('g', 6), ('i', 7)]
+
+Letters in incorrect positions:
+	[('i', 0), ('o', 1), ('l', 2), ('s', 8), ('l', 9), ('t', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'd', 'm', 'n', 'p', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

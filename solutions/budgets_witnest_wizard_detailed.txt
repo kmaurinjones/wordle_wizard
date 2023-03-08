@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'budgets'
+Letters in correct positions:
+	[('e', 4)]
+
+Letters in incorrect positions:
+	[('t', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 's', 't']
+
+Letters to not guess again:
+	['b', 'd', 'g', 'u']
+
+At this point:
+	12407, 98.73% of total words have been eliminated, and
+	159, 1.27% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('nailest', 100.0), ('salient', 100.0), ('mainest', 90.04), ('sapient', 89.05), ('pastern', 88.73), ('cistern', 88.55), ('fairest', 87.38), ('rankest', 84.44), ('earnest', 79.48), ('nearest', 79.48), ('eastern', 79.48), ('laziest', 78.1), ('holiest', 77.96), ('richest', 76.61), ('realest', 76.19), ('norwest', 73.6), ('calmest', 72.96), ('mastery', 71.83), ('inspect', 71.72), ('markest', 71.19), ('harvest', 70.94), ('prayest', 70.8), ('warmest', 70.48), ('amplest', 69.6), ('soylent', 69.06), ('scarest', 68.57), ('firmest', 67.72), ('lackest', 67.65), ('hearest', 67.54), ('theresa', 67.54), ('solvent', 66.9), ('armrest', 66.27), ('nascent', 65.98), ('reapest', 65.24), ('playest', 64.92), ('pinkest', 64.1), ('meanest', 63.64), ('callest', 62.69), ('whilest', 62.37), ('fearest', 60.95)]
+
+Words guessed so far:
+	['budgets'].
+
+Next guess:
+	'salient'
+
+-----------------------------
+
+Guess 2: 'salient'
+Letters in correct positions:
+	[('e', 4), ('t', 6)]
+
+Letters in incorrect positions:
+	[('s', 0), ('i', 3), ('t', 5), ('n', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'i', 'n', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'g', 'l', 'u']
+
+At this point:
+	12563, 99.98% of total words have been eliminated, and
+	3, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('inspect', 100.0), ('pinkest', 56.74), ('witnest', 0.0)]
+
+Words guessed so far:
+	['budgets', 'salient'].
+
+Next guess:
+	'inspect'
+
+-----------------------------
+
+Guess 3: 'inspect'
+Letters in correct positions:
+	[('e', 4), ('t', 6)]
+
+Letters in incorrect positions:
+	[('s', 0), ('i', 0), ('n', 1), ('s', 2), ('i', 3), ('t', 5), ('n', 5), ('s', 6)]
+
+Letters to guess again:
+	['e', 'i', 'n', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'c', 'd', 'g', 'l', 'p', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'witnest'
+
+Next guess:
+	'witnest'
+
+-----------------------------
+
+Guess 4: 'witnest'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'witnest'.
+
+-----------------------------

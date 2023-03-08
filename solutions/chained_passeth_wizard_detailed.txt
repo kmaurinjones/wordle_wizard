@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'chained'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('h', 1), ('a', 2), ('e', 5)]
+
+Letters to guess again:
+	['a', 'e', 'h']
+
+Letters to not guess again:
+	['c', 'd', 'i', 'n']
+
+At this point:
+	12467, 99.21% of total words have been eliminated, and
+	99, 0.79% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('halters', 100.0), ('earshot', 99.61), ('eshtaol', 93.02), ('haruest', 91.13), ('haulers', 90.26), ('gathers', 89.63), ('amherst', 88.96), ('ashmore', 87.66), ('hermosa', 87.66), ('breaths', 86.4), ('bathers', 86.4), ('hayters', 83.75), ('fathers', 83.08), ('hostage', 82.65), ('hamlets', 82.41), ('wreaths', 82.26), ('koshare', 81.78), ('harvest', 81.35), ('armhole', 78.79), ('gresham', 77.72), ('hatters', 77.56), ('hampers', 75.91), ('earthly', 74.84), ('stealth', 70.98), ('hatless', 70.98), ('labothe', 70.5), ('lebaoth', 70.5), ('asshole', 69.68), ('jerusha', 68.97), ('hammers', 65.62), ('maktesh', 65.46), ('keturah', 65.26), ('harpers', 64.51), ('perhaps', 64.51), ('seraphs', 64.51), ('hagerty', 64.47), ('hawkers', 64.43), ('harveys', 64.2), ('marketh', 63.13), ('exhaust', 62.93)]
+
+Words guessed so far:
+	['chained'].
+
+Next guess:
+	'halters'
+
+-----------------------------
+
+Guess 2: 'halters'
+Letters in correct positions:
+	[('a', 1), ('e', 4)]
+
+Letters in incorrect positions:
+	[('h', 0), ('h', 1), ('a', 2), ('t', 3), ('e', 5), ('s', 6)]
+
+Letters to guess again:
+	['a', 'e', 'h', 's', 't']
+
+Letters to not guess again:
+	['c', 'd', 'i', 'l', 'n', 'r']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('passeth', 100.0), ('washest', 0.0)]
+
+Words guessed so far:
+	['chained', 'halters'].
+
+Next guess:
+	'passeth'
+
+-----------------------------
+
+Guess 3: 'passeth'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'passeth'.
+
+-----------------------------

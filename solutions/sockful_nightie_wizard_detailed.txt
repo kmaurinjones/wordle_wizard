@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'sockful'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	[]
+
+Letters to not guess again:
+	['c', 'f', 'k', 'l', 'o', 's', 'u']
+
+At this point:
+	11376, 90.53% of total words have been eliminated, and
+	1190, 9.47% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('trained', 100.0), ('tearing', 97.75), ('granite', 97.75), ('ingrate', 97.75), ('integra', 97.75), ('raiment', 97.42), ('reitman', 97.42), ('painter', 96.88), ('repaint', 96.88), ('pertain', 96.88), ('bietnar', 96.16), ('handier', 94.84), ('grained', 94.47), ('reading', 94.47), ('dreamin', 94.14), ('brained', 92.86), ('hearing', 92.59), ('thandie', 92.05), ('germain', 91.89), ('trainer', 91.79), ('trainee', 91.79), ('tertian', 91.79), ('terrain', 91.79), ('retaine', 91.79), ('inertia', 91.79), ('intreat', 91.79), ('nitrate', 91.79), ('dragnet', 91.48), ('granted', 91.48), ('animted', 91.35), ('reaping', 91.33), ('gaither', 91.21), ('permian', 91.0), ('ithream', 90.88), ('thermia', 90.88), ('painted', 90.79), ('bearing', 90.61), ('garmite', 90.51), ('migrate', 90.51), ('invader', 90.38)]
+
+Words guessed so far:
+	['sockful'].
+
+Next guess:
+	'trained'
+
+-----------------------------
+
+Guess 2: 'trained'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 0), ('i', 3), ('n', 4), ('e', 5)]
+
+Letters to guess again:
+	['e', 'i', 'n', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'f', 'k', 'l', 'o', 'r', 's', 'u']
+
+At this point:
+	12551, 99.88% of total words have been eliminated, and
+	15, 0.12% of total words remain possible.
+
+Potential next guesses:
+	[('pigment', 100.0), ('nightie', 60.39), ('meeting', 54.05), ('petting', 48.94), ('betting', 42.43), ('winneth', 27.29), ('wetting', 23.94), ('venting', 19.89), ('jetting', 8.27), ('exigent', 6.69), ('exiting', 6.69), ('getting', 2.99), ('netting', 2.99), ('minnett', 0.0), ('eminent', 0.0)]
+
+Words guessed so far:
+	['sockful', 'trained'].
+
+Next guess:
+	'pigment'
+
+-----------------------------
+
+Guess 3: 'pigment'
+Letters in correct positions:
+	[('i', 1), ('g', 2)]
+
+Letters in incorrect positions:
+	[('t', 0), ('i', 3), ('n', 4), ('e', 4), ('e', 5), ('n', 5), ('t', 6)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'n', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'f', 'k', 'l', 'm', 'o', 'p', 'r', 's', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'nightie'
+
+Next guess:
+	'nightie'
+
+-----------------------------
+
+Guess 4: 'nightie'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'nightie'.
+
+-----------------------------

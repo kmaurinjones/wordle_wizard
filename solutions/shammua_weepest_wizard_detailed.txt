@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'shammua'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('s', 0)]
+
+Letters to guess again:
+	['s']
+
+Letters to not guess again:
+	['a', 'h', 'm', 'u']
+
+At this point:
+	11383, 90.59% of total words have been eliminated, and
+	1183, 9.41% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('loiters', 100.0), ('toilers', 100.0), ('cretins', 96.93), ('cistern', 96.93), ('cronies', 96.02), ('ericson', 96.02), ('editors', 95.93), ('resting', 95.6), ('deloris', 95.33), ('lingers', 94.97), ('regions', 94.69), ('ignores', 94.69), ('edtions', 93.92), ('rodents', 93.67), ('recoils', 93.47), ('pierson', 93.42), ('goriest', 92.73), ('clients', 92.34), ('cinders', 92.26), ('discern', 92.26), ('rescind', 92.26), ('glories', 92.12), ('notices', 92.04), ('costner', 91.79), ('creston', 91.79), ('cornets', 91.79), ('reconst', 91.79), ('riposte', 91.48), ('conseil', 91.43), ('inclose', 91.43), ('glisten', 90.98), ('kirsten', 90.98), ('kristen', 90.98), ('tinkers', 90.98), ('tingles', 90.98), ('bristle', 90.74), ('blister', 90.74), ('winters', 90.4), ('credits', 90.29), ('directs', 90.29)]
+
+Words guessed so far:
+	['shammua'].
+
+Next guess:
+	'toilers'
+
+-----------------------------
+
+Guess 2: 'toilers'
+Letters in correct positions:
+	[('e', 4)]
+
+Letters in incorrect positions:
+	[('s', 0), ('t', 0), ('s', 6)]
+
+Letters to guess again:
+	['e', 's', 't']
+
+Letters to not guess again:
+	['a', 'h', 'i', 'l', 'm', 'o', 'r', 'u']
+
+At this point:
+	12552, 99.89% of total words have been eliminated, and
+	14, 0.11% of total words remain possible.
+
+Potential next guesses:
+	[('descent', 100.0), ('needest', 74.77), ('densest', 74.77), ('knewest', 63.22), ('deckest', 62.93), ('keenest', 54.71), ('wentest', 53.3), ('deepest', 46.35), ('feedest', 37.77), ('keepest', 26.29), ('weepest', 24.81), ('gettest', 19.56), ('wettest', 6.31), ('jettest', 0.0)]
+
+Words guessed so far:
+	['shammua', 'toilers'].
+
+Next guess:
+	'descent'
+
+-----------------------------
+
+Guess 3: 'descent'
+Letters in correct positions:
+	[('e', 1), ('e', 4), ('t', 6)]
+
+Letters in incorrect positions:
+	[('s', 0), ('t', 0), ('s', 2), ('s', 6)]
+
+Letters to guess again:
+	['e', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'h', 'i', 'l', 'm', 'n', 'o', 'r', 'u']
+
+At this point:
+	12561, 99.96% of total words have been eliminated, and
+	5, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('keepest', 100.0), ('weepest', 94.34), ('gettest', 74.39), ('wettest', 23.99), ('jettest', 0.0)]
+
+Words guessed so far:
+	['shammua', 'toilers', 'descent'].
+
+Next guess:
+	'keepest'
+
+-----------------------------
+
+Guess 4: 'keepest'
+Letters in correct positions:
+	[('e', 1), ('e', 2), ('p', 3), ('e', 4), ('s', 5), ('t', 6)]
+
+Letters in incorrect positions:
+	[('s', 0), ('t', 0), ('s', 2), ('s', 6)]
+
+Letters to guess again:
+	['e', 'p', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'r', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'weepest'
+
+Next guess:
+	'weepest'
+
+-----------------------------
+
+Guess 5: 'weepest'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'weepest'.
+
+-----------------------------

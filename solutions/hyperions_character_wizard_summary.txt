@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'hyperions'
+Guess 2: 'cathedral'
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

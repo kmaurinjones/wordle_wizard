@@ -18,7 +18,7 @@ At this point:
 	26, 0.22% of total words remain possible.
 
 Potential next guesses:
-	[('tumbrels', 100.0), ('tumblers', 100.0), ('theorems', 91.84), ('throuble', 91.84), ('torquers', 82.1), ('terrours', 81.36), ('tortures', 81.36), ('throttle', 70.07), ('teleport', 67.5), ('threwest', 61.5), ('thereout', 61.5), ('together', 60.07), ('textures', 58.97), ('therfore', 53.47), ('therefor', 53.47), ('tweezers', 49.92), ('tourette', 48.69), ('torturer', 48.69), ('terrorem', 46.33), ('toujours', 33.65), ('temperer', 33.36), ('tortuous', 32.71), ('thorough', 25.24), ('tommorow', 2.04), ('tomorrow', 2.04), ('turturro', 0.0)]
+	[('tumbrels', 100.0), ('tumblers', 100.0), ('theorems', 91.84), ('throuble', 91.84), ('torquers', 82.1), ('tortures', 81.36), ('terrours', 81.36), ('throttle', 70.07), ('teleport', 67.5), ('threwest', 61.5), ('thereout', 61.5), ('together', 60.07), ('textures', 58.97), ('therfore', 53.47), ('therefor', 53.47), ('tweezers', 49.92), ('torturer', 48.69), ('tourette', 48.69), ('terrorem', 46.33), ('toujours', 33.65), ('temperer', 33.36), ('tortuous', 32.71), ('thorough', 25.24), ('tommorow', 2.04), ('tomorrow', 2.04), ('turturro', 0.0)]
 
 Words guessed so far:
 	['trinidad'].

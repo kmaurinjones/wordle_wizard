@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'mutineers'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 2), ('e', 5), ('e', 6), ('r', 7)]
+
+Letters to guess again:
+	['e', 'r', 't']
+
+Letters to not guess again:
+	['i', 'm', 'n', 's', 'u']
+
+At this point:
+	9626, 99.07% of total words have been eliminated, and
+	90, 0.93% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('relocated', 100.0), ('goldwater', 99.95), ('charlotte', 94.79), ('godfather', 90.64), ('tolerated', 80.27), ('correlate', 79.92), ('electoral', 79.92), ('worktable', 79.36), ('overacted', 79.16), ('abrogated', 78.45), ('bechorath', 78.1), ('tolerably', 76.53), ('theocracy', 75.32), ('decorator', 73.7), ('portrayed', 73.7), ('doctorate', 73.7), ('decorated', 73.7), ('telegraph', 73.5), ('lacerated', 70.56), ('tolerable', 69.75), ('elaborate', 69.75), ('partygoer', 68.54), ('greatcoat', 68.54), ('eachother', 68.49), ('cooperate', 66.57), ('corporate', 66.57), ('relegated', 65.76), ('rewatched', 63.88), ('erwatched', 63.88), ('harrogate', 63.68), ('threefold', 62.62), ('propagate', 61.76), ('reportage', 61.76), ('chevrolet', 60.85), ('overtaxed', 60.65), ('electrode', 60.6), ('traceable', 60.04), ('celebrate', 60.04), ('overrated', 59.43), ('characted', 59.13)]
+
+Words guessed so far:
+	['mutineers'].
+
+Next guess:
+	'relocated'
+
+-----------------------------
+
+Guess 2: 'relocated'
+Letters in correct positions:
+	[('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('r', 0), ('e', 1), ('t', 2), ('c', 4), ('e', 5), ('a', 5), ('e', 6), ('r', 7)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'm', 'n', 'o', 's', 'u']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['mutineers', 'relocated'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 3: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('r', 0), ('e', 1), ('t', 2), ('c', 4), ('e', 4), ('e', 5), ('a', 5), ('e', 6), ('r', 7)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'm', 'n', 'o', 's', 'u']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

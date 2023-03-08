@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'enfolding'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0)]
+
+Letters to guess again:
+	['e']
+
+Letters to not guess again:
+	['d', 'f', 'g', 'i', 'l', 'n', 'o']
+
+At this point:
+	9504, 97.82% of total words have been eliminated, and
+	212, 2.18% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('bucharest', 100.0), ('preachest', 90.96), ('patrasche', 90.96), ('awestruck', 90.08), ('mercyseat', 86.16), ('crewmates', 84.81), ('creatures', 83.67), ('supremacy', 83.56), ('scratcher', 82.32), ('searcheth', 82.32), ('searchest', 82.32), ('chracters', 82.32), ('scratches', 82.32), ('paymaster', 81.64), ('thesaurus', 80.43), ('purchases', 79.68), ('purchaser', 79.68), ('apertures', 79.14), ('superstar', 79.14), ('petruchka', 78.37), ('mustaches', 78.1), ('sharpster', 77.79), ('permeates', 77.12), ('secretary', 76.92), ('substrate', 76.88), ('kershbaum', 76.78), ('attackers', 75.63), ('breathers', 75.53), ('breathest', 75.53), ('parachute', 75.13), ('taxpayers', 73.2), ('asymmetry', 73.0), ('harvester', 72.8), ('streetcar', 72.39), ('actresses', 72.39), ('recreates', 72.39), ('marketers', 71.72), ('parakeets', 71.08), ('partakers', 71.08), ('partakest', 71.08)]
+
+Words guessed so far:
+	['enfolding'].
+
+Next guess:
+	'bucharest'
+
+-----------------------------
+
+Guess 2: 'bucharest'
+Letters in correct positions:
+	[('a', 4)]
+
+Letters in incorrect positions:
+	[('e', 0), ('c', 2), ('h', 3), ('r', 5), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'f', 'g', 'i', 'l', 'n', 'o', 's', 'u']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

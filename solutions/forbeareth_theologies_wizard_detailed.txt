@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'forbeareth'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('o', 1), ('e', 4), ('e', 7), ('t', 8), ('h', 9)]
+
+Letters to guess again:
+	['e', 'h', 'o', 't']
+
+Letters to not guess again:
+	['a', 'b', 'f', 'r']
+
+At this point:
+	7174, 99.64% of total words have been eliminated, and
+	26, 0.36% of total words remain possible.
+
+Potential next guesses:
+	[('hypnotised', 100.0), ('hedonistic', 99.85), ('shilonites', 87.73), ('hypnotises', 82.4), ('lighthouse', 79.58), ('theophilus', 79.19), ('huddleston', 78.13), ('zephonites', 77.45), ('photogenic', 70.03), ('withholden', 69.4), ('theologies', 62.9), ('hypnotized', 62.46), ('pitchpoled', 60.77), ('checkpoint', 59.6), ('theodosius', 58.1), ('telephones', 57.23), ('technology', 44.86), ('hypothesis', 43.84), ('telephoned', 35.55), ('spoutholes', 35.31), ('stephenson', 31.86), ('whetstones', 21.82), ('ghettoized', 17.6), ('sheepcotes', 13.19), ('shotshells', 5.33), ('hypotheses', 0.0)]
+
+Words guessed so far:
+	['forbeareth'].
+
+Next guess:
+	'hypnotised'
+
+-----------------------------
+
+Guess 2: 'hypnotised'
+Letters in correct positions:
+	[('e', 8)]
+
+Letters in incorrect positions:
+	[('h', 0), ('o', 1), ('e', 4), ('o', 4), ('t', 5), ('i', 6), ('e', 7), ('s', 7), ('t', 8), ('h', 9)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'f', 'n', 'p', 'r', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

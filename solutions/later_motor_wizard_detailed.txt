@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'later'
+Letters in correct positions:
+	[('t', 2), ('r', 4)]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	['r', 't']
+
+Letters to not guess again:
+	['a', 'e', 'l']
+
+At this point:
+	2324, 99.87% of total words have been eliminated, and
+	3, 0.13% of total words remain possible.
+
+Potential next guesses:
+	[('tutor', 100.0), ('motor', 67.65), ('rotor', 0.0)]
+
+Words guessed so far:
+	['later'].
+
+Next guess:
+	'tutor'
+
+-----------------------------
+
+Guess 2: 'tutor'
+Letters in correct positions:
+	[('t', 2), ('o', 3), ('r', 4)]
+
+Letters in incorrect positions:
+	[('t', 0)]
+
+Letters to guess again:
+	['o', 'r', 't']
+
+Letters to not guess again:
+	['a', 'e', 'l', 'u']
+
+At this point:
+	2325, 99.91% of total words have been eliminated, and
+	2, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('motor', 100.0), ('rotor', 0.0)]
+
+Words guessed so far:
+	['later', 'tutor'].
+
+Next guess:
+	'motor'
+
+-----------------------------
+
+Guess 3: 'motor'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'motor'.
+
+-----------------------------

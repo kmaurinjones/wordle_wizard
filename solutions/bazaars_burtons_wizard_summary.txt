@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'bazaars'
+Guess 2: 'bridles'
+Guess 3: 'burtons'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'burtons'.
+
+-----------------------------

@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'heart'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	[]
+
+Letters to not guess again:
+	['a', 'e', 'h', 'r', 't']
+
+At this point:
+	2063, 88.65% of total words have been eliminated, and
+	264, 11.35% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('lions', 100.0), ('solid', 91.92), ('spoil', 90.78), ('scion', 89.18), ('sonic', 89.18), ('noisy', 86.85), ('locus', 86.54), ('lousy', 84.15), ('login', 83.58), ('lingo', 83.58), ('scold', 83.17), ('disco', 81.1), ('bison', 80.42), ('sling', 80.06), ('logic', 79.23), ('sound', 76.33), ('slink', 75.56), ('synod', 74.31), ('scowl', 74.26), ('cloud', 73.85), ('could', 73.85), ('slimy', 73.69), ('bonus', 71.31), ('slick', 71.21), ('nobly', 71.15), ('cling', 71.1), ('slung', 70.95), ('limbo', 70.79), ('lucid', 70.17), ('blond', 69.81), ('clown', 69.65), ('spiny', 69.55), ('minus', 69.24), ('dingo', 69.03), ('doing', 69.03), ('suing', 68.88), ('using', 68.88), ('silky', 68.88), ('lying', 68.77), ('clink', 66.65)]
+
+Words guessed so far:
+	['heart'].
+
+Next guess:
+	'lions'
+
+-----------------------------
+
+Guess 2: 'lions'
+Letters in correct positions:
+	[('o', 2)]
+
+Letters in incorrect positions:
+	[('l', 0)]
+
+Letters to guess again:
+	['l', 'o']
+
+Letters to not guess again:
+	['a', 'e', 'h', 'i', 'n', 'r', 's', 't']
+
+At this point:
+	2318, 99.61% of total words have been eliminated, and
+	9, 0.39% of total words remain possible.
+
+Potential next guesses:
+	[('cloud', 100.0), ('block', 49.69), ('flock', 42.81), ('clock', 11.87), ('blood', 10.31), ('gloom', 3.91), ('flood', 3.28), ('wooly', 2.81), ('bloom', 0.0)]
+
+Words guessed so far:
+	['heart', 'lions'].
+
+Next guess:
+	'cloud'
+
+-----------------------------
+
+Guess 3: 'cloud'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'cloud'.
+
+-----------------------------

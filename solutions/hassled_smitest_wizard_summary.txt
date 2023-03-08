@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'hassled'
+Guess 2: 'cretins'
+Guess 3: 'bootsie'
+Guess 4: 'smitest'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'smitest'.
+
+-----------------------------

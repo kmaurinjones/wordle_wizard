@@ -1,0 +1,38 @@
+-----------------------------
+
+Guess 1: 'booties'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 3), ('s', 6)]
+
+Letters to guess again:
+	['s', 't']
+
+Letters to not guess again:
+	['b', 'e', 'i', 'o']
+
+At this point:
+	12519, 99.63% of total words have been eliminated, and
+	47, 0.37% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('crystal', 100.0), ('smartly', 95.65), ('scantly', 95.11), ('shugart', 92.97), ('standup', 91.49), ('starman', 91.36), ('staunch', 91.29), ('spartan', 89.42), ('sanctum', 88.88), ('hallstr', 87.54), ('starkly', 85.6), ('starchy', 83.66), ('strasny', 82.45), ('tuscany', 79.97), ('muskrat', 79.37), ('dykstra', 75.75), ('accurst', 74.41), ('scratch', 73.14), ('gymnast', 73.07), ('analyst', 71.27), ('stratum', 69.99), ('sumatra', 69.99), ('sahjunt', 69.52), ('ghastly', 69.26), ('startup', 68.05), ('swarthy', 67.85), ('sanctam', 65.84), ('capstan', 63.9), ('dynasty', 61.42), ('asphalt', 55.73), ('shrasta', 49.36), ('natasha', 44.41), ('gangsta', 43.13), ('passant', 40.12), ('assault', 39.45), ('sawdust', 37.58), ('schultz', 31.61), ('typcast', 30.01), ('tsugawa', 29.81), ('vansant', 29.07)]
+
+Words guessed so far:
+	['booties'].
+
+Next guess:
+	'crystal'
+
+-----------------------------
+
+Guess 2: 'crystal'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'crystal'.
+
+-----------------------------

@@ -1,0 +1,38 @@
+-----------------------------
+
+Guess 1: 'impregnate'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('i', 0), ('e', 4), ('g', 5), ('t', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'g', 'i', 't']
+
+Letters to not guess again:
+	['a', 'm', 'n', 'p', 'r']
+
+At this point:
+	7193, 99.9% of total words have been eliminated, and
+	7, 0.1% of total words remain possible.
+
+Potential next guesses:
+	[('theologies', 100.0), ('delightest', 82.27), ('bodyweight', 56.78), ('delightful', 56.78), ('ghettoized', 30.4), ('weightiest', 21.39), ('lighweight', 0.0)]
+
+Words guessed so far:
+	['impregnate'].
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

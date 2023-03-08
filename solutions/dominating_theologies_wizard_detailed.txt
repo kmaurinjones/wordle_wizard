@@ -1,0 +1,35 @@
+-----------------------------
+
+Guess 1: 'dominating'
+Letters in correct positions:
+	[('i', 7)]
+
+Letters in incorrect positions:
+	[('o', 1), ('i', 3), ('t', 6), ('g', 9)]
+
+Letters to guess again:
+	['g', 'i', 'o', 't']
+
+Letters to not guess again:
+	['a', 'd', 'm', 'n']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'obliuious'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[]
+
+Letters to guess again:
+	[]
+
+Letters to not guess again:
+	['b', 'i', 'l', 'o', 's', 'u']
+
+At this point:
+	9469, 97.46% of total words have been eliminated, and
+	247, 2.54% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('parchment', 100.0), ('trenchard', 96.72), ('engrafted', 90.46), ('vngartred', 89.77), ('mccartney', 89.75), ('darkeneth', 89.48), ('entranced', 89.45), ('wandereth', 89.43), ('carpentry', 89.31), ('teagarden', 87.11), ('generated', 87.11), ('hardeneth', 87.09), ('threatned', 87.09), ('pageantry', 86.96), ('enchanter', 86.94), ('trenchant', 86.94), ('prettyman', 86.45), ('repayment', 86.45), ('entrapped', 86.15), ('partnered', 86.15), ('patterned', 86.15), ('caprenter', 85.98), ('carpenter', 85.98), ('ermatched', 84.87), ('vndertake', 84.87), ('termagant', 84.11), ('agreement', 84.11), ('parentage', 83.64), ('apartment', 83.12), ('permanant', 83.12), ('petermann', 83.12), ('permanent', 83.12), ('centenary', 83.0), ('venerated', 82.5), ('vtterance', 82.36), ('warranted', 82.16), ('encampeth', 81.91), ('frenchman', 80.58), ('archenemy', 80.53), ('erwatched', 80.41)]
+
+Words guessed so far:
+	['obliuious'].
+
+Next guess:
+	'parchment'
+
+-----------------------------
+
+Guess 2: 'parchment'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 2), ('c', 3), ('h', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'i', 'l', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+	9707, 99.91% of total words have been eliminated, and
+	9, 0.09% of total words remain possible.
+
+Potential next guesses:
+	[('rewatched', 100.0), ('erwatched', 100.0), ('characted', 80.86), ('chattered', 80.86), ('chartered', 80.86), ('charecter', 0.0), ('chatterer', 0.0), ('character', 0.0), ('heartache', 0.0)]
+
+Words guessed so far:
+	['obliuious', 'parchment'].
+
+Next guess:
+	'erwatched'
+
+-----------------------------
+
+Guess 3: 'erwatched'
+Letters in correct positions:
+	[('c', 5), ('e', 7)]
+
+Letters in incorrect positions:
+	[('e', 0), ('a', 1), ('r', 1), ('r', 2), ('c', 3), ('a', 3), ('h', 4), ('t', 4), ('e', 6), ('h', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'i', 'l', 'm', 'n', 'o', 'p', 's', 'u', 'w']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['obliuious', 'parchment', 'erwatched'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 4: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('e', 0), ('a', 1), ('r', 1), ('r', 2), ('c', 3), ('a', 3), ('h', 4), ('t', 4), ('e', 4), ('e', 6), ('h', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'i', 'l', 'm', 'n', 'o', 'p', 's', 'u', 'w']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

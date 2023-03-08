@@ -1,11 +1,12 @@
 -----------------------------
 
 Guess 1: 'have'
-Guess 2: 'shor'
-Guess 3: 'this'
+Guess 2: 'rosh'
+Guess 3: 'shin'
+Guess 4: 'this'
 
-Congratulations! The Wordle has been solved in 3 guesses!
-There were still 3 guesses remaining.
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
 
 The target word was 'this'.
 

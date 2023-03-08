@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'persuadest'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('s', 3), ('e', 7), ('s', 8), ('t', 9)]
+
+Letters to guess again:
+	['e', 's', 't']
+
+Letters to not guess again:
+	['a', 'd', 'p', 'r', 'u']
+
+At this point:
+	7137, 99.12% of total words have been eliminated, and
+	63, 0.88% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('novelistic', 100.0), ('obsoleting', 97.46), ('ostensibly', 90.76), ('somethings', 89.98), ('congestive', 88.91), ('millstones', 88.59), ('milestones', 88.59), ('shilonites', 88.41), ('ostensible', 84.43), ('congestion', 83.79), ('contesting', 83.79), ('economists', 83.37), ('insolently', 82.26), ('objections', 79.95), ('infections', 76.44), ('gibeonites', 73.3), ('injections', 71.45), ('continents', 70.72), ('oftentimes', 70.16), ('intellects', 67.11), ('theologies', 64.76), ('simeonites', 64.43), ('entwhistle', 63.83), ('synthetics', 61.8), ('lobotomies', 60.37), ('obsenities', 60.28), ('inventions', 56.91), ('hygienists', 55.94), ('steinbecks', 54.55), ('holystones', 52.98), ('extensions', 52.79), ('extentions', 52.79), ('intentions', 51.78), ('stockynges', 51.41), ('scientific', 48.68), ('objectives', 48.41), ('vicinities', 48.08), ('incentives', 48.08), ('synthesize', 44.53), ('stickytoes', 43.46)]
+
+Words guessed so far:
+	['persuadest'].
+
+Next guess:
+	'novelistic'
+
+-----------------------------
+
+Guess 2: 'novelistic'
+Letters in correct positions:
+	[('l', 4)]
+
+Letters in incorrect positions:
+	[('e', 1), ('o', 1), ('s', 3), ('e', 3), ('i', 5), ('s', 6), ('e', 7), ('t', 7), ('s', 8), ('i', 8), ('t', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'd', 'n', 'p', 'r', 'u', 'v']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

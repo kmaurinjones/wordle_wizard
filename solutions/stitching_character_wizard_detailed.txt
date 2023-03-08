@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'stitching'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 1), ('t', 3), ('c', 4), ('h', 5)]
+
+Letters to guess again:
+	['c', 'h', 't']
+
+Letters to not guess again:
+	['g', 'i', 'n', 's']
+
+At this point:
+	9669, 99.52% of total words have been eliminated, and
+	47, 0.48% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('charlotte', 100.0), ('declareth', 93.09), ('cathedral', 93.09), ('archuleta', 90.78), ('bechorath', 87.68), ('leucothea', 85.1), ('petruchka', 84.5), ('ermatched', 83.94), ('eachother', 80.58), ('erwatched', 77.18), ('rewatched', 77.18), ('chevrolet', 74.94), ('ratcheted', 73.67), ('characted', 73.67), ('chartered', 73.67), ('procureth', 73.53), ('archetype', 73.45), ('wehrmacht', 72.63), ('chocolate', 72.63), ('thackeray', 67.48), ('beckworth', 65.68), ('butchered', 64.15), ('bepatched', 62.92), ('watchable', 61.46), ('pochereth', 61.05), ('cumbereth', 59.56), ('character', 58.85), ('charecter', 58.85), ('heartache', 58.85), ('charmouth', 58.03), ('teachable', 57.95), ('rochefort', 56.57), ('computech', 56.39), ('patchwork', 51.94), ('throwback', 49.48), ('detatched', 46.3), ('chartroom', 45.52), ('checkmate', 45.29), ('accepteth', 41.04), ('matchwood', 36.48)]
+
+Words guessed so far:
+	['stitching'].
+
+Next guess:
+	'charlotte'
+
+-----------------------------
+
+Guess 2: 'charlotte'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('t', 6)]
+
+Letters in incorrect positions:
+	[('t', 1), ('t', 3), ('c', 4), ('h', 5), ('t', 7), ('e', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['g', 'i', 'l', 'n', 'o', 's']
+
+At this point:
+	9713, 99.97% of total words have been eliminated, and
+	3, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('characted', 100.0), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['stitching', 'charlotte'].
+
+Next guess:
+	'characted'
+
+-----------------------------
+
+Guess 3: 'characted'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('a', 4), ('c', 5), ('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('t', 1), ('t', 3), ('c', 4), ('h', 5), ('t', 7), ('e', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'l', 'n', 'o', 's']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

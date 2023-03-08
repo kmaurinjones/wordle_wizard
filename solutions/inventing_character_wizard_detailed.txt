@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'inventing'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 3), ('t', 5)]
+
+Letters to guess again:
+	['e', 't']
+
+Letters to not guess again:
+	['g', 'i', 'n', 'v']
+
+At this point:
+	9194, 94.63% of total words have been eliminated, and
+	522, 5.37% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('pectorals', 100.0), ('democrats', 96.28), ('outspread', 93.67), ('stomacher', 92.68), ('relocates', 90.94), ('metaphors', 87.9), ('decorates', 86.59), ('marchedst', 86.13), ('declarest', 84.39), ('orchestra', 82.94), ('masterful', 82.87), ('adultress', 82.41), ('spaceport', 81.6), ('spectator', 81.6), ('authoress', 80.96), ('bucharest', 80.89), ('outbreaks', 80.64), ('mcalester', 80.04), ('plastered', 79.62), ('moustache', 78.52), ('laboureth', 77.64), ('forsaketh', 77.35), ('bracelets', 77.03), ('cautelous', 76.79), ('relocated', 76.54), ('southerly', 76.54), ('scratched', 76.4), ('bathrobes', 75.83), ('abhorrest', 75.83), ('workmates', 75.16), ('formulate', 75.02), ('stylemark', 74.38), ('holstered', 74.03), ('trackless', 73.74), ('austerely', 73.11), ('charlotte', 72.89), ('rostrated', 72.75), ('heartwoes', 72.47), ('platforme', 72.26), ('postulate', 72.05)]
+
+Words guessed so far:
+	['inventing'].
+
+Next guess:
+	'pectorals'
+
+-----------------------------
+
+Guess 2: 'pectorals'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('c', 2), ('e', 3), ('t', 3), ('t', 5), ('r', 5), ('a', 6)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['g', 'i', 'l', 'n', 'o', 'p', 's', 'v']
+
+At this point:
+	9704, 99.88% of total words have been eliminated, and
+	12, 0.12% of total words remain possible.
+
+Potential next guesses:
+	[('ermatched', 100.0), ('fractured', 85.27), ('erwatched', 73.07), ('ratcheted', 59.08), ('characted', 59.08), ('chartered', 59.08), ('thackeray', 34.38), ('treachery', 20.09), ('extracted', 18.9), ('attracted', 15.33), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['inventing', 'pectorals'].
+
+Next guess:
+	'ermatched'
+
+-----------------------------
+
+Guess 3: 'ermatched'
+Letters in correct positions:
+	[('c', 5), ('e', 7)]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 1), ('r', 1), ('c', 2), ('e', 3), ('t', 3), ('a', 3), ('t', 4), ('t', 5), ('r', 5), ('a', 6), ('h', 6)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'l', 'm', 'n', 'o', 'p', 's', 'v']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['inventing', 'pectorals', 'ermatched'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'hideously'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('h', 0), ('e', 3)]
+
+Letters to guess again:
+	['e', 'h']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'o', 's', 'u', 'y']
+
+At this point:
+	9679, 99.62% of total words have been eliminated, and
+	37, 0.38% of total words remain possible.
+
+Potential next guesses:
+	[('parchment', 100.0), ('trenchant', 81.86), ('enchanter', 81.86), ('benchmark', 78.16), ('bethharan', 74.97), ('encampeth', 74.87), ('frenchman', 73.02), ('wehrmacht', 68.61), ('mceachern', 68.37), ('perchance', 67.75), ('preacheth', 64.74), ('champagne', 62.14), ('bethrapha', 57.86), ('charecter', 55.97), ('chatterer', 55.97), ('character', 55.97), ('manhatten', 52.76), ('gathereth', 52.72), ('prepareth', 51.39), ('weakeneth', 49.88), ('bethanath', 49.85), ('machbenah', 49.74), ('breatheth', 49.09), ('bethabara', 49.09), ('bethbarah', 49.09), ('frenchmen', 46.35), ('marrakech', 45.81), ('checkmate', 43.55), ('bethphage', 42.86), ('kretchmer', 42.01), ('chenaanah', 33.86), ('zephathah', 27.52), ('ephphatha', 26.26), ('cheapjack', 20.68), ('chewbacca', 17.7), ('recherche', 6.44), ('whereever', 0.0)]
+
+Words guessed so far:
+	['hideously'].
+
+Next guess:
+	'parchment'
+
+-----------------------------
+
+Guess 2: 'parchment'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('h', 0), ('a', 1), ('r', 2), ('e', 3), ('c', 3), ('h', 4), ('e', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'm', 'n', 'o', 'p', 's', 'u', 'y']
+
+At this point:
+	9713, 99.97% of total words have been eliminated, and
+	3, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('chatterer', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['hideously', 'parchment'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

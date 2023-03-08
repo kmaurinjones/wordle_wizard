@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'poorest'
+Letters in correct positions:
+	[('o', 1), ('e', 4)]
+
+Letters in incorrect positions:
+	[('o', 2), ('r', 3), ('s', 5)]
+
+Letters to guess again:
+	['e', 'o', 'r', 's']
+
+Letters to not guess again:
+	['p', 't']
+
+At this point:
+	12522, 99.65% of total words have been eliminated, and
+	44, 0.35% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('loaders', 100.0), ('boilers', 82.23), ('joiners', 76.18), ('holders', 69.0), ('bordens', 68.52), ('lodgers', 67.86), ('wonders', 62.24), ('downers', 62.24), ('confers', 59.49), ('folders', 57.93), ('codgers', 55.06), ('lockers', 53.86), ('horsely', 53.14), ('bonkers', 51.59), ('corners', 51.05), ('conners', 51.05), ('folgers', 50.99), ('golfers', 50.99), ('howlers', 50.87), ('louvers', 50.57), ('yonkers', 47.58), ('bowlers', 44.82), ('hollers', 43.75), ('morsels', 41.59), ('fowlers', 39.8), ('mockers', 37.1), ('worsens', 36.92), ('dodgers', 33.75), ('rodgers', 33.75), ('roswell', 31.36), ('borders', 28.85), ('rollers', 24.24), ('bombers', 20.89), ('sorcery', 20.77), ('coffers', 19.81), ('rockers', 19.75), ('corkers', 19.75), ('forgers', 16.88), ('yorkers', 7.9), ('sommers', 7.48)]
+
+Words guessed so far:
+	['poorest'].
+
+Next guess:
+	'loaders'
+
+-----------------------------
+
+Guess 2: 'loaders'
+Letters in correct positions:
+	[('o', 1), ('e', 4), ('r', 5), ('s', 6)]
+
+Letters in incorrect positions:
+	[('o', 2), ('r', 3), ('d', 3), ('s', 5)]
+
+Letters to guess again:
+	['d', 'e', 'o', 'r', 's']
+
+Letters to not guess again:
+	['a', 'l', 'p', 't']
+
+At this point:
+	12562, 99.97% of total words have been eliminated, and
+	4, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('downers', 100.0), ('codgers', 74.79), ('dodgers', 0.0), ('rodgers', 0.0)]
+
+Words guessed so far:
+	['poorest', 'loaders'].
+
+Next guess:
+	'downers'
+
+-----------------------------
+
+Guess 3: 'downers'
+Letters in correct positions:
+	[('o', 1), ('e', 4), ('r', 5), ('s', 6)]
+
+Letters in incorrect positions:
+	[('d', 0), ('o', 2), ('r', 3), ('d', 3), ('s', 5)]
+
+Letters to guess again:
+	['d', 'e', 'o', 'r', 's']
+
+Letters to not guess again:
+	['a', 'l', 'n', 'p', 't', 'w']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('codgers', 100.0), ('rodgers', 0.0)]
+
+Words guessed so far:
+	['poorest', 'loaders', 'downers'].
+
+Next guess:
+	'codgers'
+
+-----------------------------
+
+Guess 4: 'codgers'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'codgers'.
+
+-----------------------------

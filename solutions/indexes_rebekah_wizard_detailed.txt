@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'indexes'
+Letters in correct positions:
+	[('e', 3)]
+
+Letters in incorrect positions:
+	[('e', 5)]
+
+Letters to guess again:
+	['e']
+
+Letters to not guess again:
+	['d', 'i', 'n', 's', 'x']
+
+At this point:
+	12471, 99.24% of total words have been eliminated, and
+	95, 0.76% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('alberto', 100.0), ('loretta', 92.19), ('palermo', 90.76), ('camelot', 89.03), ('polecat', 88.06), ('aureola', 83.58), ('phlegra', 83.26), ('allegro', 82.29), ('careful', 81.39), ('alberta', 80.56), ('hagerty', 80.42), ('roberta', 80.21), ('coletta', 78.99), ('cruella', 76.53), ('hateful', 75.38), ('agreeth', 74.97), ('ackerly', 74.86), ('cruelty', 73.23), ('rozella', 73.19), ('caberat', 73.13), ('lateral', 72.78), ('taberah', 72.08), ('cheetal', 70.87), ('algebra', 70.66), ('eagerly', 68.33), ('allergy', 68.33), ('capello', 67.5), ('forearm', 66.81), ('purepac', 65.8), ('reueale', 64.17), ('fateful', 64.06), ('rolette', 62.88), ('allegra', 62.88), ('auberge', 62.81), ('categut', 62.4), ('marella', 62.29), ('repeale', 61.28), ('parella', 61.28), ('poverty', 60.97), ('utterly', 60.9)]
+
+Words guessed so far:
+	['indexes'].
+
+Next guess:
+	'alberto'
+
+-----------------------------
+
+Guess 2: 'alberto'
+Letters in correct positions:
+	[('b', 2), ('e', 3)]
+
+Letters in incorrect positions:
+	[('a', 0), ('r', 4), ('e', 5)]
+
+Letters to guess again:
+	['a', 'b', 'e', 'r']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'n', 'o', 's', 't', 'x']
+
+At this point:
+	12564, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('rebekah', 100.0), ('rebecca', 0.0)]
+
+Words guessed so far:
+	['indexes', 'alberto'].
+
+Next guess:
+	'rebekah'
+
+-----------------------------
+
+Guess 3: 'rebekah'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'rebekah'.
+
+-----------------------------

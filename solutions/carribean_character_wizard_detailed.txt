@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'carribean'
+Letters in correct positions:
+	[('c', 0), ('r', 3)]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 2), ('e', 6), ('a', 7)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r']
+
+Letters to not guess again:
+	['b', 'i', 'n']
+
+At this point:
+	9709, 99.93% of total words have been eliminated, and
+	7, 0.07% of total words remain possible.
+
+Potential next guesses:
+	[('chargedst', 100.0), ('charlotte', 73.66), ('cherkasov', 61.63), ('chartered', 26.54), ('characted', 26.54), ('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['carribean'].
+
+Next guess:
+	'chargedst'
+
+-----------------------------
+
+Guess 2: 'chargedst'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3)]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 2), ('e', 5), ('e', 6), ('a', 7), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'g', 'i', 'n', 's']
+
+At this point:
+	9713, 99.97% of total words have been eliminated, and
+	3, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('charlotte', 100.0), ('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['carribean', 'chargedst'].
+
+Next guess:
+	'charlotte'
+
+-----------------------------
+
+Guess 3: 'charlotte'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('t', 6)]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 2), ('e', 5), ('e', 6), ('a', 7), ('t', 7), ('t', 8), ('e', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'g', 'i', 'l', 'n', 'o', 's']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['carribean', 'chargedst', 'charlotte'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

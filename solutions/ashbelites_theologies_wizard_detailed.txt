@@ -1,0 +1,35 @@
+-----------------------------
+
+Guess 1: 'ashbelites'
+Letters in correct positions:
+	[('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('s', 1), ('h', 2), ('e', 4), ('l', 5), ('i', 6), ('t', 7)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 's', 't']
+
+Letters to not guess again:
+	['a', 'b']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 2: 'theologies'
+
+Congratulations! The Wordle has been solved in 2 guesses!
+There were still 4 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

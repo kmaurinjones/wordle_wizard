@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'designedly'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('s', 2), ('i', 3), ('g', 4), ('e', 6), ('l', 8)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 's']
+
+Letters to not guess again:
+	['d', 'n', 'y']
+
+At this point:
+	7188, 99.83% of total words have been eliminated, and
+	12, 0.17% of total words remain possible.
+
+Potential next guesses:
+	[('lightsaber', 100.0), ('glamorizes', 83.47), ('multistage', 67.25), ('margiulles', 65.68), ('burglaries', 60.23), ('lighthouse', 57.93), ('guerrillas', 49.09), ('fiberglass', 46.91), ('sagemiller', 44.92), ('apologizes', 40.92), ('theologies', 37.11), ('spielvogel', 0.0)]
+
+Words guessed so far:
+	['designedly'].
+
+Next guess:
+	'lightsaber'
+
+-----------------------------
+
+Guess 2: 'lightsaber'
+Letters in correct positions:
+	[('e', 8)]
+
+Letters in incorrect positions:
+	[('l', 0), ('e', 1), ('i', 1), ('s', 2), ('g', 2), ('i', 3), ('h', 3), ('g', 4), ('t', 4), ('s', 5), ('e', 6), ('l', 8)]
+
+Letters to guess again:
+	['e', 'g', 'h', 'i', 'l', 's', 't']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'n', 'r', 'y']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

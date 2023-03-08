@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'quakerism'
+Letters in correct positions:
+	[('a', 2)]
+
+Letters in incorrect positions:
+	[('e', 4), ('r', 5)]
+
+Letters to guess again:
+	['a', 'e', 'r']
+
+Letters to not guess again:
+	['i', 'k', 'm', 'q', 's', 'u']
+
+At this point:
+	9684, 99.67% of total words have been eliminated, and
+	32, 0.33% of total words remain possible.
+
+Potential next guesses:
+	[('charleton', 100.0), ('heartland', 73.8), ('charlotte', 65.56), ('charlayne', 49.16), ('dragooned', 46.2), ('heartedly', 45.47), ('clattered', 43.74), ('leathered', 39.36), ('learnedly', 36.04), ('chattered', 33.44), ('chartered', 33.44), ('characted', 33.44), ('flattered', 32.12), ('weatherly', 31.66), ('heartfelt', 27.47), ('fragrance', 25.6), ('feathered', 21.87), ('cranberry', 20.68), ('headboard', 20.36), ('deathward', 19.95), ('weathered', 19.95), ('reachable', 17.27), ('crabapple', 15.49), ('chatterer', 15.35), ('character', 15.35), ('heartache', 15.35), ('flatterer', 14.03), ('grappelly', 8.66), ('heartbeat', 6.2), ('ghallager', 4.28), ('rearrange', 1.59), ('graybeard', 0.0)]
+
+Words guessed so far:
+	['quakerism'].
+
+Next guess:
+	'charleton'
+
+-----------------------------
+
+Guess 2: 'charleton'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('t', 6)]
+
+Letters in incorrect positions:
+	[('e', 4), ('r', 5), ('e', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['i', 'k', 'l', 'm', 'n', 'o', 'q', 's', 'u']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('characted', 100.0), ('character', 0.0)]
+
+Words guessed so far:
+	['quakerism', 'charleton'].
+
+Next guess:
+	'characted'
+
+-----------------------------
+
+Guess 3: 'characted'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('a', 4), ('c', 5), ('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('e', 4), ('r', 5), ('e', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'k', 'l', 'm', 'n', 'o', 'q', 's', 'u']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

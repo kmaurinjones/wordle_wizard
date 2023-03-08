@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'motherless'
+Letters in correct positions:
+	[('s', 9)]
+
+Letters in incorrect positions:
+	[('o', 1), ('t', 2), ('h', 3), ('e', 4), ('l', 6), ('e', 7), ('s', 8)]
+
+Letters to guess again:
+	['e', 'h', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['m', 'r']
+
+At this point:
+	7191, 99.88% of total words have been eliminated, and
+	9, 0.12% of total words remain possible.
+
+Potential next guesses:
+	[('hailstones', 100.0), ('shilonites', 69.32), ('theophilus', 62.14), ('theologies', 48.43), ('chocolates', 47.41), ('telephones', 43.66), ('bedclothes', 39.05), ('spoutholes', 25.21), ('shotshells', 0.0)]
+
+Words guessed so far:
+	['motherless'].
+
+Next guess:
+	'hailstones'
+
+-----------------------------
+
+Guess 2: 'hailstones'
+Letters in correct positions:
+	[('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('h', 0), ('o', 1), ('t', 2), ('i', 2), ('h', 3), ('l', 3), ('e', 4), ('s', 4), ('t', 5), ('l', 6), ('o', 6), ('e', 7), ('s', 8)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'm', 'n', 'r']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'ingannato'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 3), ('a', 6), ('t', 7)]
+
+Letters to guess again:
+	['a', 't']
+
+Letters to not guess again:
+	['g', 'i', 'n', 'o']
+
+At this point:
+	9493, 97.7% of total words have been eliminated, and
+	223, 2.3% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('marchedst', 100.0), ('declarest', 98.62), ('masterful', 97.4), ('adultress', 97.03), ('bucharest', 95.82), ('mcalester', 95.14), ('plastered', 94.8), ('trackless', 90.11), ('austerely', 89.6), ('mustached', 88.7), ('patrasche', 88.25), ('astraddle', 87.57), ('awestruck', 87.51), ('euphrates', 86.66), ('fractures', 85.98), ('laureates', 85.82), ('ulcerated', 85.33), ('heartless', 84.68), ('hartselle', 84.68), ('latherers', 84.68), ('harvested', 84.26), ('mercyseat', 84.23), ('cathedral', 84.2), ('scattered', 83.92), ('descartes', 83.92), ('castrated', 83.92), ('watershed', 83.87), ('plasterer', 83.58), ('depravest', 83.16), ('crewmates', 83.1), ('matchless', 82.74), ('saturated', 82.34), ('ballestre', 81.72), ('alabaster', 81.72), ('shattered', 81.21), ('searchest', 81.01), ('waterbeds', 80.9), ('amsterdam', 80.64), ('stammered', 80.64), ('desmarest', 80.64)]
+
+Words guessed so far:
+	['ingannato'].
+
+Next guess:
+	'marchedst'
+
+-----------------------------
+
+Guess 2: 'marchedst'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 1), ('r', 2), ('a', 3), ('c', 3), ('h', 4), ('e', 5), ('a', 6), ('t', 7), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'm', 'n', 'o', 's']
+
+At this point:
+	9711, 99.95% of total words have been eliminated, and
+	5, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('petruchka', 100.0), ('archetype', 56.91), ('charecter', 0.0), ('heartache', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['ingannato', 'marchedst'].
+
+Next guess:
+	'petruchka'
+
+-----------------------------
+
+Guess 3: 'petruchka'
+Letters in correct positions:
+	[('r', 3), ('c', 5)]
+
+Letters in incorrect positions:
+	[('a', 1), ('e', 1), ('r', 2), ('t', 2), ('a', 3), ('c', 3), ('h', 4), ('e', 5), ('a', 6), ('h', 6), ('t', 7), ('t', 8), ('a', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'g', 'i', 'k', 'm', 'n', 'o', 'p', 's', 'u']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['ingannato', 'marchedst', 'petruchka'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

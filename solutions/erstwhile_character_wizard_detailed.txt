@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'erstwhile'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('r', 1), ('t', 3), ('h', 5), ('e', 8)]
+
+Letters to guess again:
+	['e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['i', 'l', 's', 'w']
+
+At this point:
+	9636, 99.18% of total words have been eliminated, and
+	80, 0.82% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('pardoneth', 100.0), ('uncharted', 95.21), ('parchment', 86.7), ('hammerton', 83.99), ('hovertank', 81.02), ('abhorrent', 80.39), ('unearthed', 78.7), ('godfather', 75.43), ('manhunter', 73.49), ('bernhardt', 72.55), ('todhunter', 70.35), ('cutherton', 70.06), ('darkeneth', 68.61), ('pondereth', 67.01), ('bechorath', 64.93), ('favoureth', 64.85), ('threatned', 64.51), ('hardeneth', 64.51), ('thereupon', 64.38), ('theocracy', 62.6), ('hereabout', 62.56), ('abernathy', 61.41), ('petruchka', 61.33), ('reckoneth', 59.97), ('homefront', 56.71), ('dougherty', 56.54), ('dethroned', 56.16), ('approveth', 55.78), ('bethharan', 55.74), ('honoureth', 53.54), ('thereunto', 53.54), ('bethgader', 53.03), ('ratcheted', 49.05), ('chartered', 49.05), ('characted', 49.05), ('abhorreth', 48.37), ('godmother', 48.28), ('bethhoron', 47.4), ('thundered', 45.7), ('hundredth', 45.7)]
+
+Words guessed so far:
+	['erstwhile'].
+
+Next guess:
+	'pardoneth'
+
+-----------------------------
+
+Guess 2: 'pardoneth'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('r', 1), ('a', 1), ('r', 2), ('t', 3), ('h', 5), ('e', 6), ('t', 7), ('e', 8), ('h', 8)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'n', 'o', 'p', 's', 'w']
+
+At this point:
+	9711, 99.95% of total words have been eliminated, and
+	5, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('thackeray', 100.0), ('charecter', 46.53), ('character', 46.53), ('hexameter', 25.23), ('bethabara', 0.0)]
+
+Words guessed so far:
+	['erstwhile', 'pardoneth'].
+
+Next guess:
+	'thackeray'
+
+-----------------------------
+
+Guess 3: 'thackeray'
+Letters in correct positions:
+	[('h', 1), ('a', 2)]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 0), ('r', 1), ('a', 1), ('r', 2), ('t', 3), ('c', 3), ('h', 5), ('e', 5), ('e', 6), ('r', 6), ('t', 7), ('a', 7), ('e', 8), ('h', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'k', 'l', 'n', 'o', 'p', 's', 'w', 'y']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['erstwhile', 'pardoneth', 'thackeray'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 4: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('e', 0), ('t', 0), ('r', 1), ('a', 1), ('r', 2), ('t', 3), ('c', 3), ('e', 4), ('h', 5), ('e', 5), ('e', 6), ('r', 6), ('t', 7), ('a', 7), ('e', 8), ('h', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'k', 'l', 'n', 'o', 'p', 's', 'w', 'y']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'jehoiarib'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 1), ('h', 2), ('a', 5), ('r', 6)]
+
+Letters to guess again:
+	['a', 'e', 'h', 'r']
+
+Letters to not guess again:
+	['b', 'i', 'j', 'o']
+
+At this point:
+	9621, 99.02% of total words have been eliminated, and
+	95, 0.98% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('stauncher', 100.0), ('launchers', 94.12), ('slaughter', 86.89), ('snatchers', 86.74), ('chargedst', 84.19), ('uncharted', 83.84), ('marchedst', 83.4), ('earthsman', 82.13), ('daughters', 81.97), ('unearthly', 78.55), ('parchment', 75.85), ('answereth', 74.98), ('scratched', 72.48), ('enlargeth', 71.68), ('threatens', 71.21), ('sharpened', 70.61), ('trenchard', 70.57), ('harangues', 69.7), ('uncharged', 69.02), ('unearthed', 68.35), ('spreadeth', 67.16), ('patrasche', 66.88), ('preachest', 66.88), ('archelaus', 64.14), ('manhunter', 63.46), ('hartselle', 61.87), ('latherers', 61.87), ('charmless', 61.76), ('harvested', 61.28), ('watershed', 60.72), ('archangel', 60.64), ('harshened', 60.44), ('harnessed', 60.44), ('darkeneth', 58.9), ('wandereth', 58.82), ('archuleta', 58.74), ('sharedata', 56.99), ('drachmaes', 56.83), ('scratches', 56.71), ('chracters', 56.71)]
+
+Words guessed so far:
+	['jehoiarib'].
+
+Next guess:
+	'stauncher'
+
+-----------------------------
+
+Guess 2: 'stauncher'
+Letters in correct positions:
+	[('a', 2), ('c', 5), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('e', 1), ('t', 1), ('h', 2), ('a', 5), ('r', 6), ('h', 6)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'i', 'j', 'n', 'o', 's', 'u']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['jehoiarib', 'stauncher'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

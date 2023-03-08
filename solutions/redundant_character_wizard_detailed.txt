@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'redundant'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('r', 0), ('e', 1), ('a', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'n', 'u']
+
+At this point:
+	9531, 98.1% of total words have been eliminated, and
+	185, 1.9% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('mcalister', 100.0), ('particles', 99.24), ('factories', 96.93), ('aristotle', 96.69), ('tailoress', 96.69), ('korahites', 91.56), ('moviestar', 91.24), ('hairstyle', 90.6), ('chapiters', 90.28), ('atomizers', 88.37), ('bachrites', 87.61), ('sosipater', 86.18), ('favorites', 85.7), ('favorties', 85.7), ('tsarevich', 84.39), ('pilasters', 83.71), ('baltimore', 83.15), ('liberates', 81.04), ('stomacher', 80.41), ('strategic', 80.13), ('charities', 80.09), ('theatrics', 80.09), ('armistice', 79.29), ('frailties', 78.93), ('practices', 78.53), ('practises', 78.53), ('stairwell', 77.26), ('hagarites', 76.3), ('pharzites', 76.22), ('sawtimber', 75.03), ('therapies', 74.71), ('maelstrom', 73.84), ('artifices', 73.76), ('israelite', 73.52), ('whitakers', 72.12), ('thalbergs', 70.73), ('lightyear', 70.33), ('cottagers', 69.49), ('orchestra', 69.45), ('gravesite', 68.86)]
+
+Words guessed so far:
+	['redundant'].
+
+Next guess:
+	'mcalister'
+
+-----------------------------
+
+Guess 2: 'mcalister'
+Letters in correct positions:
+	[('a', 2), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('r', 0), ('e', 1), ('c', 1), ('a', 6), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'm', 'n', 's', 'u']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['redundant', 'mcalister'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

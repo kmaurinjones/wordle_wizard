@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'addresses'
+Letters in correct positions:
+	[('r', 3), ('e', 7)]
+
+Letters in incorrect positions:
+	[('a', 0), ('e', 4)]
+
+Letters to guess again:
+	['a', 'e', 'r']
+
+Letters to not guess again:
+	['d', 's']
+
+At this point:
+	9706, 99.9% of total words have been eliminated, and
+	10, 0.1% of total words remain possible.
+
+Potential next guesses:
+	[('patrolmen', 100.0), ('intrantem', 72.35), ('overtaken', 54.05), ('guarantee', 45.57), ('garryowen', 35.14), ('warrantee', 16.46), ('mccracken', 16.4), ('quarrymen', 16.3), ('character', 7.5), ('carryover', 0.0)]
+
+Words guessed so far:
+	['addresses'].
+
+Next guess:
+	'patrolmen'
+
+-----------------------------
+
+Guess 2: 'patrolmen'
+Letters in correct positions:
+	[('r', 3), ('e', 7)]
+
+Letters in incorrect positions:
+	[('a', 0), ('a', 1), ('t', 2), ('e', 4)]
+
+Letters to guess again:
+	['a', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'l', 'm', 'n', 'o', 'p', 's']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 3: 'character'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

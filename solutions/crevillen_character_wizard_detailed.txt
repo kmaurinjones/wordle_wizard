@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'crevillen'
+Letters in correct positions:
+	[('c', 0), ('e', 7)]
+
+Letters in incorrect positions:
+	[('r', 1), ('e', 2)]
+
+Letters to guess again:
+	['c', 'e', 'r']
+
+Letters to not guess again:
+	['i', 'l', 'n', 'v']
+
+At this point:
+	9694, 99.77% of total words have been eliminated, and
+	22, 0.23% of total words remain possible.
+
+Potential next guesses:
+	[('castrated', 100.0), ('curtseyed', 78.61), ('corrupted', 71.73), ('chuckster', 68.98), ('comported', 67.61), ('characted', 64.92), ('chartered', 64.92), ('chattered', 64.92), ('comforted', 59.35), ('camcorder', 57.63), ('chambered', 50.89), ('corrupter', 44.43), ('chatterer', 37.62), ('character', 37.62), ('charecter', 37.62), ('comforter', 32.05), ('corrected', 31.16), ('carcasses', 26.75), ('corkscrew', 26.27), ('cupbearer', 25.03), ('caretaker', 24.0), ('cypresses', 0.0)]
+
+Words guessed so far:
+	['crevillen'].
+
+Next guess:
+	'castrated'
+
+-----------------------------
+
+Guess 2: 'castrated'
+Letters in correct positions:
+	[('c', 0), ('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('r', 1), ('a', 1), ('e', 2), ('t', 3), ('r', 4), ('a', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'n', 's', 'v']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['crevillen', 'castrated'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 3: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('r', 1), ('a', 1), ('e', 2), ('t', 3), ('r', 4), ('e', 4), ('a', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'n', 's', 'v']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

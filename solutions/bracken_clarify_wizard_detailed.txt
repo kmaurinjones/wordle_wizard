@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'bracken'
+Letters in correct positions:
+	[('a', 2)]
+
+Letters in incorrect positions:
+	[('r', 1), ('c', 3)]
+
+Letters to guess again:
+	['a', 'c', 'r']
+
+Letters to not guess again:
+	['b', 'e', 'k', 'n']
+
+At this point:
+	12556, 99.92% of total words have been eliminated, and
+	10, 0.08% of total words remain possible.
+
+Potential next guesses:
+	[('chariot', 100.0), ('clamors', 99.39), ('clarity', 87.88), ('starchy', 73.01), ('scarify', 70.55), ('charity', 69.17), ('clamour', 64.8), ('clarify', 53.22), ('quadric', 46.86), ('charact', 0.0)]
+
+Words guessed so far:
+	['bracken'].
+
+Next guess:
+	'chariot'
+
+-----------------------------
+
+Guess 2: 'chariot'
+Letters in correct positions:
+	[('c', 0), ('a', 2), ('r', 3), ('i', 4)]
+
+Letters in incorrect positions:
+	[('r', 1), ('c', 3)]
+
+Letters to guess again:
+	['a', 'c', 'i', 'r']
+
+Letters to not guess again:
+	['b', 'e', 'h', 'k', 'n', 'o', 't']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'clarify'
+
+Next guess:
+	'clarify'
+
+-----------------------------
+
+Guess 3: 'clarify'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'clarify'.
+
+-----------------------------

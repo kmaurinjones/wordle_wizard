@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'cymbals'
+Guess 2: 'ericson'
+Guess 3: 'rustick'
+Guess 4: 'stritch'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'stritch'.
+
+-----------------------------

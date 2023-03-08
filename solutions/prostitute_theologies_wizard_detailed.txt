@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'prostitute'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('o', 2), ('s', 3), ('t', 4), ('i', 5), ('t', 6), ('t', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'i', 'o', 's', 't']
+
+Letters to not guess again:
+	['p', 'r', 'u']
+
+At this point:
+	7140, 99.17% of total words have been eliminated, and
+	60, 0.83% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('actionless', 100.0), ('wainscoted', 95.26), ('hailstones', 92.78), ('kadmonites', 88.14), ('antemosaic', 87.16), ('hanochites', 86.95), ('elevations', 84.58), ('theodosian', 84.53), ('antibodies', 80.04), ('actionfest', 79.42), ('affections', 79.42), ('dislocated', 77.72), ('deviations', 76.33), ('anatomizes', 67.87), ('gestations', 66.43), ('emanations', 66.01), ('metabolism', 61.47), ('sebastiano', 61.32), ('selections', 61.22), ('defections', 59.36), ('oscillates', 59.0), ('socialites', 59.0), ('ostensibly', 56.63), ('milestones', 54.2), ('millstones', 54.2), ('motionless', 54.2), ('shilonites', 54.0), ('disconnect', 52.97), ('attentions', 51.88), ('omniscient', 48.38), ('insolently', 47.14), ('digestions', 46.36), ('montedison', 45.95), ('objections', 44.56), ('ashdodites', 43.53), ('sextillion', 41.16), ('infections', 40.64), ('immodestly', 39.04), ('gibeonites', 37.13), ('injections', 35.07)]
+
+Words guessed so far:
+	['prostitute'].
+
+Next guess:
+	'actionless'
+
+-----------------------------
+
+Guess 2: 'actionless'
+Letters in correct positions:
+	[('s', 9)]
+
+Letters in incorrect positions:
+	[('o', 2), ('t', 2), ('s', 3), ('i', 3), ('t', 4), ('o', 4), ('i', 5), ('t', 6), ('l', 6), ('e', 7), ('t', 8), ('s', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'n', 'p', 'r', 'u']
+
+At this point:
+	7198, 99.97% of total words have been eliminated, and
+	2, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('theologies', 100.0), ('telemovies', 0.0)]
+
+Words guessed so far:
+	['prostitute', 'actionless'].
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

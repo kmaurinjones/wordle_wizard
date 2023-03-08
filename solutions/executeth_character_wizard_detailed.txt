@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'executeth'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 2), ('c', 3), ('t', 5), ('e', 6), ('t', 7), ('h', 8)]
+
+Letters to guess again:
+	['c', 'e', 'h', 't']
+
+Letters to not guess again:
+	['u', 'x']
+
+At this point:
+	9650, 99.32% of total words have been eliminated, and
+	66, 0.68% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('mechanist', 100.0), ('charleton', 96.02), ('bachrites', 95.32), ('hesitancy', 93.87), ('alchemist', 89.72), ('hesitance', 88.01), ('cenotaphs', 87.53), ('lethargic', 87.53), ('stomacher', 87.4), ('catherine', 84.95), ('catharine', 84.95), ('detaching', 83.11), ('decathlon', 81.27), ('chargedst', 80.18), ('ostriches', 78.42), ('technical', 75.58), ('orchestra', 75.36), ('heretical', 74.62), ('chastised', 72.3), ('yachtsmen', 68.75), ('chastened', 68.23), ('scratched', 67.26), ('schematic', 66.91), ('catechism', 66.91), ('pastiches', 66.13), ('ghostface', 62.14), ('patrasche', 61.09), ('splotched', 60.48), ('synthetic', 59.78), ('hysterics', 58.82), ('atheistic', 54.92), ('aesthetic', 54.92), ('cathedral', 54.84), ('prophetic', 54.44), ('scotchmen', 54.22), ('hemolytic', 51.77), ('hilprecht', 51.73), ('scratcher', 49.89), ('scratches', 49.89), ('tallchief', 48.45)]
+
+Words guessed so far:
+	['executeth'].
+
+Next guess:
+	'mechanist'
+
+-----------------------------
+
+Guess 2: 'mechanist'
+Letters in correct positions:
+	[('a', 4)]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 1), ('e', 2), ('c', 2), ('c', 3), ('h', 3), ('t', 5), ('e', 6), ('t', 7), ('h', 8), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 't']
+
+Letters to not guess again:
+	['i', 'm', 'n', 's', 'u', 'x']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('characted', 100.0), ('character', 0.0)]
+
+Words guessed so far:
+	['executeth', 'mechanist'].
+
+Next guess:
+	'characted'
+
+-----------------------------
+
+Guess 3: 'characted'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('a', 4), ('c', 5), ('t', 6), ('e', 7)]
+
+Letters in incorrect positions:
+	[('e', 0), ('e', 1), ('e', 2), ('c', 2), ('c', 3), ('h', 3), ('t', 5), ('e', 6), ('t', 7), ('h', 8), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'm', 'n', 's', 'u', 'x']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

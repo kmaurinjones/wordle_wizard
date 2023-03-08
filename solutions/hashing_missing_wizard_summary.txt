@@ -1,0 +1,15 @@
+-----------------------------
+
+Guess 1: 'hashing'
+Guess 2: 'resting'
+Guess 3: 'gosling'
+Guess 4: 'busying'
+Guess 5: 'disking'
+Guess 6: 'missing'
+
+Congratulations! The Wordle has been solved in 6 guesses!
+Lucky! It was the last guess.
+
+The target word was 'missing'.
+
+-----------------------------

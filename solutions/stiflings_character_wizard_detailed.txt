@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'stiflings'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 1)]
+
+Letters to guess again:
+	['t']
+
+Letters to not guess again:
+	['f', 'g', 'i', 'l', 'n', 's']
+
+At this point:
+	9517, 97.95% of total words have been eliminated, and
+	199, 2.05% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('accoutred', 100.0), ('autocoder', 100.0), ('motorcade', 98.05), ('motorhead', 94.94), ('overacted', 92.67), ('bechorath', 91.99), ('dreamboat', 91.53), ('theocracy', 90.2), ('hereabout', 90.17), ('petruchka', 89.23), ('decorated', 89.16), ('doctorate', 89.16), ('detractor', 89.16), ('portrayed', 89.16), ('predatory', 89.16), ('decorator', 89.16), ('ermatched', 88.74), ('parachute', 86.11), ('eachother', 85.82), ('moderated', 85.4), ('moderator', 85.4), ('rotterdam', 85.4), ('temporary', 85.17), ('earthworm', 85.11), ('approveth', 84.98), ('procreate', 84.59), ('corporate', 84.59), ('cooperate', 84.59), ('corrupted', 83.03), ('erwatched', 82.87), ('rewatched', 82.87), ('compacted', 82.54), ('comported', 81.08), ('overtaxed', 80.79), ('combatted', 80.4), ('overrated', 80.01), ('characted', 79.82), ('ratcheted', 79.82), ('chartered', 79.82), ('chattered', 79.82)]
+
+Words guessed so far:
+	['stiflings'].
+
+Next guess:
+	'autocoder'
+
+-----------------------------
+
+Guess 2: 'autocoder'
+Letters in correct positions:
+	[('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 0), ('t', 1), ('t', 2), ('c', 4)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['d', 'f', 'g', 'i', 'l', 'n', 'o', 's', 'u']
+
+At this point:
+	9710, 99.94% of total words have been eliminated, and
+	6, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('backwater', 100.0), ('chatterer', 69.96), ('character', 69.96), ('charecter', 69.96), ('racketeer', 0.0), ('caretaker', 0.0)]
+
+Words guessed so far:
+	['stiflings', 'autocoder'].
+
+Next guess:
+	'backwater'
+
+-----------------------------
+
+Guess 3: 'backwater'
+Letters in correct positions:
+	[('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 0), ('t', 1), ('a', 1), ('t', 2), ('c', 2), ('c', 4), ('a', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'f', 'g', 'i', 'k', 'l', 'n', 'o', 's', 'u', 'w']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('character', 0.0), ('charecter', 0.0)]
+
+Words guessed so far:
+	['stiflings', 'autocoder', 'backwater'].
+
+Next guess:
+	'charecter'
+
+-----------------------------
+
+Guess 4: 'charecter'
+Letters in correct positions:
+	[('c', 0), ('h', 1), ('a', 2), ('r', 3), ('c', 5), ('t', 6), ('e', 7), ('r', 8)]
+
+Letters in incorrect positions:
+	[('a', 0), ('t', 1), ('a', 1), ('t', 2), ('c', 2), ('c', 4), ('e', 4), ('a', 5)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['b', 'd', 'f', 'g', 'i', 'k', 'l', 'n', 'o', 's', 'u', 'w']
+
+At this point:
+	9715, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'character'
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 5: 'character'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

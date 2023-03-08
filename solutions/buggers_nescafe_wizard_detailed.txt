@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'buggers'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('e', 4), ('s', 6)]
+
+Letters to guess again:
+	['e', 's']
+
+Letters to not guess again:
+	['b', 'g', 'r', 'u']
+
+At this point:
+	12044, 95.85% of total words have been eliminated, and
+	522, 4.15% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('isolate', 100.0), ('stained', 98.33), ('sainted', 98.33), ('sodaine', 97.07), ('seminal', 92.42), ('elastic', 92.23), ('slanted', 91.66), ('spaniel', 91.36), ('incased', 89.34), ('elysian', 87.36), ('ainsley', 87.36), ('despina', 85.73), ('salmone', 85.34), ('anselmo', 85.34), ('section', 84.93), ('evasion', 84.66), ('espanol', 84.28), ('aimedst', 84.13), ('inclose', 84.09), ('eshtaol', 84.01), ('descant', 83.52), ('scanted', 83.52), ('moisten', 82.45), ('sanitie', 82.26), ('palsied', 82.19), ('josiane', 82.15), ('spahnie', 82.07), ('yedisan', 81.77), ('apostle', 81.58), ('stanley', 81.54), ('alstyne', 81.54), ('sealine', 81.39), ('pistone', 81.35), ('epsilon', 80.51), ('aseptic', 80.47), ('atheism', 80.43), ('hostile', 80.28), ('chasten', 79.82), ('masoned', 79.75), ('olenska', 79.63)]
+
+Words guessed so far:
+	['buggers'].
+
+Next guess:
+	'isolate'
+
+-----------------------------
+
+Guess 2: 'isolate'
+Letters in correct positions:
+	[('a', 4), ('e', 6)]
+
+Letters in incorrect positions:
+	[('s', 1), ('e', 4), ('s', 6)]
+
+Letters to guess again:
+	['a', 'e', 's']
+
+Letters to not guess again:
+	['b', 'g', 'i', 'l', 'o', 'r', 't', 'u']
+
+At this point:
+	12560, 99.95% of total words have been eliminated, and
+	6, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('mcshane', 100.0), ('nescafe', 65.38), ('cascade', 37.68), ('decease', 37.68), ('skywave', 18.29), ('appease', 0.0)]
+
+Words guessed so far:
+	['buggers', 'isolate'].
+
+Next guess:
+	'mcshane'
+
+-----------------------------
+
+Guess 3: 'mcshane'
+Letters in correct positions:
+	[('s', 2), ('a', 4), ('e', 6)]
+
+Letters in incorrect positions:
+	[('s', 1), ('c', 1), ('e', 4), ('n', 5), ('s', 6)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'n', 's']
+
+Letters to not guess again:
+	['b', 'g', 'h', 'i', 'l', 'm', 'o', 'r', 't', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'nescafe'
+
+Next guess:
+	'nescafe'
+
+-----------------------------
+
+Guess 4: 'nescafe'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'nescafe'.
+
+-----------------------------

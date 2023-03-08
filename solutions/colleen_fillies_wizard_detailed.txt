@@ -1,0 +1,119 @@
+-----------------------------
+
+Guess 1: 'colleen'
+Letters in correct positions:
+	[('l', 2), ('l', 3), ('e', 5)]
+
+Letters in incorrect positions:
+	[('e', 4)]
+
+Letters to guess again:
+	['e', 'l']
+
+Letters to not guess again:
+	['c', 'n', 'o']
+
+At this point:
+	12543, 99.82% of total words have been eliminated, and
+	23, 0.18% of total words remain possible.
+
+Potential next guesses:
+	[('rallies', 100.0), ('tallies', 92.51), ('sallied', 83.67), ('rallied', 80.6), ('dallier', 80.6), ('tallied', 73.11), ('fallies', 69.01), ('sallies', 61.67), ('gallied', 58.24), ('sillier', 56.11), ('gullies', 51.69), ('bullies', 47.37), ('dallied', 42.33), ('hillyer', 39.83), ('gellies', 33.75), ('bellies', 29.49), ('bullied', 27.98), ('fillies', 25.12), ('jellies', 19.4), ('bellied', 10.09), ('millieu', 9.41), ('fulller', 1.2), ('jellied', 0.0)]
+
+Words guessed so far:
+	['colleen'].
+
+Next guess:
+	'rallies'
+
+-----------------------------
+
+Guess 2: 'rallies'
+Letters in correct positions:
+	[('l', 2), ('l', 3), ('i', 4), ('e', 5), ('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 4)]
+
+Letters to guess again:
+	['e', 'i', 'l', 's']
+
+Letters to not guess again:
+	['a', 'c', 'n', 'o', 'r']
+
+At this point:
+	12560, 99.95% of total words have been eliminated, and
+	6, 0.05% of total words remain possible.
+
+Potential next guesses:
+	[('gullies', 100.0), ('bullies', 86.63), ('gellies', 44.44), ('bellies', 31.24), ('fillies', 17.71), ('jellies', 0.0)]
+
+Words guessed so far:
+	['colleen', 'rallies'].
+
+Next guess:
+	'gullies'
+
+-----------------------------
+
+Guess 3: 'gullies'
+Letters in correct positions:
+	[('l', 2), ('l', 3), ('i', 4), ('e', 5), ('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 4)]
+
+Letters to guess again:
+	['e', 'i', 'l', 's']
+
+Letters to not guess again:
+	['a', 'c', 'g', 'n', 'o', 'r', 'u']
+
+At this point:
+	12563, 99.98% of total words have been eliminated, and
+	3, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('bellies', 100.0), ('fillies', 56.7), ('jellies', 0.0)]
+
+Words guessed so far:
+	['colleen', 'rallies', 'gullies'].
+
+Next guess:
+	'bellies'
+
+-----------------------------
+
+Guess 4: 'bellies'
+Letters in correct positions:
+	[('l', 2), ('l', 3), ('i', 4), ('e', 5), ('s', 6)]
+
+Letters in incorrect positions:
+	[('e', 1), ('e', 4)]
+
+Letters to guess again:
+	['e', 'i', 'l', 's']
+
+Letters to not guess again:
+	['a', 'b', 'c', 'g', 'n', 'o', 'r', 'u']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'fillies'
+
+Next guess:
+	'fillies'
+
+-----------------------------
+
+Guess 5: 'fillies'
+
+Congratulations! The Wordle has been solved in 5 guesses!
+There were still 1 guesses remaining.
+
+The target word was 'fillies'.
+
+-----------------------------

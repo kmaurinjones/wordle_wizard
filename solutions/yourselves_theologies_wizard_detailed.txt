@@ -1,0 +1,66 @@
+-----------------------------
+
+Guess 1: 'yourselves'
+Letters in correct positions:
+	[('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('o', 1), ('s', 4), ('e', 5), ('l', 6)]
+
+Letters to guess again:
+	['e', 'l', 'o', 's']
+
+Letters to not guess again:
+	['r', 'u', 'v', 'y']
+
+At this point:
+	7181, 99.74% of total words have been eliminated, and
+	19, 0.26% of total words remain possible.
+
+Potential next guesses:
+	[('flamingoes', 100.0), ('defoliates', 85.69), ('oscillates', 81.44), ('shilonites', 76.08), ('amphobiles', 73.92), ('stockpiles', 58.78), ('floodgates', 51.33), ('apologizes', 51.27), ('bloodlines', 51.05), ('theologies', 47.79), ('chocolates', 46.41), ('spoilables', 43.81), ('telephones', 41.33), ('allowances', 38.84), ('bedclothes', 35.08), ('demolishes', 27.07), ('snowflakes', 26.69), ('ideologies', 12.6), ('empedocles', 0.0)]
+
+Words guessed so far:
+	['yourselves'].
+
+Next guess:
+	'flamingoes'
+
+-----------------------------
+
+Guess 2: 'flamingoes'
+Letters in correct positions:
+	[('g', 6), ('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('o', 1), ('l', 1), ('s', 4), ('i', 4), ('e', 5), ('l', 6), ('o', 7)]
+
+Letters to guess again:
+	['e', 'g', 'i', 'l', 'o', 's']
+
+Letters to not guess again:
+	['a', 'f', 'm', 'n', 'r', 'u', 'v', 'y']
+
+At this point:
+	7198, 99.97% of total words have been eliminated, and
+	2, 0.03% of total words remain possible.
+
+Potential next guesses:
+	[('theologies', 100.0), ('ideologies', 0.0)]
+
+Words guessed so far:
+	['yourselves', 'flamingoes'].
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

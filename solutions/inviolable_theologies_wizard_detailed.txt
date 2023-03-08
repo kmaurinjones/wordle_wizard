@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'inviolable'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('i', 0), ('i', 3), ('o', 4), ('l', 5), ('l', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'i', 'l', 'o']
+
+Letters to not guess again:
+	['a', 'b', 'n', 'v']
+
+At this point:
+	7172, 99.61% of total words have been eliminated, and
+	28, 0.39% of total words remain possible.
+
+Potential next guesses:
+	[('flourished', 100.0), ('kilometres', 98.43), ('kilometers', 98.43), ('completist', 93.94), ('poledouris', 93.73), ('theophilus', 90.28), ('pitchpoler', 88.24), ('stockpiles', 83.12), ('outfielder', 81.66), ('flourishes', 81.03), ('telescopic', 79.62), ('middlemost', 77.12), ('eulogizers', 77.06), ('glorifieth', 73.67), ('theologies', 72.73), ('pitchpoled', 70.43), ('horseflies', 63.11), ('complexity', 59.98), ('demolished', 53.13), ('demolishes', 53.13), ('rottweiler', 41.85), ('dispeopled', 39.08), ('pedophilic', 32.34), ('grillework', 22.05), ('rollergirl', 14.99), ('oleophilic', 13.38), ('kieslowski', 12.8), ('likelihood', 0.0)]
+
+Words guessed so far:
+	['inviolable'].
+
+Next guess:
+	'flourished'
+
+-----------------------------
+
+Guess 2: 'flourished'
+Letters in correct positions:
+	[('e', 8)]
+
+Letters in incorrect positions:
+	[('i', 0), ('l', 1), ('o', 2), ('i', 3), ('o', 4), ('l', 5), ('i', 5), ('s', 6), ('h', 7), ('l', 8), ('e', 9)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 'o', 's']
+
+Letters to not guess again:
+	['a', 'b', 'd', 'f', 'n', 'r', 'u', 'v']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

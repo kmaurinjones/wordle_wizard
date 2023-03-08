@@ -10,8 +10,7 @@ english_alphabet = "abcdefghijklmnopqrstuvwxyz"
 def get_letter_counts(letters: str, word_list: list, sort: str = "descending"):
     """
     Given a passed str of letters and a list of words, produces a frequency distribution of all letters
-    
-    ------
+
     Parameters:
     ------
     `letters`: str
@@ -21,7 +20,6 @@ def get_letter_counts(letters: str, word_list: list, sort: str = "descending"):
     `sort`: str
         if either "descending" or "ascending" are passed, returned list of tuples will be sorted accoringly, else returned dictionary will be unsorted
 
-    ------
     Returns:
     ------
     `letters_counts_dict`: dict
@@ -1328,7 +1326,7 @@ def compare_wordle(word_list: list, max_guesses: int = None, guess_list: list = 
 
     if return_stats == True:
         return stats_master
-    
+
 def convert_row(df, row):
     """
     Converts row of passed pandas dataFrame object into usable inputs for `compare_wordle()` function
@@ -1352,13 +1350,17 @@ def convert_row(df, row):
     `player`: str
         name of player of passed iteration of the puzzle
     """
+    
+    df.fillna("none", inplace = True)
+    df.loc[row, :].str.lower()
 
     list_1 = df.loc[row, :].tolist()
+    # print(list_1)
     
-    player = list_1[-1]
-    del list_1[-1]
-    target = list_1[-1]
-    del list_1[-1]
+    player = list_1[0]
+    del list_1[0]
+    target = list_1[0]
+    del list_1[0]
 
     to_delete = []
     for i, word in enumerate(list_1):
@@ -1371,6 +1373,75 @@ def convert_row(df, row):
         del list_1[pos]
 
     guess_list = list_1
+    
+    lower_player = player.lower()
+    lower_target = target.lower()
+    lower_guess_list = [word.lower() for word in guess_list]
 
-    return (guess_list, target, player)
+    return (lower_player, lower_target, lower_guess_list)
 
+def create_compared_df(player_df, to_csv: bool = False, show_shapes: bool = False):
+    """
+    Creates master df of player wordle scores compared to how wordle_wizard would perform on the same puzzles
+
+    Parameters:
+    -----
+    `player_df`: Pandas dataFrame object
+        df of player scores of wordle puzzles
+    `to_csv`: bool
+        If True, writes returned df to csv
+    `show_shapes`: bool
+        If True, prints shape of new df before and after deleting duplicate rows (created by wordle_wizard running the same puzzles multiple times)
+    
+    Returns:
+    -----
+    `df_master`: Pandas dataFrame object
+        df of player scores and wordle_wizard scores of wordle puzzles
+    """
+
+    stats_master = {}
+    excepts = []
+    for row in player_df.index:
+        player = convert_row(player_df, row)[0]
+        target_word = convert_row(player_df, row)[1]
+        guess_list = convert_row(player_df, row)[2]
+        try:
+            complete = compare_wordle(word_list = official_words, max_guesses = 6, 
+                        guess_list = guess_list, player = player, target = target_word,
+                        verbose = True, return_stats = True, record = False)
+            for metric, results in complete.items():
+                if metric in stats_master:
+                    for result in results:
+                        stats_master[metric].append(result)
+                else:
+                    stats_master[metric] = []
+                    for result in results:
+                        stats_master[metric].append(result)
+        except:
+            AttributeError
+            excepts.append(guess_list)
+
+    df_master = pd.DataFrame(stats_master)
+    # print(df_master.columns.tolist())
+
+    # Re-organizing columns to a more logical order (for viewing)
+    df_master = df_master[['first_guess', 'target_word', 'player', 'num_guesses', 'expected_guesses', 'luck', 'first_guess_vowels', 'first_guess_consonants',
+                        'target_vowels', 'target_consonants', 'first_guess_entropy', 'target_entropy',
+                        'target_guessed', 'mid_guesses_avg_vows', 'mid_guesses_avg_cons', 'avg_perf_letters',
+                        'avg_wrong_pos_letters', 'avg_wrong_letters', 'avg_remaining', 'avg_intermediate_guess_entropy',
+                        'valid_success']]
+
+    # print(excepts)
+    if show_shapes == True:
+        print(df_master.shape) # check shape before deleting dups
+
+    # Delete duplicate rows (some created by process)
+    df_master.drop_duplicates(inplace = True)
+    
+    if to_csv == True:
+        df_master.to_csv('compared_data/players_compared.csv') # write new data to csv
+    
+    if show_shapes == True:
+        print(df_master.shape) # check shape after deleting dups
+    
+    return df_master

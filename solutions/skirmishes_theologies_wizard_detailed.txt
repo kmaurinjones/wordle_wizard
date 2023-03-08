@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'skirmishes'
+Letters in correct positions:
+	[('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('s', 0), ('i', 2), ('i', 5), ('s', 6), ('h', 7)]
+
+Letters to guess again:
+	['e', 'h', 'i', 's']
+
+Letters to not guess again:
+	['k', 'm', 'r']
+
+At this point:
+	7184, 99.78% of total words have been eliminated, and
+	16, 0.22% of total words remain possible.
+
+Potential next guesses:
+	[('hanochites', 100.0), ('jachinites', 75.65), ('hypnotises', 68.77), ('ashdodites', 64.89), ('zephonites', 64.51), ('allghanies', 61.01), ('punchlines', 60.76), ('ashbelites', 54.17), ('theologies', 52.0), ('jashubites', 47.37), ('cinephiles', 46.46), ('gazathites', 37.99), ('phosphines', 32.61), ('pelethites', 26.65), ('housewives', 9.8), ('fetishizes', 0.0)]
+
+Words guessed so far:
+	['skirmishes'].
+
+Next guess:
+	'hanochites'
+
+-----------------------------
+
+Guess 2: 'hanochites'
+Letters in correct positions:
+	[('o', 3), ('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('s', 0), ('h', 0), ('i', 2), ('i', 5), ('h', 5), ('s', 6), ('i', 6), ('h', 7), ('t', 7)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'c', 'k', 'm', 'n', 'r']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

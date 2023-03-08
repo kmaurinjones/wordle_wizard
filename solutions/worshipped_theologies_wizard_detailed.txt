@@ -1,0 +1,63 @@
+-----------------------------
+
+Guess 1: 'worshipped'
+Letters in correct positions:
+	[('e', 8)]
+
+Letters in incorrect positions:
+	[('o', 1), ('s', 3), ('h', 4), ('i', 5)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'o', 's']
+
+Letters to not guess again:
+	['d', 'p', 'r', 'w']
+
+At this point:
+	7196, 99.94% of total words have been eliminated, and
+	4, 0.06% of total words remain possible.
+
+Potential next guesses:
+	[('hailstones', 100.0), ('hanochites', 91.06), ('shilonites', 40.51), ('theologies', 0.0)]
+
+Words guessed so far:
+	['worshipped'].
+
+Next guess:
+	'hailstones'
+
+-----------------------------
+
+Guess 2: 'hailstones'
+Letters in correct positions:
+	[('e', 8), ('s', 9)]
+
+Letters in incorrect positions:
+	[('h', 0), ('o', 1), ('i', 2), ('s', 3), ('l', 3), ('h', 4), ('s', 4), ('i', 5), ('t', 5), ('o', 6)]
+
+Letters to guess again:
+	['e', 'h', 'i', 'l', 'o', 's', 't']
+
+Letters to not guess again:
+	['a', 'd', 'n', 'p', 'r', 'w']
+
+At this point:
+	7199, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'theologies'
+
+Next guess:
+	'theologies'
+
+-----------------------------
+
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------

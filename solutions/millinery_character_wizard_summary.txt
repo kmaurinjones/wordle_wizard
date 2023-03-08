@@ -1,0 +1,13 @@
+-----------------------------
+
+Guess 1: 'millinery'
+Guess 2: 'chargedst'
+Guess 3: 'charecter'
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

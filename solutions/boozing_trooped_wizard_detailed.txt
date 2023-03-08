@@ -1,0 +1,91 @@
+-----------------------------
+
+Guess 1: 'boozing'
+Letters in correct positions:
+	[('o', 2)]
+
+Letters in incorrect positions:
+	[('o', 1)]
+
+Letters to guess again:
+	['o']
+
+Letters to not guess again:
+	['b', 'g', 'i', 'n', 'z']
+
+At this point:
+	12339, 98.19% of total words have been eliminated, and
+	227, 1.81% of total words remain possible.
+
+The top 40 potential next guesses are::
+	[('aroused', 100.0), ('acourse', 97.66), ('apostle', 97.21), ('floater', 90.92), ('croakes', 90.5), ('adopter', 89.98), ('thoreau', 89.52), ('stormed', 89.31), ('leopard', 89.21), ('cholera', 89.1), ('chorale', 89.1), ('smolder', 88.51), ('trowels', 88.47), ('sported', 88.3), ('closure', 88.09), ('adorers', 87.95), ('smother', 85.92), ('troupes', 85.57), ('proteus', 85.57), ('spouter', 85.57), ('arouses', 85.23), ('cloakes', 84.7), ('frosted', 84.07), ('stomper', 83.65), ('scoured', 82.92), ('drovest', 82.54), ('clothes', 82.4), ('cloture', 80.96), ('chortle', 80.34), ('floated', 79.95), ('acolyte', 78.2), ('scouted', 77.89), ('croaked', 77.47), ('plowers', 76.95), ('shouted', 76.88), ('trouser', 76.42), ('shooter', 75.79), ('shorter', 75.79), ('prorate', 75.24), ('chorals', 75.1)]
+
+Words guessed so far:
+	['boozing'].
+
+Next guess:
+	'aroused'
+
+-----------------------------
+
+Guess 2: 'aroused'
+Letters in correct positions:
+	[('r', 1), ('o', 2), ('e', 5), ('d', 6)]
+
+Letters in incorrect positions:
+	[('o', 1)]
+
+Letters to guess again:
+	['d', 'e', 'o', 'r']
+
+Letters to not guess again:
+	['a', 'b', 'g', 'i', 'n', 's', 'u', 'z']
+
+At this point:
+	12552, 99.89% of total words have been eliminated, and
+	14, 0.11% of total words remain possible.
+
+Potential next guesses:
+	[('frothed', 100.0), ('prowled', 86.47), ('trooped', 74.19), ('cropped', 44.61), ('proceed', 44.61), ('trotted', 41.48), ('drooled', 38.72), ('crocked', 29.32), ('crooked', 29.32), ('crowded', 26.82), ('drooped', 0.0), ('prodded', 0.0), ('propped', 0.0), ('dropped', 0.0)]
+
+Words guessed so far:
+	['boozing', 'aroused'].
+
+Next guess:
+	'frothed'
+
+-----------------------------
+
+Guess 3: 'frothed'
+Letters in correct positions:
+	[('r', 1), ('o', 2), ('e', 5), ('d', 6)]
+
+Letters in incorrect positions:
+	[('o', 1), ('t', 3)]
+
+Letters to guess again:
+	['d', 'e', 'o', 'r', 't']
+
+Letters to not guess again:
+	['a', 'b', 'f', 'g', 'h', 'i', 'n', 's', 'u', 'z']
+
+At this point:
+	12565, 99.99% of total words have been eliminated, and
+	1, 0.01% of total words remain possible.
+
+The only remaining possible word is:
+	'trooped'
+
+Next guess:
+	'trooped'
+
+-----------------------------
+
+Guess 4: 'trooped'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'trooped'.
+
+-----------------------------

@@ -1,0 +1,94 @@
+-----------------------------
+
+Guess 1: 'southland'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('t', 3), ('h', 4), ('a', 6)]
+
+Letters to guess again:
+	['a', 'h', 't']
+
+Letters to not guess again:
+	['d', 'l', 'n', 'o', 's', 'u']
+
+At this point:
+	9678, 99.61% of total words have been eliminated, and
+	38, 0.39% of total words remain possible.
+
+Potential next guesses:
+	[('architect', 100.0), ('arimathea', 93.59), ('ramathite', 93.59), ('arbathite', 88.89), ('pacifieth', 81.09), ('archetype', 74.68), ('wehrmacht', 73.47), ('empathize', 69.21), ('preacheth', 67.22), ('thackeray', 65.84), ('catechize', 61.47), ('treachery', 60.53), ('bethrapha', 56.11), ('bewrayeth', 54.62), ('heartache', 53.07), ('charecter', 53.07), ('character', 53.07), ('hamathite', 53.01), ('pethahiah', 52.02), ('betrayeth', 49.42), ('matriarch', 48.09), ('hexameter', 47.98), ('bereaveth', 47.93), ('gathereth', 47.82), ('patriarch', 47.1), ('appeareth', 45.66), ('repeateth', 45.66), ('prepareth', 45.66), ('bethbarah', 41.96), ('breatheth', 41.96), ('heartbeat', 41.96), ('hereafter', 39.03), ('cathartic', 32.95), ('birzavith', 29.85), ('accepteth', 26.7), ('affecteth', 20.01), ('zephathah', 7.13), ('vajezatha', 0.0)]
+
+Words guessed so far:
+	['southland'].
+
+Next guess:
+	'architect'
+
+-----------------------------
+
+Guess 2: 'architect'
+Letters in correct positions:
+	[]
+
+Letters in incorrect positions:
+	[('a', 0), ('r', 1), ('c', 2), ('t', 3), ('h', 3), ('h', 4), ('t', 5), ('a', 6), ('e', 6), ('c', 7), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'l', 'n', 'o', 's', 'u']
+
+At this point:
+	9712, 99.96% of total words have been eliminated, and
+	4, 0.04% of total words remain possible.
+
+Potential next guesses:
+	[('thackeray', 100.0), ('charecter', 0.0), ('character', 0.0), ('heartache', 0.0)]
+
+Words guessed so far:
+	['southland', 'architect'].
+
+Next guess:
+	'thackeray'
+
+-----------------------------
+
+Guess 3: 'thackeray'
+Letters in correct positions:
+	[('h', 1), ('a', 2)]
+
+Letters in incorrect positions:
+	[('a', 0), ('t', 0), ('r', 1), ('c', 2), ('t', 3), ('h', 3), ('c', 3), ('h', 4), ('t', 5), ('e', 5), ('a', 6), ('e', 6), ('r', 6), ('c', 7), ('a', 7), ('t', 8)]
+
+Letters to guess again:
+	['a', 'c', 'e', 'h', 'r', 't']
+
+Letters to not guess again:
+	['d', 'i', 'k', 'l', 'n', 'o', 's', 'u', 'y']
+
+At this point:
+	9714, 99.98% of total words have been eliminated, and
+	2, 0.02% of total words remain possible.
+
+Potential next guesses:
+	[('charecter', 0.0), ('character', 0.0)]
+
+Words guessed so far:
+	['southland', 'architect', 'thackeray'].
+
+Next guess:
+	'character'
+
+-----------------------------
+
+Guess 4: 'character'
+
+Congratulations! The Wordle has been solved in 4 guesses!
+There were still 2 guesses remaining.
+
+The target word was 'character'.
+
+-----------------------------

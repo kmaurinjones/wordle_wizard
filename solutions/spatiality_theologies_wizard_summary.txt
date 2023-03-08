@@ -1,0 +1,12 @@
+-----------------------------
+
+Guess 1: 'spatiality'
+Guess 2: 'holstering'
+Guess 3: 'theologies'
+
+Congratulations! The Wordle has been solved in 3 guesses!
+There were still 3 guesses remaining.
+
+The target word was 'theologies'.
+
+-----------------------------
