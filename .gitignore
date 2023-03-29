@@ -1,5 +1,9 @@
 ### temporary ignores
 wordle_wizard2.ipynb
+solutions/*
+environment/*
+compared_data/*
+all_permutations*
 
 
 *.gitignore*
