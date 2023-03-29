@@ -7,18 +7,20 @@ from nltk.corpus import movie_reviews, treebank, brown, gutenberg, switchboard
 
 english_alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-def get_letter_counts(letters: str, word_list: list, sort: str = "descending"):
+def get_letter_counts(word_list: list, letters: str = english_alphabet, sort: str = "descending", unique: bool = False):
     """
     Given a passed str of letters and a list of words, produces a frequency distribution of all letters
 
     Parameters:
     ------
-    `letters`: str
-        a string of letters to be counted. String must only be desired letters, with no spaces. Default is local variable containing all letters of the English alphabet
     `word_list`: list
         list of words (str) from which word frequencies will be counted
+    `letters`: str
+        a string of letters to be counted. String must only be desired letters, with no spaces. Default is local variable containing all letters of the English alphabet
     `sort`: str
-        if either "descending" or "ascending" are passed, returned list of tuples will be sorted accoringly, else returned dictionary will be unsorted
+        if either "descending" or "ascending" are passed, returned list of tuples will be sorted accordingly, else returned dictionary will be unsorted
+    `unique`: bool
+        if True, only unique letters in a word are counted. That means that words with more unique letters are rated more highly than any words with duplicate letters
 
     Returns:
     ------
@@ -28,17 +30,31 @@ def get_letter_counts(letters: str, word_list: list, sort: str = "descending"):
         list of tuples. Format is ("letter", frequency). Ordered according to `sort` values
     """
 
-    words_counts_dict = {}
+    words_counts_dict = {} # master dictionary
 
-    for word in word_list: # real dataset
-        word_dict = {}
- 
-        for letter in word:
-            if letter in word_dict:
-                word_dict[letter] += 1
-            else:
-                word_dict[letter] = 1
-        words_counts_dict[word] = word_dict
+    if unique == False:
+        for word in word_list: # real dataset
+            word_dict = {}
+
+            for letter in word:
+                if letter in word_dict:
+                    word_dict[letter.lower()] += 1
+                else:
+                    word_dict[letter.lower()] = 1
+            words_counts_dict[word] = word_dict # add dictionary for each word to master dictionary
+    else: # if unique == True
+
+        for word in word_list: # real dataset
+            word_dict = {}
+
+            word_letters = set(letter for letter in word)
+
+            for letter in word_letters:
+                if letter in word_dict:
+                    word_dict[letter] += 1
+                else:
+                    word_dict[letter] = 1
+            words_counts_dict[word] = word_dict # add dictionary for each word to master dictionary
 
     letters_counts_dict = {}
 
@@ -87,7 +103,7 @@ def best_guess_words(word_list: list, show_letters: bool = False):
         
     english_alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
+    sorted_counts = get_letter_counts(word_list = word_list, letters = english_alphabet, sort = "descending", unique = True)
 
     max_len_possible = len(word_list[0])
 
@@ -176,7 +192,7 @@ def count_vows_cons(word: str, y_vow = True):
     counts = {}
     counts["vows"] = 0
     counts["cons"] = 0
-    for letter in word:
+    for letter in set(word):
         if letter in vows:
             counts["vows"] += 1
         if letter in cons:
@@ -184,9 +200,9 @@ def count_vows_cons(word: str, y_vow = True):
 
     return counts
 
-def get_word_entropy(words_to_rate: list, word_list: list, normalized: bool = True, ascending: bool = False):
+def get_word_meaning(words_to_rate: list, word_list: list, normalized: bool = True, ascending: bool = False, unique: bool = False):
     """
-    Given a word and a word list, calculates entropy each word as a measure of its impact to the next possible guesses in Wordle, ordered according to `reverse` parameter.
+    Given a word and a word list, calculates meaning each word as a measure of its impact to the next possible guesses in Wordle, ordered according to `reverse` parameter.
     
     ------
     Parameters:
@@ -199,6 +215,8 @@ def get_word_entropy(words_to_rate: list, word_list: list, normalized: bool = Tr
         if True, normalizes all ratings on a scale of 0-100, with 100 being the rating for the most optimal word, and 0 for the least optimal word
     `ascending`: bool
         if True, returns list ordered ascending. If False, returns list in descending order
+    `unique`: bool
+        if True, uses counts are incremented uses only unique letters in words. If False, includes duplicate letters in count
 
     ------
     Returns:
@@ -210,9 +228,9 @@ def get_word_entropy(words_to_rate: list, word_list: list, normalized: bool = Tr
     """
 
     if ascending == True:
-        sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "ascending")
+        sorted_counts = get_letter_counts(word_list = word_list, letters = english_alphabet, sort = "ascending", unique = unique)
     else:
-        sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
+        sorted_counts = get_letter_counts(word_list = word_list, letters = english_alphabet, sort = "descending", unique = unique)
 
     all_letters_count = 0
     for letter, freq in sorted_counts:
@@ -296,7 +314,7 @@ def get_word_distribution(word_list: list, sort: str = "descending"):
         return sorted_counts_dict
     
 def wordle_wizard(word_list: list, max_guesses: int = None, 
-                  guess: str = None, target: str = None, bias: bool = True, 
+                  guess: str = None, target: str = None,
                   random_guess: bool = False, random_target: bool = False, 
                   verbose: bool = False, drama: float = None, 
                   return_stats: bool = False, record: bool = False):
@@ -312,15 +330,6 @@ def wordle_wizard(word_list: list, max_guesses: int = None,
         a string -- must be the same length as `target_word`
     `target`: str
         a string -- must be the same length as `opening_word`
-    `bias`: str ['entropy', 'common', 'rare', None]
-        'entropy' biases next word guesses to be the ones with the highest impact on the range of next possible guesses. Entropy values associated with each word are normalized across the list.
-
-        'common' biases next word guesses to be words that are more commonly used
-
-        'rare' biases next word guesses to be words that are more rarely used
-
-        'no_bias' chooses a next guess at random of all available guesses
-
     `max_guesses`: int
         the maximum number of attempts allowed to solve the Wordle
     `random_guess`: bool
@@ -376,21 +385,21 @@ def wordle_wizard(word_list: list, max_guesses: int = None,
     stats_dict['target_vowels'] = float(count_vows_cons(target, y_vow = True)['vows'])
     stats_dict['target_consonants'] = float(count_vows_cons(target, y_vow = True)['cons'])
     
-    # get entropy of the first guess word and target word in the entire word_list
-    for tup in get_word_entropy(word_list, word_list, normalized = True):
+    # get meaning of the first guess word and target word in the entire word_list
+    for tup in get_word_meaning(word_list, word_list, normalized = False):
         if tup[0] == guess:
-            stats_dict['first_guess_entropy'] = tup[1]
+            stats_dict['first_guess_meaning'] = tup[1]
         if tup[0] == target:
-            stats_dict['target_entropy'] = tup[1]
+            stats_dict['target_meaning'] = tup[1]
 
     guess_entropies = []
-    guess_entropies.append(stats_dict['first_guess_entropy'])
+    guess_entropies.append(stats_dict['first_guess_meaning'])
 
     # luck_guess_1 = round(1 - ((1 / len(word_list)) * guess_entropies[0] / 100), 2) * 100
 
     english_alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    word_list_sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
+    # word_list_sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
     
     wordlen = len(guess)
     letter_positions = set(i for i in range(0, wordlen))
@@ -632,104 +641,25 @@ def wordle_wizard(word_list: list, max_guesses: int = None,
                     record_list.append(f"The only remaining possible word is:\n\t'{list(potential_next_guesses)[0]}'\n")
                 
             guess = list(potential_next_guesses)[0]
-            guess_entropies.append(get_word_entropy([guess], word_list, normalized = True, ascending = False)[0][1])
+            guess_entropies.append(get_word_meaning([guess], word_list, normalized = False, ascending = False)[0][1])
 
         else:
-
-            if bias == "entropy":
                 
-                best_next_guesses = list(potential_next_guesses)                
-                # print (best_next_guesses)
-                word_ratings = get_word_entropy(best_next_guesses, word_list, normalized = True, ascending = False) # "internal" ratings
+            best_next_guesses = list(potential_next_guesses)                
+            # print (best_next_guesses)
+            word_ratings = get_word_meaning(best_next_guesses, word_list, normalized = False, ascending = False) # "internal" ratings
 
-                # Get max rated word
-                max_rating = -np.inf
-                for word, rating in word_ratings:
-                    if rating > max_rating:
-                        max_rating = rating
+            # Get max rated word
+            max_rating = -np.inf
+            for word, rating in word_ratings:
+                if rating > max_rating:
+                    max_rating = rating
 
-                for word, rating in word_ratings:
-                    if rating == max_rating:
-                        guess = word
-                
-                guess_entropies.append(get_word_entropy([guess], word_list, normalized = True, ascending = False)[0][1])
-
-                if return_stats == False:
-                    if verbose == True:
-                        if len(word_ratings) <= 40:
-                            print(f"All potential next guesses:\n\t{word_ratings}\n")
-                            print(f"Words guessed so far:\n\t{guessed_words}.\n")
-                            record_list.append(f"Potential next guesses:\n\t{word_ratings}\n")
-                            record_list.append(f"Words guessed so far:\n\t{guessed_words}.\n")
-                        else:
-                            print(f"The top 40 potential next guesses are:\n\t{word_ratings[:40]}\n")
-                            print(f"Words guessed so far:\n\t{guessed_words}.\n")
-                            record_list.append(f"The top 40 potential next guesses are::\n\t{word_ratings[:40]}\n")
-                            record_list.append(f"Words guessed so far:\n\t{guessed_words}.\n")
-
-            if bias == "no_bias":
-                best_next_guesses = set()
-                for word in potential_next_guesses:
-                    for letter, freq in word_list_sorted_counts:
-                        if letter not in dont_guess_again:
-                            if len(next_letters) > 0:
-                                if letter in next_letters:
-                                    if letter in word:
-                                        best_next_guesses.add(word)
-                                        break
-                            else:
-                                if letter in word:
-                                    best_next_guesses.add(word)
-                                    break
-                                
-                if return_stats == False:
-                    if verbose == True:
-                        if len(best_next_guesses) <= 40:
-                            print(f"Potential next guesses:\n\t{best_next_guesses}\n")
-                            print(f"Words guessed so far:\n\t{guessed_words}.\n") 
-                            record_list.append(f"Potential next guesses:\n\t{best_next_guesses}\n")
-                            record_list.append(f"Words guessed so far:\n\t{guessed_words}.\n") 
-
-            if bias == ("common" or "rare"):
-                found_words = []
-                for word in word_list:
-                    if word in nltk_counts.keys():
-                        found_words.append(word)
-
-                found_words_sorted = sorted(found_words, key = operator.itemgetter(1), reverse = True) # sorted descending
-
-                rated_words = []
-                for word in potential_next_guesses:
-                    for tup in found_words_sorted:
-                        if tup[0] == word:
-                            rated_words.append(tup)
-
-                rated_words = sorted(rated_words, key = operator.itemgetter(1), reverse = True) # sorted descending
-                
-                if bias == "common":
-                    guess = rated_words[0][0] # word in first position // most frequent word
-                    
-                    if return_stats == False:
-                        if verbose == True:
-                            if len(potential_next_guesses) <= 40:
-                                print(f"Potential next guesses:\n\t{rated_words}\n")
-                                print(f"Words guessed so far:\n\t{guessed_words}.\n") 
-                                record_list.append(f"Potential next guesses:\n\t{potential_next_guesses}\n")
-                                record_list.append(f"Words guessed so far:\n\t{guessed_words}.\n") 
-                
-                if bias == "rare":
-                    guess = rated_words[-1][0] # word in last position // least frequent word
-                
-                    if return_stats == False:
-                        if verbose == True:
-                            if len(potential_next_guesses) <= 40:
-                                print(f"Potential next guesses:\n\t{rated_words}\n")
-                                print(f"Words guessed so far:\n\t{guessed_words}.\n") 
-                                record_list.append(f"Potential next guesses:\n\t{potential_next_guesses}\n")
-                                record_list.append(f"Words guessed so far:\n\t{guessed_words}.\n") 
-                    
-                # guess = list(best_next_guesses)[0]
-                guess_entropies.append(get_word_entropy([guess], word_list, normalized = True, ascending = False)[0][1])
+            for word, rating in word_ratings:
+                if rating == max_rating:
+                    guess = word
+            
+            guess_entropies.append(get_word_meaning([guess], word_list, normalized = False, ascending = False)[0][1])
 
         #### Guess has now been made -- what to do next
         if guess_num == max_guesses: # if at max guesses allowed
@@ -811,25 +741,25 @@ def wordle_wizard(word_list: list, max_guesses: int = None,
     # average number of words remaining after each guess -- the higher this is, the luckier the person got (the lower, the more guesses it took)
     stats_dict['avg_remaining'] = float(round(np.mean(reduction_per_guess), 2))
 
-    # avg entropy of each guessed word relative to all other words possible at that moment -- this should consistently be 100 for the algorithm, but will be different for user
+    # avg meaning of each guessed word relative to all other words possible at that moment -- this should consistently be 100 for the algorithm, but will be different for user
     if len(guess_entropies) > 1: # in case of guessing it correctly on the first try
         sum_entropies = 0
-        for entropy in guess_entropies:
-            sum_entropies += entropy
+        for meaning in guess_entropies:
+            sum_entropies += meaning
 
-        average_entropy = float(round(sum_entropies / len(guess_entropies), 2))
-        stats_dict['avg_intermediate_guess_entropy'] = average_entropy
+        average_meaning = float(round(sum_entropies / len(guess_entropies), 2))
+        stats_dict['avg_intermediate_guess_meaning'] = average_meaning
     else:
-        stats_dict['avg_intermediate_guess_entropy'] = float(100)
+        stats_dict['avg_intermediate_guess_meaning'] = float(100)
 
     expected_guesses = 3.85
 
     # guess_num = 3
-    # average_entropy = 95
-    luck = round(1 - ((((guess_num / expected_guesses) * (stats_dict['avg_intermediate_guess_entropy'] / 100)) / max_guesses) * 5), 2)
+    # average_meaning = 95
+    luck = round(1 - ((((guess_num / expected_guesses) * (stats_dict['avg_intermediate_guess_meaning'] / 100)) / max_guesses) * 5), 2)
     stats_dict['luck'] = luck
     
-    stats_dict['bias'] = bias
+    # stats_dict['bias'] = bias
 
 
     if record == True:
@@ -901,19 +831,19 @@ def compare_wordle(word_list: list, max_guesses: int = None, guess_list: list = 
     stats_dict['target_vowels'] = float(count_vows_cons(target, y_vow = True)['vows'])
     stats_dict['target_consonants'] = float(count_vows_cons(target, y_vow = True)['cons'])
     
-    # get entropy of the first guess word and target word in the entire word_list
-    for tup in get_word_entropy(word_list, word_list, normalized = True):
+    # get meaning of the first guess word and target word in the entire word_list
+    for tup in get_word_meaning(word_list, word_list, normalized = False):
         if tup[0] == guess:
-            stats_dict['first_guess_entropy'] = tup[1]
+            stats_dict['first_guess_meaning'] = tup[1]
         if tup[0] == target:
-            stats_dict['target_entropy'] = tup[1]
+            stats_dict['target_meaning'] = tup[1]
 
     guess_entropies = []
-    guess_entropies.append(stats_dict['first_guess_entropy'])
+    guess_entropies.append(stats_dict['first_guess_meaning'])
 
     english_alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    word_list_sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
+    # word_list_sorted_counts = get_letter_counts(english_alphabet, word_list, sort = "descending")
     
     wordlen = len(guess)
     letter_positions = set(i for i in range(0, wordlen))
@@ -1158,18 +1088,18 @@ def compare_wordle(word_list: list, max_guesses: int = None, guess_list: list = 
             del guess_list[0]
             # print (guess_list)
             guess = guess_list[0]
-            guess_entropies.append(get_word_entropy([guess], word_list, normalized = True, ascending = False)[0][1])
+            guess_entropies.append(get_word_meaning([guess], word_list, normalized = False, ascending = False)[0][1])
 
         else:
             
             best_next_guesses = list(potential_next_guesses)                
-            word_ratings = get_word_entropy(best_next_guesses, word_list, normalized = True, ascending = False) # "internal" ratings
+            word_ratings = get_word_meaning(best_next_guesses, word_list, normalized = False, ascending = False) # "internal" ratings
 
             del guess_list[0]
             # print (guess_list)
             guess = guess_list[0]
 
-            guess_entropies.append(get_word_entropy([guess], word_list, normalized = True, ascending = False)[0][1])
+            guess_entropies.append(get_word_meaning([guess], word_list, normalized = False, ascending = False)[0][1])
 
             if return_stats == False:
                 if verbose == True:
@@ -1264,16 +1194,16 @@ def compare_wordle(word_list: list, max_guesses: int = None, guess_list: list = 
     # average number of words remaining after each guess -- the higher this is, the luckier the person got (the lower, the more guesses it took)
     stats_dict['avg_remaining'] = float(round(np.mean(reduction_per_guess), 2))
 
-    # avg entropy of each guessed word relative to all other words possible at that moment -- this should consistently be 100 for the algorithm, but will be different for user
+    # avg meaning of each guessed word relative to all other words possible at that moment -- this should consistently be 100 for the algorithm, but will be different for user
     if len(guess_entropies) > 1: # in case of guessing it correctly on the first try
         sum_entropies = 0
-        for entropy in guess_entropies:
-            sum_entropies += entropy
+        for meaning in guess_entropies:
+            sum_entropies += meaning
 
-        average_entropy = float(round(sum_entropies / len(guess_entropies), 2))
-        stats_dict['avg_intermediate_guess_entropy'] = average_entropy
+        average_meaning = float(round(sum_entropies / len(guess_entropies), 2))
+        stats_dict['avg_intermediate_guess_meaning'] = average_meaning
     else:
-        stats_dict['avg_intermediate_guess_entropy'] = float(100)
+        stats_dict['avg_intermediate_guess_meaning'] = float(100)
     
     # stats_dict['bias'] = bias
 
@@ -1298,20 +1228,20 @@ def compare_wordle(word_list: list, max_guesses: int = None, guess_list: list = 
     stats_dict['num_guesses'] = float(guess_num)
 
     wizard_dict = wordle_wizard(word_list = word_list, max_guesses = max_guesses, 
-        guess = first_guess, target = target, bias = 'entropy', 
+        guess = first_guess, target = target,
         random_guess = False, random_target = False, 
         verbose = False, drama = 0, return_stats = return_stats, record = False)
     
     wizard_dict['player'] = "wizard"
-    del wizard_dict['bias'] # leftover from the wordle_wizard() output stats_dict, but isn't relevant anymore
+    # del wizard_dict['bias'] # leftover from the wordle_wizard() output stats_dict, but isn't relevant anymore
     wizard_dict['luck'] = 0
     
     wizard_dict['expected_guesses'] = wizard_dict['num_guesses']
     stats_dict['expected_guesses'] = wizard_dict['num_guesses']
 
     expected_guesses = wizard_dict['num_guesses']
-    # stats_dict['luck'] = round((1 - (guess_num / expected_guesses)) * (stats_dict['avg_intermediate_guess_entropy'] / 100), 2)
-    stats_dict['luck'] = round((1 - ((guess_num / expected_guesses)) * (stats_dict['avg_intermediate_guess_entropy'] / 100)), 2)
+    # stats_dict['luck'] = round((1 - (guess_num / expected_guesses)) * (stats_dict['avg_intermediate_guess_meaning'] / 100), 2)
+    stats_dict['luck'] = round((1 - ((guess_num / expected_guesses)) * (stats_dict['avg_intermediate_guess_meaning'] / 100)), 2)
 
     stats_master = {}
     for metric, result in stats_dict.items():
@@ -1426,9 +1356,9 @@ def create_compared_df(player_df, to_csv: bool = False, show_shapes: bool = Fals
 
     # Re-organizing columns to a more logical order (for viewing)
     df_master = df_master[['first_guess', 'target_word', 'player', 'num_guesses', 'expected_guesses', 'luck', 'first_guess_vowels', 'first_guess_consonants',
-                        'target_vowels', 'target_consonants', 'first_guess_entropy', 'target_entropy',
+                        'target_vowels', 'target_consonants', 'first_guess_meaning', 'target_meaning',
                         'target_guessed', 'mid_guesses_avg_vows', 'mid_guesses_avg_cons', 'avg_perf_letters',
-                        'avg_wrong_pos_letters', 'avg_wrong_letters', 'avg_remaining', 'avg_intermediate_guess_entropy',
+                        'avg_wrong_pos_letters', 'avg_wrong_letters', 'avg_remaining', 'avg_intermediate_guess_meaning',
                         'valid_success']]
 
     # print(excepts)
@@ -1444,4 +1374,4 @@ def create_compared_df(player_df, to_csv: bool = False, show_shapes: bool = Fals
     if show_shapes == True:
         print(df_master.shape) # check shape after deleting dups
     
-    return df_master
+    return df_master.reset_index(drop = True)

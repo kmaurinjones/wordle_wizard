@@ -17,12 +17,6 @@ At this point:
 	2288, 99.09% of total words have been eliminated, and
 	21, 0.91% of total words remain possible.
 
-Potential next guesses:
-	[('shirt', 100.0), ('strip', 97.58), ('rusty', 82.49), ('skirt', 81.4), ('surly', 81.16), ('swirl', 78.38), ('spurt', 76.33), ('slurp', 75.0), ('spurn', 60.02), ('sprig', 53.86), ('risky', 49.52), ('virus', 47.83), ('shirk', 45.65), ('scrum', 44.57), ('syrup', 44.44), ('scrub', 40.82), ('smirk', 38.29), ('strut', 38.16), ('shrug', 34.78), ('shrub', 31.64), ('usurp', 0.0)]
-
-Words guessed so far:
-	['arose'].
-
 Next guess:
 	'shirt'
 
@@ -44,12 +38,6 @@ Letters to not guess again:
 At this point:
 	2305, 99.83% of total words have been eliminated, and
 	4, 0.17% of total words remain possible.
-
-Potential next guesses:
-	[('surly', 100.0), ('scrum', 9.28), ('syrup', 8.98), ('scrub', 0.0)]
-
-Words guessed so far:
-	['arose', 'shirt'].
 
 Next guess:
 	'surly'

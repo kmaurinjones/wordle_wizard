@@ -14,14 +14,8 @@ Letters to not guess again:
 	['a', 'i', 'n', 'p', 't']
 
 At this point:
-	1933, 83.07% of total words have been eliminated, and
-	394, 16.93% of total words remain possible.
-
-The top 40 potential next guesses are::
-	[('loser', 100.0), ('score', 92.28), ('rouse', 92.02), ('older', 90.94), ('shore', 89.42), ('horse', 89.42), ('close', 86.49), ('louse', 86.23), ('sober', 85.97), ('lower', 84.56), ('ulcer', 84.41), ('cruel', 84.41), ('lover', 83.22), ('swore', 83.22), ('sower', 83.22), ('worse', 83.22), ('decor', 83.18), ('credo', 83.18), ('curse', 83.07), ('chore', 83.0), ('verso', 81.85), ('horde', 80.33), ('rogue', 80.25), ('rouge', 80.25), ('usher', 80.25), ('lemur', 79.32), ('gruel', 79.06), ('bluer', 78.14), ('serum', 77.99), ('homer', 77.91), ('force', 77.91), ('surge', 77.73), ('cower', 76.8), ('rebus', 76.8), ('foyer', 76.21), ('clerk', 76.1), ('solve', 76.1), ('chose', 75.91), ('house', 75.65), ('cover', 75.46)]
-
-Words guessed so far:
-	['paint'].
+	1919, 83.11% of total words have been eliminated, and
+	390, 16.89% of total words remain possible.
 
 Next guess:
 	'loser'
@@ -42,14 +36,8 @@ Letters to not guess again:
 	['a', 'i', 'l', 'n', 'p', 's', 't']
 
 At this point:
-	2321, 99.74% of total words have been eliminated, and
+	2303, 99.74% of total words have been eliminated, and
 	6, 0.26% of total words remain possible.
-
-Potential next guesses:
-	[('horde', 100.0), ('rogue', 99.51), ('rouge', 99.51), ('force', 84.03), ('forge', 48.4), ('gorge', 0.0)]
-
-Words guessed so far:
-	['paint', 'loser'].
 
 Next guess:
 	'horde'
@@ -70,14 +58,8 @@ Letters to not guess again:
 	['a', 'd', 'h', 'i', 'l', 'n', 'p', 's', 't']
 
 At this point:
-	2324, 99.87% of total words have been eliminated, and
+	2306, 99.87% of total words have been eliminated, and
 	3, 0.13% of total words remain possible.
-
-Potential next guesses:
-	[('force', 100.0), ('forge', 57.6), ('gorge', 0.0)]
-
-Words guessed so far:
-	['paint', 'loser', 'horde'].
 
 Next guess:
 	'force'
