@@ -1,3 +1,7 @@
+### temporary ignores
+wordle_wizard2.ipynb
+
+
 *.gitignore*
 *pycache*
 */environment*
